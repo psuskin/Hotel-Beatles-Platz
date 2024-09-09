@@ -8,13 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "primary-color": "#BF8970",
+        "secondary-color": "#8C6954"
       },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+      },
+      fontFamily: {
+        sans: ['Playfair Display SC', 'serif'],
+      }
     },
   },
   plugins: [],
 };
+
 export default config;
