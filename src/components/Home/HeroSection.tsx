@@ -1,8 +1,6 @@
 "use client";
-
 import React, { useState, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaChevronDown } from "react-icons/fa";
 import RotatingButton from "../RotatingButton";
 import BookingPopUp from "../BookingPopUp";
 
@@ -26,7 +24,7 @@ const HeroSection: React.FC = () => {
   return (
     <div
       ref={containerRef}
-      className="relative h-screen w-full overflow-hidden"
+      className="relative h-[calc(100vh-5rem)] w-full overflow-hidden pt-16"
     >
       {/* Video Background */}
       <motion.div
@@ -53,8 +51,8 @@ const HeroSection: React.FC = () => {
         className="relative z-10 h-full flex flex-col justify-between text-white px-6 py-12 md:px-12 md:py-16"
         style={{ y: contentY, opacity }}
       >
-        <div className="flex flex-col md:flex-row items-start md:items-end justify-between w-full">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 md:mb-0">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between w-full mt-2">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 md:mb-0 uppercase">
             Hotel am
             <br />
             Beatles-Platz

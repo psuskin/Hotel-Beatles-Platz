@@ -69,10 +69,10 @@ const ContactForm: React.FC = () => {
     setIsSuccess(false);
 
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
+      const response = await fetch("/api/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formState),
       });
@@ -90,10 +90,10 @@ const ContactForm: React.FC = () => {
           consent: false,
         });
       } else {
-        throw new Error('Failed to send email');
+        throw new Error("Failed to send email");
       }
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error sending email:", error);
       // Handle error (e.g., show error message to user)
     } finally {
       setIsSubmitting(false);
@@ -101,10 +101,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="space-y-6 bg-gray-800 p-8"
-    >
+    <form onSubmit={handleSubmit} className="space-y-6 bg-gray-900 p-8 w-full">
       <h2 className="text-2xl font-semibold mb-6 text-white">Contact Us</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>

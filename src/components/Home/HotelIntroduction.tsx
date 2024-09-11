@@ -9,6 +9,7 @@ import { Bed, UtensilsCrossed, GlassWater, Car } from "lucide-react";
 import { fetchWeather } from "@/utils/fetchWeather";
 import Button from "../Buttons/Button";
 import BookingPopUp from "../BookingPopUp";
+import Atmosphere from "../Atmosphere";
 
 const HotelIntroduction: React.FC = () => {
   const options: EmblaOptionsType = { loop: true };
@@ -71,14 +72,20 @@ const HotelIntroduction: React.FC = () => {
   return (
     <section className="bg-black text-white py-20">
       <div className="container mx-auto px-4">
-        {/* Existing carousel and hotel information */}
+        {/* Updated carousel and hotel information */}
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
-          {/* Carousel */}
-          <div className="w-full lg:w-1/2">
-            <div
-              className="overflow-hidden rounded-lg shadow-lg"
-              ref={emblaRef}
+          <div className="w-full relative">
+            <h1
+              className="absolute top-0 left-[2vw] transform -translate-y-1/2 z-10 text-white uppercase font-light leading-tight tracking-wide"
+              style={{
+                fontSize: "clamp(2rem, 5vw + 1rem, 5rem)",
+                textShadow: "2px rgba(0,0,0,0.5)",
+              }}
             >
+              HOTEL AT BEATLES
+            </h1>
+
+            <div className="overflow-hidden rounded-lg" ref={emblaRef}>
               <div className="flex">
                 {images.map((src, index) => (
                   <div key={index} className="flex-[0_0_100%] min-w-0">
@@ -87,7 +94,7 @@ const HotelIntroduction: React.FC = () => {
                       alt={`Hotel am Beatles-Platz ${index + 1}`}
                       width={800}
                       height={600}
-                      className="w-full h-[500px] object-cover"
+                      className="w-full h-[500px] lg:h-[600px] object-cover opacity-85"
                     />
                   </div>
                 ))}
@@ -116,7 +123,7 @@ const HotelIntroduction: React.FC = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-8 text-primary-color">
+            <h2 className="text-4xl font-semibold mb-8 text-primary-color">
               Willkommen im Hotel am Beatles-Platz
             </h2>
             <p className="text-lg mb-8 leading-relaxed">
@@ -125,7 +132,7 @@ const HotelIntroduction: React.FC = () => {
               Unser Haus bietet eine perfekte Mischung aus modernem Komfort und
               hanseatischem Charme.
             </p>
-            <div className="grid grid-cols-2 gap-6 mb-10">
+            <div className="grid grid-cols-2 gap-6 mb-10 text-primary-color">
               <InfoItem
                 icon={<Bed className="w-6 h-6" />}
                 text="60 luxuriöse Zimmer"
@@ -143,14 +150,6 @@ const HotelIntroduction: React.FC = () => {
                 text="Tiefgarage verfügbar"
               />
             </div>
-            {/* <motion.button
-              className="bg-primary-color text-black px-8 py-3 rounded-full font-semibold text-lg tracking-wider hover:bg-opacity-90 transition duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Jetzt buchen
-            </motion.button> */}
-
             <Button
               text="Jetzt buchen"
               className="text-base md:text-lg"
@@ -165,94 +164,7 @@ const HotelIntroduction: React.FC = () => {
         </div>
 
         {/* New Atmosphere Section */}
-        <div className="flex flex-col lg:flex-row items-start gap-12">
-          {/* Quick Info Section */}
-          <div className="w-full lg:w-1/3">
-            <motion.div
-              className="border border-gray-700 p-6 rounded-lg"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <div className="space-y-4 text-sm">
-                <InfoItem label="Lage" value="20359 Hamburg – Germany" />
-                <InfoItem label="Telefon" value="+49 40 181 283 811" />
-                <InfoItem
-                  label="Ortszeit"
-                  value={currentTime.toLocaleTimeString("de-DE", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
-                />
-                <InfoItem label="Aktuelles Wetter" value={weather} />
-                <InfoItem label="Email" value="info@hotelambeatlesplatz.de" />
-                <InfoItem label="PDF" value="Gästemappe" isLink />
-                <InfoItem
-                  label="Link"
-                  value="Nachhaltigkeitszertifikat"
-                  isLink
-                />
-                <InfoItem label="Link" value="Sehenswürdigkeiten" isLink />
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Atmosphere Description and Bento Grid */}
-          <motion.div
-            className="w-full"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-2 md:mb-4 text-primary-color">
-              Elegant und Warm
-            </h2>
-            <h3 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
-              ATMOSPHÄRE
-            </h3>
-            <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8">
-              <p className="text-base md:text-lg mb-6 lg:mb-0 leading-relaxed flex-1">
-                Nach einem ereignisreichen Tag in der pulsierenden Stadt
-                begrüßen wir Sie in einer lichtdurchfluteten, großzügigen Lobby.
-                In unserer Bar Charlotte können Sie sich zurücklehnen und
-                durchatmen, bevor Sie in den großen Indoorpool in unserem 3.000
-                m² großen Befine Sports & Spa eintauchen.
-              </p>
-              <div className="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 sm:grid-rows-4 gap-2 sm:gap-4 w-full lg:w-1/2 max-w-md mx-auto lg:mx-0">
-                <Image
-                  src="/images/hotel1.jpg"
-                  alt="Hotel Lobby 1"
-                  width={300}
-                  height={300}
-                  className="rounded-lg object-cover col-span-2 row-span-2"
-                />
-                <Image
-                  src="/images/hotel2.jpg"
-                  alt="Bar Charlotte"
-                  width={150}
-                  height={150}
-                  className="rounded-lg object-cover col-span-2 sm:col-span-2 row-span-1"
-                />
-                <Image
-                  src="/images/hotel3.jpg"
-                  alt="Befine Sports & Spa"
-                  width={150}
-                  height={150}
-                  className="rounded-lg object-cover col-span-1 row-span-1 sm:row-span-2"
-                />
-                <Image
-                  src="/images/hotel1.jpg"
-                  alt="Luxurious Room"
-                  width={150}
-                  height={150}
-                  className="rounded-lg object-cover col-span-1 row-span-1 sm:row-span-2"
-                />
-              </div>
-            </div>
-          </motion.div>
-        </div>
+        <Atmosphere currentTime={currentTime} weather={weather} />
       </div>
     </section>
   );

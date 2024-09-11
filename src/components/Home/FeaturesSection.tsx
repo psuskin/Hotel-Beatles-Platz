@@ -5,6 +5,7 @@ import { Building2, Users } from "lucide-react";
 import CardGallery from "../CardGallery";
 import Button from "../Buttons/Button";
 import BookingPopUp from "../BookingPopUp";
+import WhiteSection from "../WhiteSection";
 
 interface RoomType {
   id: number;
@@ -64,23 +65,7 @@ const FeaturesSection: React.FC = () => {
 
   return (
     <section ref={containerRef} className="text-black relative">
-      <div className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-100">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-8">
-            <span className="block">Elevate Your Stay</span>
-            <span className="block text-[#BF8970] mt-2">Experience Luxury</span>
-          </h2>
-          <p className="text-lg md:text-xl text-center text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Nach einer 5 jährigen Bauphase haben wir unsere Türen als 4-Sterne
-            Superior Hotel in der lebendigsten Umgebung Hamburg´s: St. Pauli
-            eröffnet. Mit insgesamt 53 Zimmern und drei verschiedenen
-            Zimmerkategorien, bieten wir unseren Gästen eine zeitlose
-            Unterkunft. Genießen Sie hochklassigen Komfort während Ihrer
-            Städtereise und machen Sie Ihren Aufenthalt in der schönen
-            Hansestadt Hamburg unvergesslich sowie einzigartig.
-          </p>
-        </div>
-      </div>
+      <WhiteSection />
       <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
         {/* Sticky menu */}
         <motion.div
@@ -104,7 +89,7 @@ const FeaturesSection: React.FC = () => {
                     px-2 py-1
                     ${
                       index === activeCard
-                        ? "text-[#BF8970]"
+                        ? "text-primary-color"
                         : "text-gray-400 hover:text-gray-200"
                     }
                   `}
@@ -118,7 +103,7 @@ const FeaturesSection: React.FC = () => {
                   <span
                     className={`
                     absolute bottom-0 left-1/2 transform -translate-x-1/2
-                    w-0 h-0.5 bg-[#BF8970]
+                    w-0 h-0.5 bg-primary-color
                     transition-all duration-300 ease-in-out
                     ${
                       index === activeCard
@@ -188,7 +173,7 @@ const RoomCard: React.FC<{
             </div>
           </div>
           <div className="p-6 md:p-8 w-full md:w-1/2 flex flex-col justify-center">
-            <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-[#BF8970]">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-primary-color">
               {room.title}
             </h3>
             <p className="text-gray-300 text-sm md:text-base mb-4 md:mb-6">
@@ -196,11 +181,11 @@ const RoomCard: React.FC<{
             </p>
             <div className="flex justify-between mb-4 md:mb-6">
               <div className="flex items-center text-gray-300">
-                <Building2 className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2 text-[#BF8970]" />
+                <Building2 className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2 text-primary-color" />
                 <span className="text-sm md:text-base">{room.size}</span>
               </div>
               <div className="flex items-center text-gray-300">
-                <Users className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2 text-[#BF8970]" />
+                <Users className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2 text-primary-color" />
                 <span className="text-sm md:text-base">{room.occupancy}</span>
               </div>
             </div>
@@ -268,6 +253,32 @@ const roomTypes: RoomType[] = [
     occupancy: "2-3 persons",
     amenities: ["Free Wi-Fi", "Air conditioning", "Mini-bar", "Work desk"],
     price: "€149 / night",
+  },
+  {
+    id: 4,
+    title: "COMFORT PLUS",
+    description:
+      "Das modern designte Comfort+-Zimmer, ist perfekt für einen bequemen Aufenthalt zu dritt. Mit insgesamt 18m² bietet dieses Zimmer großen Komfort.",
+    images: [
+      "/images/hotel1.jpg",
+      "/images/hotel2.jpg",
+      "/images/hotel3.jpg",
+      "/images/hotel1.jpg",
+      "/images/hotel2.jpg",
+      "/images/hotel3.jpg",
+    ],
+    size: "18 m²",
+    occupancy: "1-3 persons",
+    amenities: [
+      "SAFE",
+      "MINIBAR",
+      "KLIMAANLAGE",
+      "REGENDUSCHE",
+      "43″ TV",
+      "FUßBODENHEIZUNG",
+      "RITUALS-PRODUKTE",
+    ],
+    price: "€129 / night",
   },
   {
     id: 3,

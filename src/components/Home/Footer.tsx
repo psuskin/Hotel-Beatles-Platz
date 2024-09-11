@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="mb-8 text-center">
             <h2 className="text-3xl font-bold mb-2 relative inline-block">
               Hotel am Beatles-Platz
-              <span className="absolute -bottom-2 left-0 w-full h-1 bg-secondary-color transform -skew-x-12"></span>
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary-color transform -skew-x-12"></span>
             </h2>
             <p className="text-sm text-gray-600 mt-4 max-w-md mx-auto">
               Where luxury meets the rhythm of Hamburg

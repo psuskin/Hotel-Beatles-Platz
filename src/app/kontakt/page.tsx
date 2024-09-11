@@ -21,7 +21,7 @@ const ContactPage: React.FC = () => {
         transition={{ duration: 0.8, ease: "easeInOut" }}
         className="relative z-10 bg-black min-h-screen"
       >
-        <div className="container mx-auto px-8 py-12">
+        <div className="container mx-auto px-3 md:px-8 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

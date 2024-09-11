@@ -49,17 +49,17 @@ const BackToTopButton: React.FC = () => {
           whileTap={{ scale: 0.95 }}
         >
           <div className="relative w-full h-full overflow-hidden rounded-full">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#BF8970] to-[#8C6954] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-color to-primary-color opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <ArrowUp
                 size={24}
-                className="transform group-hover:translate-y-[-2px] transition-transform duration-300"
+                className="transform group-hover:translate-y-[-3px] transition-transform duration-500"
               />
             </div>
           </div>
           <motion.div
             className="absolute inset-0 bg-white rounded-full"
-            style={{ mixBlendMode: 'soft-light' }}
+            style={{ mixBlendMode: "soft-light" }}
             initial={{ scale: 1.5, opacity: 0 }}
             animate={{ scale: [1.5, 1], opacity: [0, 0.15, 0] }}
             transition={{ duration: 1, repeat: Infinity, repeatDelay: 1 }}

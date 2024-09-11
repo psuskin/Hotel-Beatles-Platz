@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Home/Nabvar";
+
 import Footer from "@/components/Home/Footer";
 import BackToTopButton from "@/components/BackToTopButton";
+import { Montserrat } from "next/font/google";
+import Navbar from "@/components/Home/Navbar";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Hotel am Beatlesplatz",
@@ -16,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans">
+      <body className={`${montserrat.className} font-sans`}>
         <Navbar />
         {children}
         <Footer />
