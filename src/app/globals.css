@@ -7,10 +7,18 @@
 
 
 :root {
-  --color-primary: #BE965A;
+  --color-primary: #E68945;
   --color-secondary: #8C6954;
   --color-background: #000000;
   --color-text: #ffffff;
+}
+
+.text-primary-color {
+  color: #E68945;
+}
+
+.bg-primary-color {
+  background-color: #E68945;
 }
 
 html,
@@ -104,6 +112,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -136,6 +145,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

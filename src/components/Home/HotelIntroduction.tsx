@@ -82,7 +82,7 @@ const HotelIntroduction: React.FC = () => {
                 textShadow: "2px rgba(0,0,0,0.5)",
               }}
             >
-              HOTEL AT BEATLES
+              HOTEL AM BEATLES-PLATZ
             </h1>
 
             <div className="overflow-hidden rounded-lg" ref={emblaRef}>
@@ -104,11 +104,10 @@ const HotelIntroduction: React.FC = () => {
               {images.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${
-                    currentSlide === index
+                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${currentSlide === index
                       ? "bg-primary-color w-8"
                       : "bg-neutral-200"
-                  }`}
+                    }`}
                   onClick={() => emblaApi?.scrollTo(index)}
                 />
               ))}

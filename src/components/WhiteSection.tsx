@@ -137,7 +137,7 @@ export default function WhiteSection() {
                 whiteSpace: "nowrap",
               }}
             >
-              HOTEL AT BEATLES
+              HOTEL AM BEATLES-PLATZ
             </h2>
           </motion.div>
           <ImageColumn images={images1} direction="up" />

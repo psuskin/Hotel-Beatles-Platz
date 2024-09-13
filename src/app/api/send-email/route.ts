@@ -18,7 +18,7 @@ export async function POST(request: Request) {
         });
 
         await transporter.sendMail({
-            from: `"Hotel at Beatles Place" <${process.env.EMAIL_USER}>`,
+            from: `"Hotel am Beatles-Platz" <${process.env.EMAIL_USER}>`,
             to: "tayebhossain88@gmail.com",
             subject: `New Contact Form Submission: ${subject}`,
             html: generateEmailHTML({ firstName, lastName, email, phone, subject, message }),

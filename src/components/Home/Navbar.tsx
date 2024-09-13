@@ -25,11 +25,9 @@ const NavLink: React.FC<NavLinkProps> = ({
 }) => (
   <Link
     href={href}
-    className={`${
-      mobile ? "block py-3 text-lg" : "px-3 py-2 rounded-md"
-    } hover:bg-white/25 transition-all duration-300 ease-in-out ${
-      className || ""
-    }`}
+    className={`${mobile ? "block py-3 text-lg" : "px-3 py-2 rounded-md"
+      } hover:bg-white/25 transition-all duration-300 ease-in-out ${className || ""
+      }`}
     onClick={onClick}
   >
     {children}
@@ -46,7 +44,7 @@ const BookButton: React.FC<{
       className={`w-20 h-20 ${color} transform rotate-6 transition-transform duration-300 group-hover:translate-y-1 flex flex-col items-center justify-center`}
     >
       <div className="text-white mb-1">{icon}</div>
-      <div className="text-white text-xs font-semibold">book</div>
+      <div className="text-white text-xs font-semibold"></div>
     </div>
   </Link>
 );

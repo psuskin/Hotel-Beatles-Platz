@@ -31,7 +31,7 @@ const ContactPage: React.FC = () => {
             >
               <div className="text-white">
                 <h2 className="text-3xl font-semibold mb-6 text-primary-color">
-                  HOTEL AT BEATLES PLACE
+                  HOTEL AM BEATLES-PLATZ
                 </h2>
                 <div className="space-y-4 text-lg">
                   <p className="flex items-center">
@@ -62,7 +62,7 @@ const ContactPage: React.FC = () => {
               <div className="border-t border-gray-700 pt-8">
                 <p className="text-gray-400 italic">
                   Experience the magic of Hamburg from the heart of St. Pauli.
-                  Your stay at Hotel at Beatles Place is more than just
+                  Your stay at Hotel am Beatles-Platz is more than just
                   accommodation; it&apos;s an immersion into the vibrant culture
                   and rich history of this iconic neighborhood.
                 </p>

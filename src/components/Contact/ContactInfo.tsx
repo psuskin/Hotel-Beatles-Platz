@@ -3,10 +3,10 @@ import React from "react";
 const ContactInfo = () => {
   return (
     <div className="text-gray-800">
-      <h2 className="text-2xl font-bold mb-4">HOTEL AT BEATLES PLACE</h2>
+      <h2 className="text-2xl font-bold mb-4">HOTEL AM BEATLES-PLATZ</h2>
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-2">HOTEL ADDRESS</h3>
-        <p>Hotel at Beatles-Platz</p>
+        <p>Hotel am Beatles-Platz</p>
         <p>Nobistor 8</p>
         <p>22767 Hamburg - Germany</p>
       </div>

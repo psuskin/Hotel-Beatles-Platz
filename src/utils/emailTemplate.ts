@@ -1,20 +1,20 @@
 interface EmailData {
-    firstName: string;
-    lastName: string;
-    email: string;
-    phone: string;
-    subject: string;
-    message: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
 }
 
 export const generateEmailHTML = (data: EmailData): string => {
-    const { firstName, lastName, email, phone, subject, message } = data;
+  const { firstName, lastName, email, phone, subject, message } = data;
 
-    // Replace these URLs with your actual image URLs
-    const headerImageUrl = "https://i.ibb.co/GsnSWJk/pexels-jean-frenna-1045113.jpg";
-    const logoUrl = "https://i.ibb.co/HFHwdF0/Illustration.png";
+  // Replace these URLs with your actual image URLs
+  const headerImageUrl = "https://i.ibb.co/GsnSWJk/pexels-jean-frenna-1045113.jpg";
+  const logoUrl = "https://i.ibb.co/HFHwdF0/Illustration.png";
 
-    return `
+  return `
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -106,9 +106,9 @@ export const generateEmailHTML = (data: EmailData): string => {
       <body>
         <div class="container">
           <div class="header">
-            <img src="${logoUrl}" alt="Hotel at Beatles Place Logo">
+            <img src="${logoUrl}" alt="Hotel am Beatles-Platz Logo">
           </div>
-          <img src="${headerImageUrl}" alt="Hotel at Beatles Place" class="hero-image">
+          <img src="${headerImageUrl}" alt="Hotel am Beatles-Platz" class="hero-image">
           <div class="content">
             <h2>New Contact Form Submission</h2>
             <div class="info-block">
@@ -133,8 +133,8 @@ export const generateEmailHTML = (data: EmailData): string => {
             <a href="mailto:${email}" class="cta-button">Reply to ${firstName}</a>
           </div>
           <div class="footer">
-            <p>This email was sent from the contact form on Hotel at Beatles Place website.</p>
-            <p>© 2023 Hotel at Beatles Place. All rights reserved.</p>
+            <p>This email was sent from the contact form on Hotel am Beatles-Platz website.</p>
+            <p>© 2023 Hotel am Beatles-Platz. All rights reserved.</p>
           </div>
         </div>
       </body>
