@@ -58,7 +58,7 @@ const RoomCard: React.FC<RoomCardProps> = ({
           <div className="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-20"></div>
         </div>
         <div className="flex items-center mb-4">
-          <h2 className="text-3xl font-bold text-[#BF8970] transition-colors duration-300 group-hover:text-white">{name}</h2>
+          <h2 className="text-3xl font-bold text-[#E68945] transition-colors duration-300 group-hover:text-white">{name}</h2>
         </div>
         <p className="text-gray-100 mb-6 flex-grow">{description}</p>
         <div className="flex flex-col gap-4 mb-6">
