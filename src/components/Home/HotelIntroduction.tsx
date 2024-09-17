@@ -36,7 +36,7 @@ const HotelIntroduction: React.FC = () => {
       } else {
         emblaApi.scrollTo(0);
       }
-    }, 5000); // Change slide every 5 seconds
+    }, 5000); 
 
     return () => {
       clearInterval(autoplay);
@@ -76,10 +76,10 @@ const HotelIntroduction: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-20">
           <div className="w-full relative">
             <h1
-              className="absolute top-0 left-[2vw] transform -translate-y-1/2 z-10 text-white uppercase font-light leading-tight tracking-wide"
+              className="absolute top-0 left-[2vw] transform -translate-y-1/2 z-10 text-white uppercase font-light leading-none tracking-wide whitespace-nowrap overflow-hidden text-ellipsis"
               style={{
-                fontSize: "clamp(2rem, 5vw + 1rem, 5rem)",
-                textShadow: "2px rgba(0,0,0,0.5)",
+                fontSize: "calc(1rem + 2.5vw)",
+                textShadow: "2px 2px 2px rgba(0,0,0,0.5)",
               }}
             >
               HOTEL AM BEATLES-PLATZ
@@ -104,10 +104,11 @@ const HotelIntroduction: React.FC = () => {
               {images.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${currentSlide === index
+                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${
+                    currentSlide === index
                       ? "bg-primary-color w-8"
                       : "bg-neutral-200"
-                    }`}
+                  }`}
                   onClick={() => emblaApi?.scrollTo(index)}
                 />
               ))}

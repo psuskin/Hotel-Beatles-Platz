@@ -105,10 +105,6 @@ export const generateEmailHTML = (data: EmailData): string => {
       </head>
       <body>
         <div class="container">
-          <div class="header">
-            <img src="${logoUrl}" alt="Hotel am Beatles-Platz Logo">
-          </div>
-          <img src="${headerImageUrl}" alt="Hotel am Beatles-Platz" class="hero-image">
           <div class="content">
             <h2>New Contact Form Submission</h2>
             <div class="info-block">

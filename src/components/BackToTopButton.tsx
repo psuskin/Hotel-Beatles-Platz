@@ -31,7 +31,7 @@ const BackToTopButton: React.FC = () => {
   };
 
   if (!isLargeScreen) {
-    return null; // Don't render the button on mobile devices
+    return null;
   }
 
   return (
@@ -43,13 +43,13 @@ const BackToTopButton: React.FC = () => {
           exit={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 bg-primary-color text-black w-14 h-14 rounded-full shadow-lg hover:shadow-2xl focus:outline-none transform hover:scale-110 transition-all duration-300 group z-50"
+          className="fixed bottom-8 right-8 bg-secondary-color text-black w-14 h-14 rounded-full shadow-lg hover:shadow-2xl focus:outline-none transform hover:scale-110 transition-all duration-300 group z-50"
           aria-label="Back to top"
           whileHover={{ y: -5 }}
           whileTap={{ scale: 0.95 }}
         >
           <div className="relative w-full h-full overflow-hidden rounded-full">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-color to-primary-color opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-secondary-color to-secondary-color opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <ArrowUp
                 size={24}

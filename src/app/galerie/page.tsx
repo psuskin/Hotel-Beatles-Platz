@@ -51,7 +51,7 @@ const GalleryPage: React.FC = () => {
         <SubHeader
           title="Our Hotel Gallery"
           description="Explore the beauty and elegance of our hotel through our carefully curated image gallery."
-          imageSrc="/images/hotel2.jpg"
+          imageSrc="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
         />
       </div>
       <div className="relative z-10 bg-black min-h-screen">
