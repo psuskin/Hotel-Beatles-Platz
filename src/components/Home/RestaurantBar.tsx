@@ -9,17 +9,17 @@ const slides = [
   {
     title: "SUSHI-RESTAURANT",
     subtitle: "IM HERZEN ST. PAULIS",
-    image: "/images/hotel1.jpg",
+    image: "/images/wideView2.jpg",
   },
   {
     title: "COCKTAIL BAR",
     subtitle: "EINZIGARTIGE MIXOLOGIE",
-    image: "/images/hotel2.jpg",
+    image: "/images/wideView.jpg",
   },
   {
     title: "GEMÜTLICHE LOUNGE",
     subtitle: "FÜR ENTSPANNTE ABENDE",
-    image: "/images/hotel3.jpg",
+    image: "/images/chairs.jpg",
   },
 ];
 
@@ -57,13 +57,15 @@ export default function RestaurantShowcase() {
       { threshold: 0.1 }
     );
 
-    if (textRef.current) {
-      observer.observe(textRef.current);
+    const currentRef = textRef.current;
+
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, [controls]);

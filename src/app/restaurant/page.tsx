@@ -3,10 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
-import MenuButtons from "@/components/Restaurent/MenuButtons";
-import RestaurantIntro from "@/components/Restaurent/RestaurantIntro";
-import FoodSection from "@/components/Restaurent/FoodSection";
-import DiningCard from "@/components/Restaurent/DiningCard";
+// import MenuButtons from "@/components/Restaurent/MenuButtons";
+// import RestaurantIntro from "@/components/Restaurent/RestaurantIntro";
+// import FoodSection from "@/components/Restaurent/FoodSection";
+// import DiningCard from "@/components/Restaurent/DiningCard";
+// import RestaurantGallery from "@/components/Restaurent/RestaurantGallery";
 
 const menuItems = [
   "BREAKFAST",
@@ -14,7 +15,6 @@ const menuItems = [
   "DINNER",
   "OPENING HOURS",
   "SUSTAINABLE KITCHEN",
-  "EAST HONEY",
 ];
 
 const RestaurantPage = () => {
@@ -40,7 +40,7 @@ const RestaurantPage = () => {
           className="absolute inset-0"
         >
           <Image
-            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+            src="/images/wideView.jpg"
             alt="Restaurant Interior"
             layout="fill"
             objectFit="cover"
@@ -58,9 +58,9 @@ const RestaurantPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{ y: titleY }}
           >
-            HOTEL AM BEATLES PLATZ
+            Coming Soon.....
           </motion.h1>
-          <motion.p
+          {/* <motion.p
             className="text-xl md:text-2xl mb-8"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -68,14 +68,15 @@ const RestaurantPage = () => {
             style={{ y: descriptionY }}
           >
             A Culinary Journey Through Flavors
-          </motion.p>
+          </motion.p> */}
         </motion.div>
-        <MenuButtons menuItems={menuItems} />
+        {/* <MenuButtons menuItems={menuItems} /> */}
       </section>
 
-      <RestaurantIntro />
+      {/* <RestaurantIntro />
       <FoodSection />
       <DiningCard />
+      <RestaurantGallery /> */}
     </div>
   );
 };

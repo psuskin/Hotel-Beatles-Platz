@@ -12,7 +12,7 @@ const Footer = () => {
               Hotel am Beatles-Platz
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary-color transform -skew-x-12"></span>
             </h2>
-            <p className="text-sm text-gray-600 mt-4 max-w-md mx-auto">
+            <p className="text-sm text-gray-200 mt-4 max-w-md mx-auto">
               Where luxury meets the rhythm of Hamburg
             </p>
           </div>
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-center text-sm text-gray-500">
+        <div className="text-center text-sm text-gray-200">
           <p>
             &copy; {new Date().getFullYear()} Hotel am Beatles-Platz. All rights
             reserved.

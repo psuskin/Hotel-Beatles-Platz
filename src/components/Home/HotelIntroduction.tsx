@@ -36,7 +36,7 @@ const HotelIntroduction: React.FC = () => {
       } else {
         emblaApi.scrollTo(0);
       }
-    }, 5000); 
+    }, 5000);
 
     return () => {
       clearInterval(autoplay);
@@ -63,10 +63,11 @@ const HotelIntroduction: React.FC = () => {
   }, []);
 
   const images = [
-    "/images/hotel1.jpg",
-    "/images/hotel2.jpg",
-    "/images/hotel3.jpg",
-    "/images/hotel3.jpg",
+    "/images/outsideView.jpg",
+    "/images/frontView.jpg",
+    "/images/wideView.jpg",
+    "/images/chocolate.jpg",
+    "/images/roomWhite.jpg",
   ];
 
   return (
@@ -92,8 +93,8 @@ const HotelIntroduction: React.FC = () => {
                     <Image
                       src={src}
                       alt={`Hotel am Beatles-Platz ${index + 1}`}
-                      width={800}
-                      height={600}
+                      width={1200}
+                      height={1000}
                       className="w-full h-[500px] lg:h-[600px] object-cover opacity-85"
                     />
                   </div>
@@ -155,17 +156,16 @@ const HotelIntroduction: React.FC = () => {
               className="text-base md:text-lg"
               onClick={() => setIsBookingOpen(true)}
             />
-
-            <BookingPopUp
-              isOpen={isBookingOpen}
-              onClose={() => setIsBookingOpen(false)}
-            />
           </motion.div>
         </div>
 
         {/* New Atmosphere Section */}
         <Atmosphere currentTime={currentTime} weather={weather} />
       </div>
+      <BookingPopUp
+        isOpen={isBookingOpen}
+        onClose={() => setIsBookingOpen(false)}
+      />
     </section>
   );
 };

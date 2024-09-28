@@ -12,7 +12,7 @@ const ContactPage: React.FC = () => {
         <SubHeader
           title="Get in Touch"
           description="Do you have questions about your upcoming booking or general questions about our hotel and restaurant? Please contact us using the contact form below or via the email address provided"
-          imageSrc="/images/hotel2.jpg"
+          imageSrc="/images/contact.jpg"
         />
       </div>
       <motion.div

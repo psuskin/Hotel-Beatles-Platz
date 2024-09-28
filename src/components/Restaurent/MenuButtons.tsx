@@ -42,7 +42,7 @@ const MenuButtons = ({ menuItems }: { menuItems: string[] }) => {
           <motion.button
             key={index}
             className="bg-gray-800 text-white px-5 py-4 m-1 text-sm rounded-sm transition-colors hover:bg-secondary-color flex-shrink-0 whitespace-nowrap"
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.95 }}
           >
             {item}

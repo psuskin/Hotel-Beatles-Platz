@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useMediaQuery } from "@/utils/use-media-query";
 import MiniNav from "./MiniNav";
 import { BiBed, BiRestaurant } from "react-icons/bi";
+import BookingPopUp from "../BookingPopUp"; // Add this import
 
 interface NavLinkProps {
   href: string;
@@ -22,17 +23,28 @@ const NavLink: React.FC<NavLinkProps> = ({
   mobile,
   className,
   onClick,
-}) => (
-  <Link
-    href={href}
-    className={`${mobile ? "block py-3 text-lg" : "px-3 py-2 rounded-md"
-      } hover:bg-white/25 transition-all duration-300 ease-in-out ${className || ""
+}) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
+  return (
+    <Link
+      href={href}
+      className={`${
+        mobile ? "block py-3 text-lg" : "px-3 py-2 rounded-md"
+      } hover:bg-white/25 transition-all duration-300 ease-in-out ${
+        isActive
+          ? "bg-white/25 text-secondary-color font-bold"
+          : "text-white/90"
+      } ${mobile && isActive ? "border-l-4 border-secondary-color pl-2" : ""} ${
+        className || ""
       }`}
-    onClick={onClick}
-  >
-    {children}
-  </Link>
-);
+      onClick={onClick}
+    >
+      {children}
+    </Link>
+  );
+};
 
 const BookButton: React.FC<{
   href: string;
@@ -51,6 +63,7 @@ const BookButton: React.FC<{
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false); // Add this state
   const navRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
@@ -76,6 +89,11 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const openBooking = () => {
+    setIsBookingOpen(true);
+    closeMenu();
+  };
+
   const navItems = [
     { name: "STARTSEITE", href: "/" },
     { name: "ZIMMER", href: "/zimmer" },
@@ -88,16 +106,19 @@ const Navbar: React.FC = () => {
   return (
     <>
       <MiniNav />
-      <nav className="w-full z-50 py-5 bg-black/80 backdrop-blur-md relative">
+      <nav
+        ref={navRef}
+        className="w-full z-50 py-5 bg-black/80 backdrop-blur-md relative"
+      >
         <div className="container mx-auto px-6 flex justify-between items-center">
           {/* Hotel name link - visible only below 1024px */}
           <div className="lg:hidden">
             <Link
               href="/"
-              className="text-xl font-bold text-primary-color uppercase"
+              className="text-base font-bold text-primary-color uppercase"
               onClick={closeMenu}
             >
-              <span>Hotel am Beatles</span>
+              <span>Hotel am Beatles-Platz</span>
             </Link>
           </div>
 
@@ -112,7 +133,7 @@ const Navbar: React.FC = () => {
               >
                 <NavLink
                   href={item.href}
-                  className="text-base font-medium text-white/90 hover:text-white"
+                  className="text-base font-medium hover:text-white"
                   onClick={closeMenu}
                 >
                   {item.name}
@@ -124,15 +145,17 @@ const Navbar: React.FC = () => {
           {/* Book buttons */}
           <div className="hidden lg:flex space-x-1 absolute right-10 bottom-0 translate-y-1/2 gap-3">
             <BookButton
-              href="/buchen-restaurant"
+              href="/restaurant"
               icon={<BiRestaurant size={24} />}
               color="bg-gray-700"
             />
-            <BookButton
-              href="/buchen"
-              icon={<BiBed size={24} />}
-              color="bg-primary-color"
-            />
+            <div onClick={openBooking} className="cursor-pointer">
+              <BookButton
+                href="#"
+                icon={<BiBed size={24} />}
+                color="bg-primary-color"
+              />
+            </div>
           </div>
 
           {/* Hamburger Menu */}
@@ -185,20 +208,22 @@ const Navbar: React.FC = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: 0.2 }}
                 >
-                  <NavLink
-                    href="/buchen"
-                    mobile
-                    className="bg-primary-color text-black px-4 py-2 rounded-full inline-block text-center font-semibold shadow-lg mb-4"
-                    onClick={closeMenu}
+                  <button
+                    className="bg-primary-color text-white px-4 py-3 rounded-full inline-block text-center font-semibold shadow-lg mb-4 cursor-pointer"
+                    onClick={openBooking}
                   >
                     BUCHEN
-                  </NavLink>
+                  </button>
                 </motion.div>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </nav>
+      <BookingPopUp
+        isOpen={isBookingOpen}
+        onClose={() => setIsBookingOpen(false)}
+      />
     </>
   );
 };

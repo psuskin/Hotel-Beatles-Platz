@@ -12,7 +12,7 @@ type Item = {
 const items: Item[] = [
   {
     id: "1",
-    imgSrc: "/images/room2.jpg",
+    imgSrc: "/images/frontView.jpg",
   },
   {
     id: "2",
@@ -20,27 +20,115 @@ const items: Item[] = [
   },
   {
     id: "3",
-    imgSrc: "/images/room4.jpg",
-  },
-  {
-    id: "5",
-    imgSrc: "/images/room4.jpg",
-  },
-  {
-    id: "6",
     imgSrc: "/images/room1.jpg",
   },
   {
+    id: "5",
+    imgSrc: "/images/room2.jpg",
+  },
+  {
+    id: "6",
+    imgSrc: "/images/wideView.jpg",
+  },
+  {
     id: "7",
-    imgSrc: "/images/hotel2.jpg",
+    imgSrc: "/images/Premium-2.jpg",
   },
   {
     id: "8",
-    imgSrc: "/images/hotel1.jpg",
+    imgSrc: "/images/room3.jpg",
   },
   {
     id: "9",
-    imgSrc: "/images/room2.jpg",
+    imgSrc: "/images/Premium.jpg",
+  },
+  {
+    id: "10",
+    imgSrc: "/images/Classic.jpg",
+  },
+  {
+    id: "11",
+    imgSrc: "/images/Classic-2.jpg",
+  },
+  {
+    id: "12",
+    imgSrc: "/images/Comfort.jpg",
+  },
+  {
+    id: "13",
+    imgSrc: "/images/Comfort-2.jpg",
+  },
+  {
+    id: "14",
+    imgSrc: "/images/ComfortPlus.jpg",
+  },
+  {
+    id: "15",
+    imgSrc: "/images/ComfortPlus-2.jpg",
+  },
+  {
+    id: "16",
+    imgSrc: "/images/wideView.jpg",
+  },
+  {
+    id: "17",
+    imgSrc: "/images/ComfortPlus.jpg",
+  },
+  {
+    id: "18",
+    imgSrc: "/images/wideView2.jpg",
+  },
+  {
+    id: "19",
+    imgSrc: "/images/sofa.jpg",
+  },
+  {
+    id: "20",
+    imgSrc: "/images/paper.jpg",
+  },
+  {
+    id: "21",
+    imgSrc: "/images/jar.jpg",
+  },
+  {
+    id: "22",
+    imgSrc: "/images/cat.jpg",
+  },
+  {
+    id: "23",
+    imgSrc: "/images/drinks.jpg",
+  },
+  {
+    id: "24",
+    imgSrc: "/images/safeBox.jpg",
+  },
+  {
+    id: "25",
+    imgSrc: "/images/vasin3.jpg",
+  },
+  {
+    id: "26",
+    imgSrc: "/images/comode.jpg",
+  },
+  {
+    id: "27",
+    imgSrc: "/images/unlock.jpg",
+  },
+  {
+    id: "28",
+    imgSrc: "/images/vasin2.jpg",
+  },
+  {
+    id: "29",
+    imgSrc: "/images/vasin.jpg",
+  },
+  {
+    id: "30",
+    imgSrc: "/images/chairs.jpg",
+  },
+  {
+    id: "31",
+    imgSrc: "/images/Yeskey.jpg",
   },
 ];
 
@@ -51,7 +139,7 @@ const GalleryPage: React.FC = () => {
         <SubHeader
           title="Our Hotel Gallery"
           description="Explore the beauty and elegance of our hotel through our carefully curated image gallery."
-          imageSrc="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+          imageSrc="/images/hotelCard.jpg"
         />
       </div>
       <div className="relative z-10 bg-black min-h-screen">

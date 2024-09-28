@@ -5,16 +5,12 @@ import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const images1 = [
-  "/images/hotel1.jpg",
-  "/images/hotel2.jpg",
-  "/images/hotel3.jpg",
+  "/images/outSitting.jpg",
+  "/images/vasin.jpg",
+  "/images/reading.jpg",
 ];
 
-const images2 = [
-  "/images/hotel3.jpg",
-  "/images/hotel2.jpg",
-  "/images/hotel1.jpg",
-];
+const images2 = ["/images/drinks.jpg", "/images/room.jpg", "/images/room2.jpg"];
 
 const ImageColumn: React.FC<{ images: string[]; direction: "up" | "down" }> = ({
   images,
@@ -137,7 +133,7 @@ export default function WhiteSection() {
                 whiteSpace: "nowrap",
               }}
             >
-             BEATLES-PLATZ
+              BEATLES-PLATZ
             </h2>
           </motion.div>
           <ImageColumn images={images1} direction="up" />

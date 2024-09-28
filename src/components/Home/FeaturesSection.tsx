@@ -66,7 +66,7 @@ const FeaturesSection: React.FC = () => {
   return (
     <section ref={containerRef} className="text-black relative">
       <WhiteSection />
-      <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+      <div className="py-6 md:py-10 px-1 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
         {/* Sticky menu */}
         <motion.div
           className="sticky hidden md:block lg:top-[6rem] customSticky-top z-50 rounded-lg transition-all duration-300 mb-8"
@@ -164,7 +164,7 @@ const RoomCard: React.FC<{
     >
       <motion.div
         style={{ scale, top: `calc(-5vh + ${i * 25}px)` }}
-        className="flex flex-col relative bg-black border border-gray-800 rounded-xl shadow-xl overflow-hidden w-[90vw] max-w-[1200px] h-auto md:h-[500px] origin-top"
+        className="flex flex-col relative bg-black border border-gray-800 rounded-xl shadow-xl overflow-hidden w-[100vw] max-w-[1200px] h-auto md:h-[500px] origin-top"
       >
         <div className="flex flex-col md:flex-row h-full">
           <div className="w-full md:w-1/2 h-[300px] md:h-full flex items-center justify-center">
@@ -172,7 +172,7 @@ const RoomCard: React.FC<{
               <CardGallery images={room.images} />
             </div>
           </div>
-          <div className="p-6 md:p-8 w-full md:w-1/2 flex flex-col justify-center">
+          <div className="p-4 md:p-8 w-full md:w-1/2 flex flex-col justify-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-primary-color">
               {room.title}
             </h3>
@@ -224,12 +224,9 @@ const roomTypes: RoomType[] = [
     description:
       "Schlafen Sie im großen King-Size Bett und starten Sie erholt in den neuen Tag. Für Gäste die etwas mehr Freiraum benötigen ist dieses ideal geeignet. Diese Kategorie beinhaltet unter anderem auch Zimmer für bis zu drei Personen.",
     images: [
-      "/images/room.jpg",
-      "/images/room1.jpg",
-      "/images/room2.jpg",
-      "/images/room3.jpg",
-      "/images/hotel1.jpg",
-      "/images/hotel1.jpg",
+      "/images/Classic.jpg",
+      "/images/Classic-2.jpg",
+      "/images/Classic.jpg",
     ],
     size: "25 m²",
     occupancy: "1-2 persons",
@@ -242,12 +239,9 @@ const roomTypes: RoomType[] = [
     description:
       "Schlafen Sie im großen King-Size Bett und starten Sie erholt in den neuen Tag. Für Gäste die etwas mehr Freiraum benötigen ist dieses ideal geeignet. Diese Kategorie beinhaltet unter anderem auch Zimmer für bis zu drei Personen.",
     images: [
-      "/images/hotel1.jpg",
-      "/images/hotel2.jpg",
-      "/images/hotel3.jpg",
-      "/images/hotel1.jpg",
-      "/images/hotel2.jpg",
-      "/images/hotel3.jpg",
+      "/images/Comfort.jpg",
+      "/images/Comfort-2.jpg",
+      "/images/Comfort.jpg",
     ],
     size: "35 m²",
     occupancy: "2-3 persons",
@@ -260,12 +254,9 @@ const roomTypes: RoomType[] = [
     description:
       "Das modern designte Comfort+-Zimmer, ist perfekt für einen bequemen Aufenthalt zu dritt. Mit insgesamt 18m² bietet dieses Zimmer großen Komfort.",
     images: [
-      "/images/hotel1.jpg",
-      "/images/hotel2.jpg",
-      "/images/hotel3.jpg",
-      "/images/hotel1.jpg",
-      "/images/hotel2.jpg",
-      "/images/hotel3.jpg",
+      "/images/ComfortPlus.jpg",
+      "/images/ComfortPlus-2.jpg",
+      "/images/ComfortPlus.jpg",
     ],
     size: "18 m²",
     occupancy: "1-3 persons",
@@ -286,12 +277,9 @@ const roomTypes: RoomType[] = [
     description:
       "Genießen Sie besten Schlafkomfort im King-Size Bett in der Kategorie Premium. Das funktionale Sofa ist aufklappbar und bietet somit einen weiteren Schlafplatz. Das größte und geräumigste Zimmer des Hauses.",
     images: [
-      "/images/hotel1.jpg",
-      "/images/hotel2.jpg",
-      "/images/hotel3.jpg",
-      "/images/hotel1.jpg",
-      "/images/hotel2.jpg",
-      "/images/hotel3.jpg",
+      "/images/Premium.jpg",
+      "/images/Premium-2.jpg",
+      "/images/Premium.jpg",
     ],
     size: "50 m²",
     occupancy: "2-4 persons",

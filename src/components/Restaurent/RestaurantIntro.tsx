@@ -14,15 +14,15 @@ const RestaurantIntro = () => {
               <p className="text-gray-300 mb-4 text-xs md:text-sm">
                 With extraordinary rooms, which convince both in the totality
                 and in the details and a diverse food and beverage menu, the
-                HOTEL AM BEATLES PLATZ Restaurant grew since the opening of the HOTEL AM BEATLES PLATZ Hotel &
-                Restaurant in 2004 to one of the hottest nightlife addresses in
-                Hamburg and is still the destination of people from all over the
-                world.
+                HOTEL AM BEATLES PLATZ Restaurant grew since the opening of the
+                HOTEL AM BEATLES PLATZ Hotel & Restaurant in 2004 to one of the
+                hottest nightlife addresses in Hamburg and is still the
+                destination of people from all over the world.
               </p>
               <p className="text-gray-300 mb-4 text-xs md:text-sm">
-                The HOTEL AM BEATLES PLATZ Restaurant with over 200 seats, high ceilings,
-                floor-to-ceiling windows and a cozy vaulted ceiling is located
-                in the time-honored building of a former iron foundry.
+                The HOTEL AM BEATLES PLATZ Restaurant with over 200 seats, high
+                ceilings, floor-to-ceiling windows and a cozy vaulted ceiling is
+                located in the time-honored building of a former iron foundry.
                 Unplastered red brick, stained church glass and modern interior
                 design by Chicago designer Jordan Mozer give the large hall with
                 its curved columns a special atmosphere.
@@ -41,7 +41,7 @@ const RestaurantIntro = () => {
                   (item, index) => (
                     <button
                       key={index}
-                      className="bg-amber-400 text-gray-900 px-3 md:px-6 py-2 text-xs md:text-sm font-semibold transition-colors hover:bg-amber-500"
+                      className="bg-secondary-color text-gray-900 px-3 md:px-6 py-2 text-xs md:text-sm font-semibold transition-colors"
                     >
                       {item}
                     </button>

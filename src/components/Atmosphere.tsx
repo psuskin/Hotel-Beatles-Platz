@@ -60,34 +60,34 @@ const Atmosphere: React.FC<AtmosphereProps> = ({ currentTime, weather }) => {
             in den großen Indoorpool in unserem 3.000 m² großen Befine Sports &
             Spa eintauchen.
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 sm:grid-rows-4 gap-2 sm:gap-4 w-full lg:w-1/2 max-w-md mx-auto lg:mx-0">
+          <div className="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 sm:grid-rows-4 gap-2 sm:gap-4 w-full lg:w-1/2 max-w-md mx-auto lg:mx-0 overflow-hidden rounded-lg">
             <Image
-              src="/images/hotel1.jpg"
+              src="/images/wideView.jpg"
               alt="Hotel Lobby 1"
               width={300}
               height={300}
               className="rounded-lg object-cover col-span-2 row-span-2 transition-transform duration-300 hover:scale-110"
             />
             <Image
-              src="/images/hotel2.jpg"
+              src="/images/chairs.jpg"
               alt="Bar Charlotte"
               width={150}
               height={150}
               className="rounded-lg object-cover col-span-2 sm:col-span-2 row-span-1 transition-transform duration-300 hover:scale-110"
             />
             <Image
-              src="/images/hotel3.jpg"
+              src="/images/room2.jpg"
               alt="Befine Sports & Spa"
               width={150}
               height={150}
               className="rounded-lg object-cover col-span-1 row-span-1 sm:row-span-2 transition-transform duration-300 hover:scale-110"
             />
             <Image
-              src="/images/hotel1.jpg"
+              src="/images/room3.jpg"
               alt="Luxurious Room"
               width={150}
               height={150}
-              className="rounded-lg object-cover col-span-1 row-span-1 sm:row-span-2 transition-transform duration-300 hover:scale-110"
+              className="rounded-lg object-cover col-span-1 row-span-1 sm:row-span-2 transition-transform duration-300 hover:scale-110 "
             />
           </div>
         </div>
