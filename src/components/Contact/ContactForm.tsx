@@ -102,14 +102,15 @@ const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 bg-gray-900 p-8 w-full">
-      <h2 className="text-2xl font-semibold mb-6 text-white">Contact Us</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-white">Kontakt</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label
             htmlFor="firstName"
             className="block text-sm font-medium text-gray-300 mb-1"
           >
-            First Name
+            {/* First Name */}
+            Vorname
           </label>
           <input
             type="text"
@@ -126,7 +127,8 @@ const ContactForm: React.FC = () => {
             htmlFor="lastName"
             className="block text-sm font-medium text-gray-300 mb-1"
           >
-            Last Name
+            {/* Last Name */}
+            Nachname
           </label>
           <input
             type="text"
@@ -144,7 +146,8 @@ const ContactForm: React.FC = () => {
           htmlFor="email"
           className="block text-sm font-medium text-gray-300 mb-1"
         >
-          Email Address
+          {/* Email Address */}
+          Email Adresse
         </label>
         <input
           type="email"
@@ -161,7 +164,8 @@ const ContactForm: React.FC = () => {
           htmlFor="phone"
           className="block text-sm font-medium text-gray-300 mb-1"
         >
-          Phone Number
+          {/* Phone Number */}
+          Telefonnummer
         </label>
         <input
           type="tel"
@@ -178,7 +182,8 @@ const ContactForm: React.FC = () => {
           htmlFor="subject"
           className="block text-sm font-medium text-gray-300 mb-1"
         >
-          Subject
+          {/* Subject */}
+          Betreff
         </label>
         <select
           id="subject"
@@ -198,7 +203,8 @@ const ContactForm: React.FC = () => {
           htmlFor="message"
           className="block text-sm font-medium text-gray-300 mb-1"
         >
-          Your Message
+          {/* Your Message */}
+          Ihre Nachricht
         </label>
         <textarea
           id="message"

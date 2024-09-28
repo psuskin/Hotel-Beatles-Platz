@@ -137,8 +137,10 @@ const GalleryPage: React.FC = () => {
     <div className="relative">
       <div className="sticky top-0 z-0">
         <SubHeader
-          title="Our Hotel Gallery"
-          description="Explore the beauty and elegance of our hotel through our carefully curated image gallery."
+          // title="Our Hotel Gallery"
+          title="Unsere Hotelgalerie"
+          // description="Explore the beauty and elegance of our hotel through our carefully curated image gallery."
+          description="Erkunden Sie die Schönheit und Eleganz unseres Hotels durch unsere sorgfältig zusammengestellte Bildergalerie."
           imageSrc="/images/hotelCard.jpg"
         />
       </div>

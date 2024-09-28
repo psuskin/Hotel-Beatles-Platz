@@ -10,8 +10,10 @@ const ContactPage: React.FC = () => {
     <div className="relative">
       <div className="sticky top-0 z-0">
         <SubHeader
-          title="Get in Touch"
-          description="Do you have questions about your upcoming booking or general questions about our hotel and restaurant? Please contact us using the contact form below or via the email address provided"
+          // title="Get in Touch"
+          title="Kontaktieren Sie Uns"
+          // description="Do you have questions about your upcoming booking or general questions about our hotel and restaurant? Please contact us using the contact form below or via the email address provided"
+          description="Haben Sie Fragen zu Ihrer bevorstehenden Buchung oder allgemeine Fragen zu unserem Hotel und Restaurant? Bitte kontaktieren Sie uns über das untenstehende Kontaktformular oder über die angegebene E-Mail-Adresse"
           imageSrc="/images/contact.jpg"
         />
       </div>
@@ -51,7 +53,8 @@ const ContactPage: React.FC = () => {
 
               <div className="text-white">
                 <h3 className="text-2xl font-semibold mb-4 text-primary-color">
-                  COMPANY ADDRESS
+                  {/* COMPANY ADDRESS */}
+                  UNTERNEHMENSADRESSE
                 </h3>
                 <p className="text-lg">Polat Hotelbetriebsgesellschaft mbH</p>
                 <p className="text-lg">
@@ -61,10 +64,14 @@ const ContactPage: React.FC = () => {
 
               <div className="border-t border-gray-700 pt-8">
                 <p className="text-gray-400 italic">
-                  Experience the magic of Hamburg from the heart of St. Pauli.
+                  {/* Experience the magic of Hamburg from the heart of St. Pauli.
                   Your stay at Hotel am Beatles-Platz is more than just
                   accommodation; it&apos;s an immersion into the vibrant culture
-                  and rich history of this iconic neighborhood.
+                  and rich history of this iconic neighborhood. */}
+                  Erleben Sie die Magie von Hamburg im Herzen von St. Pauli. Ihr
+                  Aufenthalt im Hotel am Beatles-Platz ist mehr als nur eine
+                  Unterkunft; es ist ein Eintauchen in die lebendige Kultur und
+                  die reiche Geschichte dieses ikonischen Viertels.
                 </p>
               </div>
             </motion.div>

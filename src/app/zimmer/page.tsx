@@ -16,17 +16,21 @@ interface RoomBenefit {
 
 const roomBenefits: RoomBenefit[] = [
   {
-    name: "UNDERFLOOR HEATING",
-    description: "with display control",
+    // name: "UNDERFLOOR HEATING",
+    name: "FUSSBODENHEIZUNG",
+    // description: "with display control",
+    description: "mit Display-Steuerung",
     icon: <FaFire />,
   },
-  { name: "MINI-BAR", description: "extra charge", icon: <FaCocktail /> },
+  { name: "MINI-BAR", description: "eiskalte Getränke", icon: <FaCocktail /> },
   {
-    name: "AIR CONDITIONING",
-    description: "individually controllable",
+    // name: "AIR CONDITIONING",
+    name: "KLIMAANLAGE",
+    // description: "individually controllable",
+    description: "individuell steuerbar",
     icon: <FaSnowflake />,
   },
-  { name: "SAFE", description: "in laptop size", icon: <FaKey /> },
+  { name: "SPIND", description: "in Laptop-Größe", icon: <FaKey /> },
 ];
 
 const ZimmerPage = () => {
@@ -47,8 +51,9 @@ const ZimmerPage = () => {
       <div className="relative">
         <div className="sticky top-0 z-0">
           <SubHeader
-            title="Our Rooms"
-            description="Experience comfort and luxury in our carefully designed rooms"
+            title="Unsere Zimmer"
+            // description="Experience comfort and luxury in our carefully designed rooms"
+            description="Erleben Sie Komfort und Luxus in unseren wunderbar ausgestatteten Zimmern"
             imageSrc="/images/zimmer_sub.jpg"
           />
         </div>
@@ -82,7 +87,7 @@ const ZimmerPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Our Room Selection
+              Unsere Zimmerauswahl
             </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-7xl mx-auto">
@@ -110,11 +115,12 @@ const ZimmerPage = () => {
       >
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-light text-center mb-12 text-black">
-            Room Benefits
+            Zimmer-Vorteile
           </h2>
           <p className="text-center text-black mb-16 max-w-2xl mx-auto font-light text-lg leading-relaxed">
-            Experience comfort and luxury with our carefully curated room
-            amenities.
+            {/* Experience comfort and luxury with our carefully curated room
+            amenities. */}
+            Erleben Sie Komfort und Luxus mit unseren sorgfältig ausgewählten Zimmerausstattungen.
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             {roomBenefits.map((benefit, index) => (
