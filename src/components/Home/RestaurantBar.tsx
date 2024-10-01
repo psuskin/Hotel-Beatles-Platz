@@ -94,20 +94,20 @@ export default function RestaurantShowcase() {
             HOTEL AM BEATLES-PLATZ RESTAURANT & BAR
           </h2>
           <p className="text-xs sm:text-sm lg:text-base mb-4 sm:mb-6">
-            Das hoteleigene HOTEL AM BEATLES-PLATZ Restaurant zählt zu den
-            angesagten Ausgeh-Adressen in Hamburg und ist bei Hotelgästen und
-            Hamburger*innen gleichermaßen beliebt. Es befindet sich in den
-            Gemäuern einer ehemaligen Eisengießerei. Hinweise auf seine
-            historische Vergangenheit findet man im Restaurant an zahlreichen
-            Orten, in den Wänden und in den erhaltenen baulichen Strukturen.
+            Das zukünftige HOTEL AM BEATLES-PLATZ Restaurant wird zu den
+            angesagten Locations in Hamburg zählen und sowohl Hotelgäste
+            als auch Hamburger*innen gleichermaßen begeistern. Es wird in den
+            Gemäuern einer ehemaligen Eisengießerei entstehen. Hinweise auf seine
+            historische Vergangenheit werden im Restaurant an zahlreichen Orten,
+            in den Wänden und in den erhaltenen baulichen Strukturen zu finden sein.
           </p>
           <p className="text-xs sm:text-sm lg:text-base mb-6 sm:mb-8">
-            Das Küchenteam um Eric Kröber und Sushichef Ngima Sherpa versorgt
-            Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und
-            Fleischgerichten und Süßem aus der eigenen Pâtisserie.
+            Das zukünftige Küchenteam um Eric Kröber und Sushichef Ngima Sherpa
+            wird Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und
+            Fleischgerichten und Süßem aus der eigenen Pâtisserie verwöhnen.
           </p>
           <button className="bg-primary-color text-gray-900 px-4 sm:px-6 py-2 rounded-full self-start hover:bg-secondary-color transition duration-300 text-sm sm:text-base">
-            MEHR ERFAHREN
+            COMING SOON
           </button>
         </div>
       </motion.div>

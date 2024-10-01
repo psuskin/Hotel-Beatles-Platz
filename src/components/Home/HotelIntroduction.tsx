@@ -105,11 +105,10 @@ const HotelIntroduction: React.FC = () => {
               {images.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${
-                    currentSlide === index
-                      ? "bg-primary-color w-8"
-                      : "bg-neutral-200"
-                  }`}
+                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${currentSlide === index
+                    ? "bg-primary-color w-8"
+                    : "bg-neutral-200"
+                    }`}
                   onClick={() => emblaApi?.scrollTo(index)}
                 />
               ))}
@@ -140,15 +139,15 @@ const HotelIntroduction: React.FC = () => {
               />
               <InfoItem
                 icon={<UtensilsCrossed className="w-6 h-6" />}
-                text="Gourmet-Restaurant"
+                text="Gourmet-Restaurant (Coming Soon)"
               />
               <InfoItem
                 icon={<GlassWater className="w-6 h-6" />}
-                text="Rooftop-Bar mit Ausblick"
+                text="Rooftop-Bar mit Ausblick (Coming Soon)"
               />
               <InfoItem
                 icon={<Car className="w-6 h-6" />}
-                text="Tiefgarage verfügbar"
+                text="Garage in der Nähe"
               />
             </div>
             <Button
