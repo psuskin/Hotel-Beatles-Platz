@@ -38,7 +38,7 @@ const SubHeader: React.FC<SubHeaderProps> = ({
         style={{ scale }}
       >
         <motion.h1
-          className="text-6xl font-bold mb-6 uppercase text-center"
+          className="text-4xl sm:text-6xl font-bold mb-6 uppercase text-center"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
@@ -47,7 +47,7 @@ const SubHeader: React.FC<SubHeaderProps> = ({
           {title}
         </motion.h1>
         <motion.p
-          className="text-xl max-w-2xl text-center"
+          className="text-xl max-w-2xl text-center px-1"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
