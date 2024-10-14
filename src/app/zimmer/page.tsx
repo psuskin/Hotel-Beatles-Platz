@@ -17,7 +17,7 @@ interface RoomBenefit {
 const roomBenefits: RoomBenefit[] = [
   {
     // name: "UNDERFLOOR HEATING",
-    name: "FUSSBODENHEIZUNG",
+    name: "Kostenloses WLAN",
     // description: "with display control",
     description: "mit Display-Steuerung",
     icon: <FaFire />,

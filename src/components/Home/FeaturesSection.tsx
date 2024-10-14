@@ -230,7 +230,12 @@ const roomTypes: RoomType[] = [
     ],
     size: "25 m²",
     occupancy: "1-2 persons",
-    amenities: ["Free Wi-Fi", "Air conditioning", "Flat-screen TV"],
+    amenities: [
+      "Free Wi-Fi",
+      "Air conditioning",
+      "Safe",
+      "Mini-bar"
+    ],
     price: "€99 / night",
   },
   {
@@ -245,7 +250,12 @@ const roomTypes: RoomType[] = [
     ],
     size: "35 m²",
     occupancy: "2-3 persons",
-    amenities: ["Free Wi-Fi", "Air conditioning", "Mini-bar", "Work desk"],
+    amenities: [
+      "Free Wi-Fi",
+      "Air conditioning",
+      "Safe",
+      "Mini-bar"
+    ],
     price: "€149 / night",
   },
   {
@@ -261,13 +271,10 @@ const roomTypes: RoomType[] = [
     size: "18 m²",
     occupancy: "1-3 persons",
     amenities: [
-      "SAFE",
-      "MINIBAR",
-      "KLIMAANLAGE",
-      "REGENDUSCHE",
-      "43″ TV",
-      "FUßBODENHEIZUNG",
-      "RITUALS-PRODUKTE",
+      "Free Wi-Fi",
+      "Air conditioning",
+      "Safe",
+      "Mini-bar"
     ],
     price: "€129 / night",
   },
@@ -286,9 +293,8 @@ const roomTypes: RoomType[] = [
     amenities: [
       "Free Wi-Fi",
       "Air conditioning",
-      "Kitchenette",
-      "Balcony",
-      "Jacuzzi",
+      "Safe",
+      "Mini-bar"
     ],
     price: "€199 / night",
   },

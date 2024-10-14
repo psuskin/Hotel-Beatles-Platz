@@ -135,7 +135,7 @@ const HotelIntroduction: React.FC = () => {
             <div className="grid grid-cols-2 gap-6 mb-10 text-primary-color">
               <InfoItem
                 icon={<Bed className="w-6 h-6" />}
-                text="60 luxuriöse Zimmer"
+                text="53 luxuriöse Zimmer"
               />
               <InfoItem
                 icon={<UtensilsCrossed className="w-6 h-6" />}

@@ -20,18 +20,18 @@ const MiniNav: React.FC = () => {
             />
           </div>
           <div className="flex space-x-4">
-            <SocialLink
+            {/* <SocialLink
               href="https://facebook.com"
               icon={<Facebook size={16} />}
-            />
+            /> */}
             <SocialLink
-              href="https://instagram.com"
+              href="https://www.instagram.com/hotelambeatlesplatz/"
               icon={<Instagram size={16} />}
             />
-            <SocialLink
+            {/* <SocialLink
               href="https://twitter.com"
               icon={<Twitter size={16} />}
-            />
+            /> */}
           </div>
         </div>
       </div>

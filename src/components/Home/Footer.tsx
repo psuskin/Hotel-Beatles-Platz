@@ -56,12 +56,12 @@ const Footer = () => {
 
           <div className="flex space-x-6 mb-8">
             <a
-              href="#"
+              href="https://www.instagram.com/hotelambeatlesplatz/"
               className="text-gray-400 hover:text-primary-color transition-colors"
             >
               <FaInstagram size={24} />
             </a>
-            <a
+            {/* <a
               href="#"
               className="text-gray-400 hover:text-primary-color transition-colors"
             >
@@ -72,7 +72,7 @@ const Footer = () => {
               className="text-gray-400 hover:text-primary-color transition-colors"
             >
               <FaFacebookF size={24} />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -83,12 +83,12 @@ const Footer = () => {
           </p>
           <div className="mt-2 space-x-4">
             <Link
-              href="/imprint"
+              href="/impressum"
               className="hover:text-primary-color transition-colors"
             >
-              Imprint
+              Impressum
             </Link>
-            <Link
+            {/* <Link
               href="/terms"
               className="hover:text-primary-color transition-colors"
             >
@@ -99,7 +99,7 @@ const Footer = () => {
               className="hover:text-primary-color transition-colors"
             >
               Privacy
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
