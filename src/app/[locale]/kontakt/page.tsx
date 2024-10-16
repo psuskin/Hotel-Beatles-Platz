@@ -4,16 +4,17 @@ import { motion } from "framer-motion";
 import { MapPin, Mail, Phone } from "lucide-react";
 import SubHeader from "@/components/SubHeader";
 import ContactForm from "@/components/Contact/ContactForm";
+import { useTranslations } from 'next-intl';
 
 const ContactPage: React.FC = () => {
+  const t = useTranslations('contact');
+
   return (
     <div className="relative">
       <div className="sticky top-0 z-0">
         <SubHeader
-          // title="Get in Touch"
-          title="Kontaktieren Sie Uns"
-          // description="Do you have questions about your upcoming booking or general questions about our hotel and restaurant? Please contact us using the contact form below or via the email address provided"
-          description="Haben Sie Fragen zu Ihrer bevorstehenden Buchung oder allgemeine Fragen zu unserem Hotel und Restaurant? Bitte kontaktieren Sie uns über das untenstehende Kontaktformular oder über die angegebene E-Mail-Adresse"
+          title={t('title')}
+          description={t('description')}
           imageSrc="/images/contact.jpg"
         />
       </div>
@@ -33,45 +34,35 @@ const ContactPage: React.FC = () => {
             >
               <div className="text-white">
                 <h2 className="text-3xl font-semibold mb-6 text-primary-color">
-                  HOTEL AM BEATLES-PLATZ
+                  {t('hotelName')}
                 </h2>
                 <div className="space-y-4 text-lg">
                   <p className="flex items-center">
                     <MapPin className="mr-4 text-primary-color" size={24} />
-                    Nobistor 8, 22767 Hamburg, Germany
+                    {t('address')}
                   </p>
                   <p className="flex items-center">
                     <Mail className="mr-4 text-primary-color" size={24} />
-                    info@hotelambeatlesplatz.de
+                    {t('email')}
                   </p>
                   <p className="flex items-center">
                     <Phone className="mr-4 text-primary-color" size={24} />
-                    +49 40 181 283 811
+                    {t('phone')}
                   </p>
                 </div>
               </div>
 
               <div className="text-white">
                 <h3 className="text-2xl font-semibold mb-4 text-primary-color">
-                  {/* COMPANY ADDRESS */}
-                  UNTERNEHMENSADRESSE
+                  {t('companyAddressTitle')}
                 </h3>
-                <p className="text-lg">Polat Hotelbetriebsgesellschaft mbH</p>
-                <p className="text-lg">
-                  Reeperbahn 117, 20359 Hamburg, Germany
-                </p>
+                <p className="text-lg">{t('companyName')}</p>
+                <p className="text-lg">{t('companyAddress')}</p>
               </div>
 
               <div className="border-t border-gray-700 pt-8">
                 <p className="text-gray-400 italic">
-                  {/* Experience the magic of Hamburg from the heart of St. Pauli.
-                  Your stay at Hotel am Beatles-Platz is more than just
-                  accommodation; it&apos;s an immersion into the vibrant culture
-                  and rich history of this iconic neighborhood. */}
-                  Erleben Sie die Magie von Hamburg im Herzen von St. Pauli. Ihr
-                  Aufenthalt im Hotel am Beatles-Platz ist mehr als nur eine
-                  Unterkunft; es ist ein Eintauchen in die lebendige Kultur und
-                  die reiche Geschichte dieses ikonischen Viertels.
+                  {t('experienceDescription')}
                 </p>
               </div>
             </motion.div>
