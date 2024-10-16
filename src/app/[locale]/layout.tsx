@@ -7,6 +7,7 @@ import { Montserrat } from "next/font/google";
 import Navbar from "@/components/Home/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import { unstable_setRequestLocale } from 'next-intl/server';
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,6 +30,8 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(locale);
+
   let messages;
   try {
     messages = (await import(`@/messages/${locale}.json`)).default;
