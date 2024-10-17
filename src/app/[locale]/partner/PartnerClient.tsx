@@ -77,7 +77,8 @@ const PartnerCard: React.FC<Partner & { index: number }> = ({ name, description,
   </motion.div>
 );
 
-const PartnerPage: React.FC = () => {
+const PartnerClient = () => {
+
   return (
     <div className="min-h-screen bg-black">
       <div className="relative">
@@ -119,4 +120,4 @@ const PartnerPage: React.FC = () => {
   );
 };
 
-export default PartnerPage;
+export default PartnerClient;

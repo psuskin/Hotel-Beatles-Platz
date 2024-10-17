@@ -9,6 +9,8 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 // import DiningCard from "@/components/Restaurent/DiningCard";
 // import RestaurantGallery from "@/components/Restaurent/RestaurantGallery";
 
+
+
 const menuItems = [
   "BREAKFAST",
   "LUNCH & SNACKS",
@@ -17,7 +19,9 @@ const menuItems = [
   "SUSTAINABLE KITCHEN",
 ];
 
-const RestaurantPage = () => {
+const RestaurantClient = () => {
+  
+
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
   const titleY = useTransform(scrollY, [0, 300], [0, -50]);
@@ -81,4 +85,4 @@ const RestaurantPage = () => {
   );
 };
 
-export default RestaurantPage;
+export default RestaurantClient;

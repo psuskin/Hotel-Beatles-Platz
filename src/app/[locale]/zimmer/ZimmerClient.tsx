@@ -8,6 +8,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { FaFire, FaCocktail, FaSnowflake, FaKey } from "react-icons/fa";
 import { roomTypes } from "@/components/constant/roomTypes";
 
+
 interface RoomBenefit {
   name: string;
   description: string;
@@ -33,7 +34,7 @@ const roomBenefits: RoomBenefit[] = [
   { name: "SPIND", description: "in Laptop-Größe", icon: <FaKey /> },
 ];
 
-const ZimmerPage = () => {
+const ZimmerClient = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -154,4 +155,4 @@ const ZimmerPage = () => {
   );
 };
 
-export default ZimmerPage;
+export default ZimmerClient;

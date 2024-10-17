@@ -132,7 +132,7 @@ const items: Item[] = [
   },
 ];
 
-const GalleryPage: React.FC = () => {
+const GalerieClient = () => {
   return (
     <div className="relative">
       <div className="sticky top-0 z-0">
@@ -163,4 +163,4 @@ const GalleryPage: React.FC = () => {
   );
 };
 
-export default GalleryPage;
+export default GalerieClient;

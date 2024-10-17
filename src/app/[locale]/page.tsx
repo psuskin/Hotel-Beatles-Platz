@@ -1,11 +1,12 @@
+import { unstable_setRequestLocale } from 'next-intl/server';
 import FeaturesSection from "@/components/Home/FeaturesSection";
 import HeroSection from "@/components/Home/HeroSection";
 import HotelIntroduction from "@/components/Home/HotelIntroduction";
 import RestaurantShowcase from "@/components/Home/RestaurantBar";
 
-import React from "react";
+export default function Home({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale);
 
-const Home = () => {
   return (
     <div>
       <HeroSection />
@@ -14,6 +15,4 @@ const Home = () => {
       <RestaurantShowcase />
     </div>
   );
-};
-
-export default Home;
+}

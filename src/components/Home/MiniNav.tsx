@@ -1,11 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { Facebook, Instagram, Twitter, Phone, Mail } from "lucide-react";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const MiniNav: React.FC = () => {
   return (
     <div className="bg-gradient-to-r from-black to-slate-800 text-primary-color py-[10px]">
       <div className="container mx-auto px-6 flex justify-end items-center">
+        <div className="sm:hidden mr-10">
+          <LanguageSwitcher />
+        </div>
         <div className="flex items-center gap-2 sm:space-x-6">
           <div className="flex space-x-4 items-center">
             <SocialLink
@@ -20,18 +24,13 @@ const MiniNav: React.FC = () => {
             />
           </div>
           <div className="flex space-x-4">
-            {/* <SocialLink
-              href="https://facebook.com"
-              icon={<Facebook size={16} />}
-            /> */}
             <SocialLink
               href="https://www.instagram.com/hotelambeatlesplatz/"
               icon={<Instagram size={16} />}
             />
-            {/* <SocialLink
-              href="https://twitter.com"
-              icon={<Twitter size={16} />}
-            /> */}
+          </div>
+          <div className="hidden sm:block mr-4">
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
