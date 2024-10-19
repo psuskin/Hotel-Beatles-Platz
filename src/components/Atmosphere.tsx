@@ -32,7 +32,7 @@ const Atmosphere: React.FC<AtmosphereProps> = ({ currentTime, weather }) => {
             <InfoItem label="Aktuelles Wetter" value={weather} />
             <InfoItem label="Email" value="info@hotelambeatlesplatz.de" />
             <InfoItem label="PDF" value="Gästemappe" isLink />
-            <InfoItem label="Link" value="Nachhaltigkeitszertifikat" isLink />
+            {/* <InfoItem label="Link" value="Nachhaltigkeitszertifikat" isLink /> */}
             <InfoItem label="Link" value="Sehenswürdigkeiten" isLink />
           </div>
         </motion.div>
@@ -55,10 +55,7 @@ const Atmosphere: React.FC<AtmosphereProps> = ({ currentTime, weather }) => {
         <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8">
           <p className="text-base md:text-lg mb-6 lg:mb-0 leading-relaxed flex-1">
             Nach einem ereignisreichen Tag in der pulsierenden Stadt begrüßen
-            wir Sie in einer lichtdurchfluteten, großzügigen Lobby. In unserer
-            Bar Charlotte können Sie sich zurücklehnen und durchatmen, bevor Sie
-            in den großen Indoorpool in unserem 3.000 m² großen Befine Sports &
-            Spa eintauchen.
+            wir Sie in einer lichtdurchfluteten, geräumigen Lobby. Die warmen und modernen Farben laden zum Verweilen ein und bieten Ihnen die Möglichkeit, sich zu entspannen und den Tag Revue passieren zu lassen. Unsere Zimmer sind modern und stilvoll eingerichtet und bieten Ihnen den perfekten Rückzugsort, um neue Energie zu tanken.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 sm:grid-rows-4 gap-2 sm:gap-4 w-full lg:w-1/2 max-w-md mx-auto lg:mx-0 overflow-hidden rounded-lg">
             <Image

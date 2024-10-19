@@ -105,9 +105,9 @@ export default function RestaurantShowcase() {
             Das zukünftige Küchenteam wird Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und
             Fleischgerichten und Süßem aus der eigenen Pâtisserie verwöhnen.
           </p>
-          <button className="bg-primary-color text-gray-900 px-4 sm:px-6 py-2 rounded-full self-start hover:bg-secondary-color transition duration-300 text-sm sm:text-base">
+          {/* <button className="bg-primary-color text-gray-900 px-4 sm:px-6 py-2 rounded-full self-start hover:bg-secondary-color transition duration-300 text-sm sm:text-base">
             COMING SOON
-          </button>
+          </button> */}
         </div>
       </motion.div>
       <div className="w-full lg:w-[55%] flex flex-col justify-end relative mt-8 lg:mt-0">

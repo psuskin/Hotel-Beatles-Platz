@@ -98,10 +98,10 @@ const items: Item[] = [
     id: "23",
     imgSrc: "/images/drinks.jpg",
   },
-  {
-    id: "24",
-    imgSrc: "/images/safeBox.jpg",
-  },
+  // {
+  //   id: "24",
+  //   imgSrc: "/images/safeBox.jpg",
+  // },
   {
     id: "25",
     imgSrc: "/images/vasin3.jpg",
@@ -140,7 +140,7 @@ const GalerieClient = () => {
           // title="Our Hotel Gallery"
           title="Unsere Hotelgalerie"
           // description="Explore the beauty and elegance of our hotel through our carefully curated image gallery."
-          description="Erkunden Sie die Schönheit und Eleganz unseres Hotels durch unsere sorgfältig zusammengestellte Bildergalerie."
+          description="Überzeugen Sie sich von unserem Hotel durch unsere sorgfältig zusammengestellte Bildergallerie."
           imageSrc="/images/hotelCard.jpg"
         />
       </div>

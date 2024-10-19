@@ -20,7 +20,7 @@ const roomBenefits: RoomBenefit[] = [
     // name: "UNDERFLOOR HEATING",
     name: "Kostenloses WLAN",
     // description: "with display control",
-    description: "mit Display-Steuerung",
+    description: "freies Surfen",
     icon: <FaFire />,
   },
   { name: "MINI-BAR", description: "eiskalte Getränke", icon: <FaCocktail /> },
@@ -31,7 +31,7 @@ const roomBenefits: RoomBenefit[] = [
     description: "individuell steuerbar",
     icon: <FaSnowflake />,
   },
-  { name: "SPIND", description: "in Laptop-Größe", icon: <FaKey /> },
+  { name: "SPIND", description: "für Ihre Wertsachen", icon: <FaKey /> },
 ];
 
 const ZimmerClient = () => {

@@ -17,11 +17,11 @@ const roomImages: { [key: string]: string } = {
 };
 
 const featureIcons: { [key: string]: React.ReactElement } = {
-  SAFE: <FaHelmetSafety />,
+  SPIND: <FaHelmetSafety />,
   KLIMAANLAGE: <FaSnowflake />,
   REGENDUSCHE: <FaShower />,
-  "43″ TV": <FaTv />,
-  "RITUALS-PRODUKTE": <FaLeaf />,
+  // "43″ TV": <FaTv />,
+  "MINI-BAR": <FaLeaf />,
 };
 
 interface RoomCardProps {

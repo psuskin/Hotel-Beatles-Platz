@@ -104,14 +104,6 @@ const PartnerClient = () => {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="mt-8 sm:mt-16 text-center"
             >
-              <a
-                href="#"
-                className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium rounded-md text-black bg-primary-color hover:bg-primary-dark transition-colors duration-300"
-              >
-                {/* Become a Partner */}
-                Werden Sie Partner
-                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-              </a>
             </motion.div>
           </div>
         </div>
