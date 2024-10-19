@@ -87,10 +87,9 @@ const FeaturesSection: React.FC = () => {
                     text-lg font-semibold
                     relative
                     px-2 py-1
-                    ${
-                      index === activeCard
-                        ? "text-primary-color"
-                        : "text-gray-400 hover:text-gray-200"
+                    ${index === activeCard
+                      ? "text-primary-color"
+                      : "text-gray-400 hover:text-gray-200"
                     }
                   `}
                   onClick={() =>
@@ -105,11 +104,10 @@ const FeaturesSection: React.FC = () => {
                     absolute bottom-0 left-1/2 transform -translate-x-1/2
                     w-0 h-0.5 bg-primary-color
                     transition-all duration-300 ease-in-out
-                    ${
-                      index === activeCard
+                    ${index === activeCard
                         ? "w-full opacity-100"
                         : "w-0 opacity-0"
-                    }
+                      }
                   `}
                   ></span>
                 </li>
@@ -228,8 +226,8 @@ const roomTypes: RoomType[] = [
       "/images/Classic-2.jpg",
       "/images/Classic.jpg",
     ],
-    size: "25 m²",
-    occupancy: "1-2 persons",
+    size: "14 m²",
+    occupancy: "2 Guests",
     amenities: [
       "Free Wi-Fi",
       "Air conditioning",
@@ -248,8 +246,8 @@ const roomTypes: RoomType[] = [
       "/images/Comfort-2.jpg",
       "/images/Comfort.jpg",
     ],
-    size: "35 m²",
-    occupancy: "2-3 persons",
+    size: "16 m²",
+    occupancy: "2 Guests",
     amenities: [
       "Free Wi-Fi",
       "Air conditioning",
@@ -269,7 +267,7 @@ const roomTypes: RoomType[] = [
       "/images/ComfortPlus.jpg",
     ],
     size: "18 m²",
-    occupancy: "1-3 persons",
+    occupancy: "3 Guests",
     amenities: [
       "Free Wi-Fi",
       "Air conditioning",
@@ -288,8 +286,8 @@ const roomTypes: RoomType[] = [
       "/images/Premium-2.jpg",
       "/images/Premium.jpg",
     ],
-    size: "50 m²",
-    occupancy: "2-4 persons",
+    size: "22 m²",
+    occupancy: "3 Guests",
     amenities: [
       "Free Wi-Fi",
       "Air conditioning",

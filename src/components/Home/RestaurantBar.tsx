@@ -102,8 +102,7 @@ export default function RestaurantShowcase() {
             in den Wänden und in den erhaltenen baulichen Strukturen zu finden sein.
           </p>
           <p className="text-xs sm:text-sm lg:text-base mb-6 sm:mb-8">
-            Das zukünftige Küchenteam um Eric Kröber und Sushichef Ngima Sherpa
-            wird Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und
+            Das zukünftige Küchenteam wird Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und
             Fleischgerichten und Süßem aus der eigenen Pâtisserie verwöhnen.
           </p>
           <button className="bg-primary-color text-gray-900 px-4 sm:px-6 py-2 rounded-full self-start hover:bg-secondary-color transition duration-300 text-sm sm:text-base">
