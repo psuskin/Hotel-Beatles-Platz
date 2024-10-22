@@ -109,13 +109,6 @@ export default function WhiteSection() {
             className="text-gray-700 mb-6 sm:mb-8 leading-relaxed max-w-xl text-sm sm:text-base"
             variants={itemVariants}
           >
-            {/* Nach einer 5 jährigen Bauphase haben wir unsere Türen als 4-Sterne
-            Superior Hotel in der lebendigsten Umgebung Hamburg's: St. Pauli
-            eröffnet. Mit insgesamt 53 Zimmern und drei verschiedenen
-            Zimmerkategorien, bieten wir unseren Gästen eine zeitlose
-            Unterkunft. Genießen Sie hochklassigen Komfort während Ihrer
-            Städtereise und machen Sie Ihren Aufenthalt in der schönen
-            Hansestadt Hamburg unvergesslich sowie einzigartig. */}
             {t("description")}
           </motion.p>
           {/* <button className="bg-primary-color text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-secondary-color transition duration-300 transform text-sm sm:text-base">
