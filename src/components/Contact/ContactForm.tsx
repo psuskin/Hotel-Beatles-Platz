@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const SendIcon = () => (
   <svg
@@ -38,6 +39,7 @@ interface FormState {
 }
 
 const ContactForm: React.FC = () => {
+  const t = useTranslations("contact");
   const [formState, setFormState] = useState<FormState>({
     firstName: "",
     lastName: "",
@@ -102,15 +104,11 @@ const ContactForm: React.FC = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 bg-gray-900 p-8 w-full">
-      <h2 className="text-2xl font-semibold mb-6 text-white">Kontakt</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-white">{t("formTitle")}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <label
-            htmlFor="firstName"
-            className="block text-sm font-medium text-gray-300 mb-1"
-          >
-            {/* First Name */}
-            Vorname
+          <label htmlFor="firstName" className="block text-sm font-medium text-gray-300 mb-1">
+            {t("firstName")}
           </label>
           <input
             type="text"
@@ -118,17 +116,14 @@ const ContactForm: React.FC = () => {
             name="firstName"
             value={formState.firstName}
             onChange={handleInputChange}
+            placeholder={t("firstNamePlaceholder")}
             className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
             required
           />
         </div>
         <div>
-          <label
-            htmlFor="lastName"
-            className="block text-sm font-medium text-gray-300 mb-1"
-          >
-            {/* Last Name */}
-            Nachname
+          <label htmlFor="lastName" className="block text-sm font-medium text-gray-300 mb-1">
+            {t("lastName")}
           </label>
           <input
             type="text"
@@ -136,18 +131,15 @@ const ContactForm: React.FC = () => {
             name="lastName"
             value={formState.lastName}
             onChange={handleInputChange}
+            placeholder={t("lastNamePlaceholder")}
             className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
             required
           />
         </div>
       </div>
       <div>
-        <label
-          htmlFor="email"
-          className="block text-sm font-medium text-gray-300 mb-1"
-        >
-          {/* Email Address */}
-          Email Adresse
+        <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+          {t("emailAddress")}
         </label>
         <input
           type="email"
@@ -155,17 +147,14 @@ const ContactForm: React.FC = () => {
           name="email"
           value={formState.email}
           onChange={handleInputChange}
+          placeholder={t("emailPlaceholder")}
           className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
           required
         />
       </div>
       <div>
-        <label
-          htmlFor="phone"
-          className="block text-sm font-medium text-gray-300 mb-1"
-        >
-          {/* Phone Number */}
-          Telefonnummer
+        <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">
+          {t("phoneNumber")}
         </label>
         <input
           type="tel"
@@ -173,17 +162,14 @@ const ContactForm: React.FC = () => {
           name="phone"
           value={formState.phone}
           onChange={handleInputChange}
+          placeholder={t("phonePlaceholder")}
           className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
           required
         />
       </div>
       <div>
-        <label
-          htmlFor="subject"
-          className="block text-sm font-medium text-gray-300 mb-1"
-        >
-          {/* Subject */}
-          Betreff
+        <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
+          {t("subject")}
         </label>
         <select
           id="subject"
@@ -192,25 +178,22 @@ const ContactForm: React.FC = () => {
           onChange={handleInputChange}
           className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
         >
-          <option value="Generally">Generally</option>
-          <option value="Room reservation">Room reservation</option>
-          <option value="Report a problem">Report a problem</option>
-          <option value="press">Press</option>
+          <option value="Generally">{t("subjectOptions.generally")}</option>
+          <option value="Room reservation">{t("subjectOptions.roomReservation")}</option>
+          <option value="Report a problem">{t("subjectOptions.reportProblem")}</option>
+          <option value="press">{t("subjectOptions.press")}</option>
         </select>
       </div>
       <div>
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium text-gray-300 mb-1"
-        >
-          {/* Your Message */}
-          Ihre Nachricht
+        <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+          {t("message")}
         </label>
         <textarea
           id="message"
           name="message"
           value={formState.message}
           onChange={handleInputChange}
+          placeholder={t("messagePlaceholder")}
           rows={4}
           className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
           required
@@ -227,10 +210,7 @@ const ContactForm: React.FC = () => {
           required
         />
         <label htmlFor="consent" className="text-sm text-gray-300">
-          Ich erteile meine jederzeit widerrufliche Einwilligung, von Hotel am
-          Beatlesplatz Polat Hotelbetriebsgesellschaft mbH per E-Mail
-          angeschrieben zu werden. Bitte beachten Sie unsere
-          Datenschutzerklärung.
+          {t("consentText")}
         </label>
       </div>
       <AnimatePresence>
@@ -241,7 +221,7 @@ const ContactForm: React.FC = () => {
             exit={{ opacity: 0, y: -20 }}
             className="bg-green-500 text-white p-3 rounded-md mb-4"
           >
-            Your message has been sent successfully!
+            {t("successMessage")}
           </motion.div>
         )}
       </AnimatePresence>
@@ -251,7 +231,7 @@ const ContactForm: React.FC = () => {
         className="w-full p-4 bg-primary-color text-white rounded-md font-semibold flex items-center justify-center space-x-3 transition duration-300 ease-in-out hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 disabled:opacity-50"
       >
         <span className="text-lg">
-          {isSubmitting ? "Sending..." : "Send Message"}
+          {isSubmitting ? t("sending") : t("sendMessage")}
         </span>
         <AnimatePresence>
           {!isSubmitting && (
@@ -265,7 +245,7 @@ const ContactForm: React.FC = () => {
                 y: -100,
                 transition: {
                   duration: 0.5,
-                  ease: [0.32, 0, 0.67, 0], // easeOutCubic
+                  ease: [0.32, 0, 0.67, 0],
                 },
               }}
             >

@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Montserrat } from "next/font/google";
-
-
 
 export const metadata: Metadata = {
   title: "Hotel am Beatlesplatz",
@@ -20,4 +17,3 @@ export default function RootLayout({
     </html>
   );
 }
-

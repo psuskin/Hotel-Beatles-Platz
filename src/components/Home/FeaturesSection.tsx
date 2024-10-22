@@ -6,6 +6,7 @@ import CardGallery from "../CardGallery";
 import Button from "../Buttons/Button";
 import BookingPopUp from "../BookingPopUp";
 import WhiteSection from "../WhiteSection";
+import { useTranslations } from "next-intl";
 
 interface RoomType {
   id: number;
@@ -19,6 +20,7 @@ interface RoomType {
 }
 
 const FeaturesSection: React.FC = () => {
+  const t = useTranslations("featuresSection");
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeCard, setActiveCard] = useState(0);
   const [showStickyMenu, setShowStickyMenu] = useState(false);
@@ -87,9 +89,10 @@ const FeaturesSection: React.FC = () => {
                     text-lg font-semibold
                     relative
                     px-2 py-1
-                    ${index === activeCard
-                      ? "text-primary-color"
-                      : "text-gray-400 hover:text-gray-200"
+                    ${
+                      index === activeCard
+                        ? "text-primary-color"
+                        : "text-gray-400 hover:text-gray-200"
                     }
                   `}
                   onClick={() =>
@@ -98,16 +101,19 @@ const FeaturesSection: React.FC = () => {
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
                 >
-                  {room.title}
+                  {room.title === "COMFORT PLUS"
+                    ? t("roomTypes.comfortplus.title")
+                    : t(`roomTypes.${room.title.toLowerCase()}.title`)}
                   <span
                     className={`
                     absolute bottom-0 left-1/2 transform -translate-x-1/2
                     w-0 h-0.5 bg-primary-color
                     transition-all duration-300 ease-in-out
-                    ${index === activeCard
+                    ${
+                      index === activeCard
                         ? "w-full opacity-100"
                         : "w-0 opacity-0"
-                      }
+                    }
                   `}
                   ></span>
                 </li>
@@ -127,6 +133,7 @@ const FeaturesSection: React.FC = () => {
               range={[i * 0.25, 1]}
               targetScale={1 - (roomTypes.length - i) * 0.05}
               onBookNow={handleBookNow}
+              t={t}
             />
           ))}
         </div>
@@ -146,7 +153,8 @@ const RoomCard: React.FC<{
   range: [number, number];
   targetScale: number;
   onBookNow: () => void;
-}> = ({ room, i, progress, range, targetScale, onBookNow }) => {
+  t: (key: string, params?: Record<string, string | number>) => string;
+}> = ({ room, i, progress, range, targetScale, onBookNow, t }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -172,10 +180,14 @@ const RoomCard: React.FC<{
           </div>
           <div className="p-4 md:p-8 w-full md:w-1/2 flex flex-col justify-center">
             <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-primary-color">
-              {room.title}
+              {room.title === "COMFORT PLUS"
+                ? t("roomTypes.comfortplus.title")
+                : t(`roomTypes.${room.title.toLowerCase()}.title`)}
             </h3>
             <p className="text-gray-300 text-sm md:text-base mb-4 md:mb-6">
-              {room.description}
+              {room.title === "COMFORT PLUS"
+                ? t("roomTypes.comfortplus.description")
+                : t(`roomTypes.${room.title.toLowerCase()}.description`)}
             </p>
             <div className="flex justify-between mb-4 md:mb-6">
               <div className="flex items-center text-gray-300">
@@ -184,12 +196,12 @@ const RoomCard: React.FC<{
               </div>
               <div className="flex items-center text-gray-300">
                 <Users className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2 text-primary-color" />
-                <span className="text-sm md:text-base">{room.occupancy}</span>
+                <span className="text-sm md:text-base">{t(`occupancy.${room.occupancy}`)}</span>
               </div>
             </div>
             <div className="mb-4 md:mb-6">
               <h4 className="font-semibold mb-2 text-gray-200 text-sm md:text-base">
-                Amenities
+                {t("amenitiesTitle")}
               </h4>
               <div className="flex flex-wrap gap-2">
                 {room.amenities.map((amenity, index) => (
@@ -197,16 +209,16 @@ const RoomCard: React.FC<{
                     key={index}
                     className="bg-gray-800 text-gray-200 px-2 py-1 rounded-full text-xs md:text-sm"
                   >
-                    {amenity}
+                    {t(`amenities.${amenity.toLowerCase().replace(' ', '_')}`)}
                   </span>
                 ))}
               </div>
             </div>
             <div className="flex justify-between items-center">
               <p className="text-xl md:text-2xl font-bold text-gray-200">
-                {room.price}
+                {t('price', { price: room.price.split(' ')[0] })}
               </p>
-              <Button text="Book Now" onClick={onBookNow} />
+              <Button text={t('bookNow')} onClick={onBookNow} />
             </div>
           </div>
         </div>
@@ -219,8 +231,7 @@ const roomTypes: RoomType[] = [
   {
     id: 1,
     title: "CLASSIC",
-    description:
-      "Schlafen Sie im großen King-Size Bett und starten Sie erholt in den neuen Tag. Für Gäste die etwas mehr Freiraum benötigen ist dieses ideal geeignet. Diese Kategorie beinhaltet unter anderem auch Zimmer für bis zu drei Personen.",
+    description: "classic.description",
     images: [
       "/images/Classic.jpg",
       "/images/Classic-2.jpg",
@@ -228,19 +239,13 @@ const roomTypes: RoomType[] = [
     ],
     size: "14 m²",
     occupancy: "2 Guests",
-    amenities: [
-      "Free Wi-Fi",
-      "Air conditioning",
-      "Safe",
-      "Mini-bar"
-    ],
+    amenities: ["Free Wi-Fi", "Air conditioning", "Safe", "Mini-bar"],
     price: "€99 / night",
   },
   {
     id: 2,
     title: "COMFORT",
-    description:
-      "Schlafen Sie im großen King-Size Bett und starten Sie erholt in den neuen Tag. Für Gäste die etwas mehr Freiraum benötigen ist dieses ideal geeignet. Diese Kategorie beinhaltet unter anderem auch Zimmer für bis zu drei Personen.",
+    description: "comfort.description",
     images: [
       "/images/Comfort.jpg",
       "/images/Comfort-2.jpg",
@@ -248,19 +253,13 @@ const roomTypes: RoomType[] = [
     ],
     size: "16 m²",
     occupancy: "2 Guests",
-    amenities: [
-      "Free Wi-Fi",
-      "Air conditioning",
-      "Safe",
-      "Mini-bar"
-    ],
+    amenities: ["Free Wi-Fi", "Air conditioning", "Safe", "Mini-bar"],
     price: "€149 / night",
   },
   {
-    id: 4,
+    id: 3,
     title: "COMFORT PLUS",
-    description:
-      "Das modern designte Comfort+-Zimmer, ist perfekt für einen bequemen Aufenthalt zu dritt. Mit insgesamt 18m² bietet dieses Zimmer großen Komfort.",
+    description: "comfortplus.description",
     images: [
       "/images/ComfortPlus.jpg",
       "/images/ComfortPlus-2.jpg",
@@ -268,19 +267,13 @@ const roomTypes: RoomType[] = [
     ],
     size: "18 m²",
     occupancy: "3 Guests",
-    amenities: [
-      "Free Wi-Fi",
-      "Air conditioning",
-      "Safe",
-      "Mini-bar"
-    ],
+    amenities: ["Free Wi-Fi", "Air conditioning", "Safe", "Mini-bar"],
     price: "€129 / night",
   },
   {
-    id: 3,
+    id: 4,
     title: "PREMIUM",
-    description:
-      "Genießen Sie besten Schlafkomfort im King-Size Bett in der Kategorie Premium. Das funktionale Sofa ist aufklappbar und bietet somit einen weiteren Schlafplatz. Das größte und geräumigste Zimmer des Hauses.",
+    description: "premium.description",
     images: [
       "/images/Premium.jpg",
       "/images/Premium-2.jpg",
@@ -288,12 +281,7 @@ const roomTypes: RoomType[] = [
     ],
     size: "22 m²",
     occupancy: "3 Guests",
-    amenities: [
-      "Free Wi-Fi",
-      "Air conditioning",
-      "Safe",
-      "Mini-bar"
-    ],
+    amenities: ["Free Wi-Fi", "Air conditioning", "Safe", "Mini-bar"],
     price: "€199 / night",
   },
 ];

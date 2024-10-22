@@ -1,19 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+import { useLocale, useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("footer");
+  const locale = useLocale();
+
   return (
     <footer className="text-white py-16 relative overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center mb-12">
           <div className="mb-8 text-center">
             <h2 className="text-3xl font-bold mb-2 relative inline-block">
-              Hotel am Beatles-Platz
+              {t("hotelName")}
               <span className="absolute -bottom-2 left-0 w-full h-1 bg-primary-color transform -skew-x-12"></span>
             </h2>
             <p className="text-sm text-gray-200 mt-4 max-w-md mx-auto">
-              Modern. Neu. Zeitlos.
+              {t("slogan")}
             </p>
           </div>
 
@@ -21,18 +25,18 @@ const Footer = () => {
             <ul className="flex flex-wrap justify-center gap-6 text-sm">
               <li>
                 <Link
-                  href="/rooms"
+                  href={`/${locale}/zimmer`}
                   className="hover:text-primary-color transition-colors"
                 >
-                  Rooms
+                  {t("rooms")}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/dining"
+                  href={`/${locale}/restaurant`}
                   className="hover:text-primary-color transition-colors"
                 >
-                  Dining
+                  {t("dining")}
                 </Link>
               </li>
               <li>
@@ -40,15 +44,15 @@ const Footer = () => {
                   href="/events"
                   className="hover:text-primary-color transition-colors"
                 >
-                  Events
+                  {t("events")}
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href={`/${locale}/kontakt`}
                   className="hover:text-primary-color transition-colors"
                 >
-                  Contact
+                  {t("contact")}
                 </Link>
               </li>
             </ul>
@@ -61,45 +65,18 @@ const Footer = () => {
             >
               <FaInstagram size={24} />
             </a>
-            {/* <a
-              href="#"
-              className="text-gray-400 hover:text-primary-color transition-colors"
-            >
-              <FaTwitter size={24} />
-            </a>
-            <a
-              href="#"
-              className="text-gray-400 hover:text-primary-color transition-colors"
-            >
-              <FaFacebookF size={24} />
-            </a> */}
           </div>
         </div>
 
         <div className="text-center text-sm text-gray-200">
-          <p>
-            &copy; {new Date().getFullYear()} Hotel am Beatles-Platz. All rights
-            reserved.
-          </p>
+          <p>{t("copyright", { year: new Date().getFullYear() })}</p>
           <div className="mt-2 space-x-4">
             <Link
-              href="/impressum"
+              href={`/${locale}/impressum`}
               className="hover:text-primary-color transition-colors"
             >
-              Impressum
+              {t("impressum")}
             </Link>
-            {/* <Link
-              href="/terms"
-              className="hover:text-primary-color transition-colors"
-            >
-              Terms
-            </Link>
-            <Link
-              href="/privacy"
-              className="hover:text-primary-color transition-colors"
-            >
-              Privacy
-            </Link> */}
           </div>
         </div>
       </div>

@@ -12,6 +12,7 @@ const nextConfig = {
       },
     ],
   },
+  transpilePackages: ['next-intl'],
 };
 
 export default withNextIntl(nextConfig);

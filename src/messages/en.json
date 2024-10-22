@@ -9,6 +9,199 @@
     "companyAddressTitle": "COMPANY ADDRESS",
     "companyName": "Polat Hotelbetriebsgesellschaft mbH",
     "companyAddress": "Reeperbahn 117, 20359 Hamburg, Germany",
-    "experienceDescription": "Experience the magic of Hamburg from the heart of St. Pauli. Your stay at Hotel am Beatles-Platz is more than just accommodation; it's an immersion into the vibrant culture and rich history of this iconic neighborhood."
+    "experienceDescription": "Experience the magic of Hamburg from the heart of St. Pauli. Your stay at Hotel am Beatles-Platz is more than just accommodation; it's an immersion into the vibrant culture and rich history of this iconic neighborhood.",
+    "formTitle": "Contact Us",
+    "firstName": "First Name",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastName": "Last Name",
+    "lastNamePlaceholder": "Enter your last name",
+    "emailAddress": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "phoneNumber": "Phone Number",
+    "phonePlaceholder": "Enter your phone number",
+    "subject": "Subject",
+    "subjectOptions": {
+      "generally": "General Inquiry",
+      "roomReservation": "Room Reservation",
+      "reportProblem": "Report a Problem",
+      "press": "Press"
+    },
+    "message": "Your Message",
+    "messagePlaceholder": "Enter your message here",
+    "consentText": "I give my revocable consent to be contacted by Hotel am Beatles-Platz Polat Hotelbetriebsgesellschaft mbH via email. Please note our privacy policy.",
+    "successMessage": "Your message has been sent successfully!",
+    "sending": "Sending...",
+    "sendMessage": "Send Message"
+  },
+  "navbar": {
+    "home": "HOME",
+    "rooms": "ROOMS",
+    "restaurant": "RESTAURANT",
+    "gallery": "GALLERY",
+    "partners": "PARTNERS",
+    "contact": "CONTACT",
+    "book": "BOOK"
+  },
+  "partner": {
+    "title": "Our Partners",
+    "description": "Collaborating to deliver exceptional value",
+    "kiezjungs": "Guided tours of St. Pauli, Hamburg's vibrant district.",
+    "hamburgCard": "Tourist discount card offering savings on Hamburg attractions and public transport.",
+    "rituals": "Luxury home and body cosmetics inspired by ancient traditions.",
+    "beurer": "Health and well-being products, including medical devices and personal care.",
+    "rojeeDesign": "Innovative, high-quality digital and print design services.",
+    "zurRitze": "Iconic bar and boxing gym in the heart of Hamburg's St. Pauli district."
+  },
+  "gallery": {
+    "title": "Our Hotel Gallery",
+    "description": "Explore the beauty and elegance of our hotel through our carefully curated image gallery."
+  },
+  "restaurant": {
+    "title": "Coming Soon..."
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "description": "Experience comfort and luxury in our carefully designed rooms",
+    "rooms": "ROOMS",
+    "beds": "BEDS",
+    "guests": "GUESTS",
+    "categories": "CATEGORIES",
+    "roomSelection": "Our Room Selection",
+    "roomBenefits": "Room Benefits",
+    "roomBenefitsDescription": "Experience comfort and luxury with our carefully curated room amenities.",
+    "wifiName": "Free Wi-Fi",
+    "wifiDescription": "free surfing",
+    "minibarName": "MINI-BAR",
+    "minibarDescription": "ice-cold drinks",
+    "acName": "AIR CONDITIONING",
+    "acDescription": "individually controllable",
+    "lockerName": "LOCKER",
+    "lockerDescription": "for your valuables",
+    "classicDescription": "The modern designed Classic room is perfect for a comfortable stay for two. With a total of 14m², this room offers great comfort.",
+    "comfortDescription": "The 'Comfort' category is slightly more spacious at approx. 16m² than the Classic room and in the Comfort+ room also offers space for up to three guests in total.",
+    "comfortPlusDescription": "The modern designed Comfort+ room is perfect for a comfortable stay for three. With a total of 18m², this room offers great comfort.",
+    "premiumDescription": "The Premium room offers perfect comfort for your stay with a king-size bed. The sofa has an integrated mattress and can be used for an additional guest.",
+    "freeWifi": "Free Wi-Fi",
+    "minibar": "MINI-BAR",
+    "airConditioning": "AIR CONDITIONING",
+    "locker": "LOCKER",
+    "twoGuests": "2 Guests",
+    "threeGuests": "3 Guests"
+  },
+  "hotelIntroduction": {
+    "hotelName": "HOTEL AM BEATLES-PLATZ",
+    "welcome": "Welcome to Hotel am Beatles-Platz",
+    "description": "Hotel am Beatles-Platz is located in the heart of Hamburg, just a few minutes' walk from the famous Reeperbahn and the harbor. Our house offers a perfect blend of modern comfort and Hanseatic charm.",
+    "rooms": "53 luxurious rooms",
+    "restaurant": "Gourmet Restaurant (Coming Soon)",
+    "rooftopBar": "Rooftop Bar with a view (Coming Soon)",
+    "parking": "Nearby garage",
+    "bookNow": "Book Now"
+  },
+  "atmosphere": {
+    "location": "Location",
+    "locationValue": "20359 Hamburg – Germany",
+    "phone": "Phone",
+    "phoneValue": "+49 40 181 283 811",
+    "localTime": "Local Time",
+    "currentWeather": "Current Weather",
+    "email": "Email",
+    "emailValue": "info@hotelambeatlesplatz.de",
+    "pdf": "PDF",
+    "guestFolder": "Guest Folder",
+    "link": "Link",
+    "attractions": "Attractions",
+    "elegantAndWarm": "Elegant and Warm",
+    "atmosphere": "ATMOSPHERE",
+    "atmosphereDescription": "After an eventful day in the vibrant city, we welcome you to a light-flooded, spacious lobby. The warm and modern colors invite you to linger and offer you the opportunity to relax and review the day. Our rooms are modern and stylishly furnished and offer you the perfect retreat to recharge your batteries.",
+    "hotelLobby": "Hotel Lobby 1",
+    "barCharlotte": "Bar Charlotte",
+    "befineSportsSpa": "Befine Sports & Spa",
+    "luxuriousRoom": "Luxurious Room"
+  },
+  "restaurantBar": {
+    "restaurantBarTitle": "HOTEL AM BEATLES-PLATZ RESTAURANT & BAR",
+    "restaurantDescription": "The future HOTEL AM BEATLES-PLATZ restaurant will be one of the hottest locations in Hamburg, delighting both hotel guests and Hamburg locals alike. It will be created within the walls of a former iron foundry. References to its historical past will be found in numerous places in the restaurant, in the walls and in the preserved structural elements.",
+    "kitchenTeamDescription": "The future kitchen team will pamper you with unusual sushi and sashimi, salads, fish and meat dishes, and sweets from our own patisserie.",
+    "sushiRestaurantTitle": "SUSHI RESTAURANT",
+    "sushiRestaurantSubtitle": "IN THE HEART OF ST. PAULI",
+    "cocktailBarTitle": "COCKTAIL BAR",
+    "cocktailBarSubtitle": "UNIQUE MIXOLOGY",
+    "loungeTitle": "COZY LOUNGE",
+    "loungeSubtitle": "FOR RELAXED EVENINGS"
+  },
+  "whiteSection": {
+    "modern": "MODERN.",
+    "newTimeless": "NEW. TIMELESS.",
+    "welcome": "WELCOME TO HOTEL AM BEATLES-PLATZ",
+    "description": "After a 5-year construction phase, we have opened our doors as a 4-star superior hotel in Hamburg's most vibrant area: St. Pauli. With a total of 53 rooms and three different room categories, we offer our guests timeless accommodation. Enjoy high-class comfort during your city trip and make your stay in the beautiful Hanseatic city of Hamburg unforgettable and unique.",
+    "beatlesPlatz": "BEATLES-PLATZ"
+  },
+  "footer": {
+    "hotelName": "Hotel am Beatles-Platz",
+    "slogan": "Modern. New. Timeless.",
+    "rooms": "Rooms",
+    "dining": "Dining",
+    "events": "Events",
+    "contact": "Contact",
+    "copyright": "© {year} Hotel am Beatles-Platz. All rights reserved.",
+    "impressum": "Imprint"
+  },
+  "featuresSection": {
+    "roomTypes": {
+      "classic": {
+        "title": "CLASSIC",
+        "description": "Sleep in the large king-size bed and start your day refreshed. This is ideal for guests who need a little more space. This category also includes rooms for up to three people."
+      },
+      "comfort": {
+        "title": "COMFORT",
+        "description": "Experience enhanced comfort in our spacious Comfort rooms. With approximately 16m², these rooms offer more space than our Classic category and are perfect for a relaxing stay."
+      },
+      "comfortplus": {
+        "title": "COMFORT PLUS",
+        "description": "The modern designed Comfort+ room is perfect for a comfortable stay for three. With a total of 18m², this room offers great comfort and additional amenities."
+      },
+      "premium": {
+        "title": "PREMIUM",
+        "description": "Indulge in luxury with our Premium rooms. Featuring a king-size bed and a functional sofa that can be converted into an additional sleeping place, these rooms offer the ultimate comfort for your stay."
+      }
+    },
+    "occupancy": {
+      "2 Guests": "2 Guests",
+      "3 Guests": "3 Guests"
+    },
+    "amenitiesTitle": "Amenities",
+    "amenities": {
+      "free_wi-fi": "Free Wi-Fi",
+      "air_conditioning": "Air conditioning",
+      "safe": "Safe",
+      "mini-bar": "Mini-bar"
+    },
+    "price": "€{price} / night",
+    "bookNow": "Book Now"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page",
+    "suggestion": "Maybe we can help you with something else?",
+    "rooms": "Our Rooms",
+    "restaurant": "Restaurant",
+    "services": "Our Services",
+    "contact": "Contact",
+    "backToHome": "Back to Home"
+  },
+  "impressum": {
+    "title": "Imprint",
+    "hotelName": "Hotel am Beatlesplatz",
+    "companyName": "Polat Hotel Management Company Ltd. Reeperbahn 117",
+    "address": "20359 Hamburg, Germany",
+    "manager": "Managing Director: Fatih Polat",
+    "registrationCourt": "Registration Court: Hamburg District Court",
+    "registrationNumber": "Registration Number: HRB",
+    "vatId": "VAT ID: DE",
+    "disclaimer": {
+      "title": "DISCLAIMER:",
+      "content": "Despite careful content control, we assume no liability for the content and the content of external links. The operators of the linked pages are solely responsible for their content. Even if we assume that the information we provide is correct, it may still contain errors or inaccuracies. The content of this website is protected by copyright. Any reproduction, distribution or public display, even of parts, is prohibited without our express consent. The mention of brand and product names as well as logos is for identification purposes only. All rights to the brand and product names mentioned on these pages, logos and images shown belong to their owners. If anyone does not agree with the mention of names or sees their copyrights violated, please contact us first by email. The corresponding content will then be removed immediately."
+    }
   }
 }

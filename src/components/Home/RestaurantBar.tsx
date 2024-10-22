@@ -4,26 +4,46 @@ import React, { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { MoveRight, MoveLeft } from "lucide-react";
+import { useTranslations } from "next-intl";
+
+// const slides = [
+//   {
+//     title: "SUSHI-RESTAURANT",
+//     subtitle: "IM HERZEN ST. PAULIS",
+//     image: "/images/wideView2.jpg",
+//   },
+//   {
+//     title: "COCKTAIL BAR",
+//     subtitle: "EINZIGARTIGE MIXOLOGIE",
+//     image: "/images/wideView.jpg",
+//   },
+//   {
+//     title: "GEMÜTLICHE LOUNGE",
+//     subtitle: "FÜR ENTSPANNTE ABENDE",
+//     image: "/images/chairs.jpg",
+//   },
+// ];
 
 const slides = [
   {
-    title: "SUSHI-RESTAURANT",
-    subtitle: "IM HERZEN ST. PAULIS",
+    titleKey: "sushiRestaurantTitle",
+    subtitleKey: "sushiRestaurantSubtitle",
     image: "/images/wideView2.jpg",
   },
   {
-    title: "COCKTAIL BAR",
-    subtitle: "EINZIGARTIGE MIXOLOGIE",
+    titleKey: "cocktailBarTitle",
+    subtitleKey: "cocktailBarSubtitle",
     image: "/images/wideView.jpg",
   },
   {
-    title: "GEMÜTLICHE LOUNGE",
-    subtitle: "FÜR ENTSPANNTE ABENDE",
+    titleKey: "loungeTitle",
+    subtitleKey: "loungeSubtitle",
     image: "/images/chairs.jpg",
   },
 ];
 
 export default function RestaurantShowcase() {
+  const t = useTranslations("restaurantBar");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
   const controls = useAnimation();
@@ -92,18 +112,23 @@ export default function RestaurantShowcase() {
         <div className="bg-gray-900 bg-opacity-90 text-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-lg w-full max-w-2xl lg:max-w-3xl xl:max-w-5xl lg:absolute lg:right-[-40px] xl:right-[-80px]">
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-light text-primary-color mb-4">
             HOTEL AM BEATLES-PLATZ RESTAURANT & BAR
+            {t("restaurantBarTitle")}
           </h2>
           <p className="text-xs sm:text-sm lg:text-base mb-4 sm:mb-6">
-            Das zukünftige HOTEL AM BEATLES-PLATZ Restaurant wird zu den
-            angesagten Locations in Hamburg zählen und sowohl Hotelgäste
-            als auch Hamburger*innen gleichermaßen begeistern. Es wird in den
-            Gemäuern einer ehemaligen Eisengießerei entstehen. Hinweise auf seine
-            historische Vergangenheit werden im Restaurant an zahlreichen Orten,
-            in den Wänden und in den erhaltenen baulichen Strukturen zu finden sein.
+            {t("restaurantDescription")}
+            {/* Das zukünftige HOTEL AM BEATLES-PLATZ Restaurant wird zu den
+            angesagten Locations in Hamburg zählen und sowohl Hotelgäste als
+            auch Hamburger*innen gleichermaßen begeistern. Es wird in den
+            Gemäuern einer ehemaligen Eisengießerei entstehen. Hinweise auf
+            seine historische Vergangenheit werden im Restaurant an zahlreichen
+            Orten, in den Wänden und in den erhaltenen baulichen Strukturen zu
+            finden sein. */}
           </p>
           <p className="text-xs sm:text-sm lg:text-base mb-6 sm:mb-8">
-            Das zukünftige Küchenteam wird Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und
-            Fleischgerichten und Süßem aus der eigenen Pâtisserie verwöhnen.
+            {/* Das zukünftige Küchenteam wird Sie mit ausgefallenem Sushi und
+            Sashimi, Salaten, Fisch- und Fleischgerichten und Süßem aus der
+            eigenen Pâtisserie verwöhnen. */}
+            {t("kitchenTeamDescription")}
           </p>
           {/* <button className="bg-primary-color text-gray-900 px-4 sm:px-6 py-2 rounded-full self-start hover:bg-secondary-color transition duration-300 text-sm sm:text-base">
             COMING SOON
@@ -126,7 +151,7 @@ export default function RestaurantShowcase() {
                 transition={{ duration: 0.5 }}
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-light mb-1 sm:mb-2 text-center"
               >
-                {slides[currentSlide].title}
+                {t(slides[currentSlide].titleKey)}
               </motion.h2>
             </AnimatePresence>
             <AnimatePresence mode="wait">
@@ -138,7 +163,7 @@ export default function RestaurantShowcase() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-lg sm:text-xl md:text-2xl font-light text-center"
               >
-                {slides[currentSlide].subtitle}
+                {t(slides[currentSlide].subtitleKey)}
               </motion.p>
             </AnimatePresence>
           </div>
@@ -153,7 +178,7 @@ export default function RestaurantShowcase() {
             >
               <Image
                 src={slides[currentSlide].image}
-                alt={slides[currentSlide].title}
+                alt={t(slides[currentSlide].titleKey)}
                 fill
                 style={{ objectFit: "cover" }}
               />

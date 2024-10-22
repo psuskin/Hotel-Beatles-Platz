@@ -8,7 +8,7 @@ import { useMediaQuery } from "@/utils/use-media-query";
 import MiniNav from "./MiniNav";
 import { BiBed, BiRestaurant } from "react-icons/bi";
 import BookingPopUp from "../BookingPopUp";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 interface NavLinkProps {
   href: string;
@@ -73,6 +73,7 @@ const Navbar: React.FC = () => {
   const pathname = usePathname();
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
   const locale = useLocale();
+  const t = useTranslations("navbar");
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -101,12 +102,12 @@ const Navbar: React.FC = () => {
   };
 
   const navItems = [
-    { name: "STARTSEITE", href: `/${locale}` },
-    { name: "ZIMMER", href: `/${locale}/zimmer` },
-    { name: "RESTAURANT", href: `/${locale}/restaurant` },
-    { name: "GALERIE", href: `/${locale}/galerie` },
-    { name: "PARTNER", href: `/${locale}/partner` },
-    { name: "KONTAKT", href: `/${locale}/kontakt` },
+    { name: t("home"), href: `/${locale}` },
+    { name: t("rooms"), href: `/${locale}/zimmer` },
+    { name: t("restaurant"), href: `/${locale}/restaurant` },
+    { name: t("gallery"), href: `/${locale}/galerie` },
+    { name: t("partners"), href: `/${locale}/partner` },
+    { name: t("contact"), href: `/${locale}/kontakt` },
   ];
 
   return (
@@ -120,7 +121,7 @@ const Navbar: React.FC = () => {
           {/* Hotel name link - visible only below 1024px */}
           <div className="lg:hidden">
             <Link
-              href="/"
+              href={`/${locale}`}
               className="text-base font-bold text-primary-color uppercase"
               onClick={closeMenu}
             >
@@ -151,7 +152,7 @@ const Navbar: React.FC = () => {
           {/* Book buttons */}
           <div className="hidden lg:flex space-x-1 absolute right-10 bottom-0 translate-y-1/2 gap-3">
             <BookButton
-              href="/restaurant"
+              href={`/${locale}/restaurant`}
               icon={
                 <div className="w-24 h-24">
                   {" "}

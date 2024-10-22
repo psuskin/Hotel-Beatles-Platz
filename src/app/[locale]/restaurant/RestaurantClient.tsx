@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { useTranslations } from "next-intl";
 // import MenuButtons from "@/components/Restaurent/MenuButtons";
 // import RestaurantIntro from "@/components/Restaurent/RestaurantIntro";
 // import FoodSection from "@/components/Restaurent/FoodSection";
@@ -20,7 +21,7 @@ const menuItems = [
 ];
 
 const RestaurantClient = () => {
-  
+  const t = useTranslations("restaurant");
 
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
@@ -62,7 +63,7 @@ const RestaurantClient = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{ y: titleY }}
           >
-            Coming Soon.....
+            {t("title")}
           </motion.h1>
           {/* <motion.p
             className="text-xl md:text-2xl mb-8"

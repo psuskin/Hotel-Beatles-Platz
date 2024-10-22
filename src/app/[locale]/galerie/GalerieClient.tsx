@@ -3,6 +3,7 @@
 import React from "react";
 import SliderModal from "@/components/SliderModal";
 import SubHeader from "@/components/SubHeader";
+import { useTranslations } from "next-intl";
 
 type Item = {
   id: string;
@@ -133,14 +134,14 @@ const items: Item[] = [
 ];
 
 const GalerieClient = () => {
+  const t = useTranslations("gallery");
   return (
     <div className="relative">
       <div className="sticky top-0 z-0">
         <SubHeader
           // title="Our Hotel Gallery"
-          title="Unsere Hotelgalerie"
-          // description="Explore the beauty and elegance of our hotel through our carefully curated image gallery."
-          description="Überzeugen Sie sich von unserem Hotel durch unsere sorgfältig zusammengestellte Bildergallerie."
+          title={t("title")}
+          description={t("description")}
           imageSrc="/images/hotelCard.jpg"
         />
       </div>

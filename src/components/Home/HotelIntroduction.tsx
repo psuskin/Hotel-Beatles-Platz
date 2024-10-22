@@ -10,8 +10,10 @@ import { fetchWeather } from "@/utils/fetchWeather";
 import Button from "../Buttons/Button";
 import BookingPopUp from "../BookingPopUp";
 import Atmosphere from "../Atmosphere";
+import { useTranslations } from "next-intl";
 
 const HotelIntroduction: React.FC = () => {
+  const t = useTranslations("hotelIntroduction");
   const options: EmblaOptionsType = { loop: true };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -83,7 +85,7 @@ const HotelIntroduction: React.FC = () => {
                 textShadow: "2px 2px 2px rgba(0,0,0,0.5)",
               }}
             >
-              HOTEL AM BEATLES-PLATZ
+              {t("hotelName")}
             </h1>
 
             <div className="overflow-hidden rounded-lg" ref={emblaRef}>
@@ -105,10 +107,11 @@ const HotelIntroduction: React.FC = () => {
               {images.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${currentSlide === index
-                    ? "bg-primary-color w-8"
-                    : "bg-neutral-200"
-                    }`}
+                  className={`w-2 h-2 rounded-full mx-1 transition-all duration-500 ${
+                    currentSlide === index
+                      ? "bg-primary-color w-8"
+                      : "bg-neutral-200"
+                  }`}
                   onClick={() => emblaApi?.scrollTo(index)}
                 />
               ))}
@@ -124,34 +127,32 @@ const HotelIntroduction: React.FC = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-semibold mb-8 text-primary-color">
-              Willkommen im Hotel am Beatles-Platz
+              {t("welcome")}
             </h2>
             <p className="text-lg mb-8 leading-relaxed">
-              Das Hotel am Beatles-Platz liegt im Herzen Hamburgs, nur wenige
+              {t("description")}
+              {/* Das Hotel am Beatles-Platz liegt im Herzen Hamburgs, nur wenige
               Gehminuten von der berühmten Reeperbahn und dem Hafen entfernt.
               Unser Haus bietet eine perfekte Mischung aus modernem Komfort und
-              hanseatischem Charme.
+              hanseatischem Charme. */}
             </p>
             <div className="grid grid-cols-2 gap-6 mb-10 text-primary-color">
-              <InfoItem
-                icon={<Bed className="w-6 h-6" />}
-                text="53 luxuriöse Zimmer"
-              />
+              <InfoItem icon={<Bed className="w-6 h-6" />} text={t("rooms")} />
               <InfoItem
                 icon={<UtensilsCrossed className="w-6 h-6" />}
-                text="Gourmet-Restaurant (Coming Soon)"
+                text={t("restaurant")}
               />
               <InfoItem
                 icon={<GlassWater className="w-6 h-6" />}
-                text="Rooftop-Bar mit Ausblick (Coming Soon)"
+                text={t("rooftopBar")}
               />
               <InfoItem
                 icon={<Car className="w-6 h-6" />}
-                text="Garage in der Nähe"
+                text={t("parking")}
               />
             </div>
             <Button
-              text="Jetzt buchen"
+              text={t("bookNow")}
               className="text-base md:text-lg"
               onClick={() => setIsBookingOpen(true)}
             />

@@ -9,6 +9,200 @@
     "companyAddressTitle": "UNTERNEHMENSADRESSE",
     "companyName": "Polat Hotelbetriebsgesellschaft mbH",
     "companyAddress": "Reeperbahn 117, 20359 Hamburg, Deutschland",
-    "experienceDescription": "Erleben Sie die Magie von Hamburg im Herzen von St. Pauli. Ihr Aufenthalt im Hotel am Beatles-Platz ist mehr als nur eine Unterkunft; es ist ein Eintauchen in die lebendige Kultur und die reiche Geschichte dieses ikonischen Viertels."
+    "experienceDescription": "Erleben Sie die Magie von Hamburg im Herzen von St. Pauli. Ihr Aufenthalt im Hotel am Beatles-Platz ist mehr als nur eine Unterkunft; es ist ein Eintauchen in die lebendige Kultur und die reiche Geschichte dieses ikonischen Viertels.",
+    "formTitle": "Kontaktieren Sie uns",
+    "firstName": "Vorname",
+    "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+    "lastName": "Nachname",
+    "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+    "emailAddress": "E-Mail-Adresse",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "phoneNumber": "Telefonnummer",
+    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+    "subject": "Betreff",
+    "subjectOptions": {
+      "generally": "Allgemeine Anfrage",
+      "roomReservation": "Zimmerreservierung",
+      "reportProblem": "Problem melden",
+      "press": "Presse"
+    },
+    "message": "Ihre Nachricht",
+    "messagePlaceholder": "Geben Sie hier Ihre Nachricht ein",
+    "consentText": "Ich erteile meine jederzeit widerrufliche Einwilligung, von Hotel am Beatles-Platz Polat Hotelbetriebsgesellschaft mbH per E-Mail angeschrieben zu werden. Bitte beachten Sie unsere Datenschutzerklärung.",
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+    "sending": "Wird gesendet...",
+    "sendMessage": "Nachricht senden"
+  },
+  "navbar": {
+    "home": "STARTSEITE",
+    "rooms": "ZIMMER",
+    "restaurant": "RESTAURANT",
+    "gallery": "GALERIE",
+    "partners": "PARTNER",
+    "contact": "KONTAKT",
+    "book": "BUCHEN"
+  },
+  "partner": {
+    "title": "Unsere Partner",
+    "description": "Zusammenarbeit zur Bereitstellung außergewöhnlichen Mehrwerts",
+    "kiezjungs": "Geführte Touren durch St. Pauli, Hamburgs lebendigen Stadtteil.",
+    "hamburgCard": "Touristenrabattkarte, die Ersparnisse bei Hamburger Attraktionen und öffentlichen Verkehrsmitteln bietet.",
+    "rituals": "Luxuriöse Home- und Körperkosmetik, inspiriert von alten Traditionen.",
+    "beurer": "Gesundheits- und Wohlfühlprodukte, einschließlich medizinischer Geräte und Körperpflege.",
+    "rojeeDesign": "Innovative, hochwertige digitale und Druckdesign-Dienstleistungen.",
+    "zurRitze": "Ikone der Bar und des Boxgyms im Herzen des Hamburger Stadtteils St. Pauli."
+  },
+  "gallery": {
+    "title": "Unsere Hotelgalerie",
+    "description": "Überzeugen Sie sich von unserem Hotel durch unsere sorgfältig zusammengestellte Bildergallerie."
+  },
+  "restaurant": {
+    "title": "Kommt bald..."
+  },
+  "rooms": {
+    "title": "Unsere Zimmer",
+    "description": "Erleben Sie Komfort und Luxus in unseren wunderbar ausgestatteten Zimmern",
+    "rooms": "ZIMMER",
+    "beds": "BETTEN",
+    "guests": "GÄSTE",
+    "categories": "KATEGORIEN",
+    "roomSelection": "Unsere Zimmerauswahl",
+    "roomBenefits": "Zimmer-Vorteile",
+    "roomBenefitsDescription": "Erleben Sie Komfort und Luxus mit unseren sorgfältig ausgewählten Zimmerausstattungen.",
+    "wifiName": "Kostenloses WLAN",
+    "wifiDescription": "freies Surfen",
+    "minibarName": "MINI-BAR",
+    "minibarDescription": "eiskalte Getränke",
+    "acName": "KLIMAANLAGE",
+    "acDescription": "individuell steuerbar",
+    "lockerName": "SPIND",
+    "lockerDescription": "für Ihre Wertsachen",
+    "classicDescription": "Das modern designte Classic-Zimmer, ist perfekt für einen bequemen Aufenthalt zu zweit. Mit insgesamt 14m² bietet dieses Zimmer großen Komfort.",
+    "comfortDescription": "Die Kategorie „Comfort“ ist mit ca. 16m² etwas geräumiger als das Classic-Zimmer und bietet im Comfort+ Zimmer auch Platz für bis zu insgesamt drei Gäste.",
+    "comfortPlusDescription": "Das modern designte Comfort+-Zimmer ist perfekt für einen bequemen Aufenthalt zu dritt. Mit insgesamt 18m² bietet dieses Zimmer großen Komfort.",
+    "premiumDescription": "Das Premium-Zimmer bietet mit einem King-Size Bett den perfekten Komfort für Ihren Aufenthalt. Das Sofa besitzt eine integrierte Matratze und kann für einen weiteren Gast genutzt werden.",
+    "freeWifi": "Kostenloses WLAN",
+    "minibar": "MINI-BAR",
+    "airConditioning": "KLIMAANLAGE",
+    "locker": "SPIND",
+    "twoGuests": "2 Gäste",
+    "threeGuests": "3 Gäste"
+  },
+  "hotelIntroduction": {
+    "hotelName": "HOTEL AM BEATLES-PLATZ",
+    "welcome": "Willkommen im Hotel am Beatles-Platz",
+    "description": "Das Hotel am Beatles-Platz liegt im Herzen Hamburgs, nur wenige Gehminuten von der berühmten Reeperbahn und dem Hafen entfernt. Unser Haus bietet eine perfekte Mischung aus modernem Komfort und hanseatischem Charme.",
+    "rooms": "53 luxuriöse Zimmer",
+    "restaurant": "Gourmet-Restaurant (Coming Soon)",
+    "rooftopBar": "Rooftop-Bar mit Ausblick (Coming Soon)",
+    "parking": "Garage in der Nähe",
+    "bookNow": "Jetzt buchen"
+  },
+  "atmosphere": {
+    "location": "Lage",
+    "locationValue": "20359 Hamburg – Germany",
+    "phone": "Telefon",
+    "phoneValue": "+49 40 181 283 811",
+    "localTime": "Ortszeit",
+    "currentWeather": "Aktuelles Wetter",
+    "email": "Email",
+    "emailValue": "info@hotelambeatlesplatz.de",
+    "pdf": "PDF",
+    "guestFolder": "Gästemappe",
+    "link": "Link",
+    "attractions": "Sehenswürdigkeiten",
+    "elegantAndWarm": "Elegant und Warm",
+    "atmosphere": "ATMOSPHÄRE",
+    "atmosphereDescription": "Nach einem ereignisreichen Tag in der pulsierenden Stadt begrüßen wir Sie in einer lichtdurchfluteten, geräumigen Lobby. Die warmen und modernen Farben laden zum Verweilen ein und bieten Ihnen die Möglichkeit, sich zu entspannen und den Tag Revue passieren zu lassen. Unsere Zimmer sind modern und stilvoll eingerichtet und bieten Ihnen den perfekten Rückzugsort, um neue Energie zu tanken.",
+    "hotelLobby": "Hotel Lobby 1",
+    "barCharlotte": "Bar Charlotte",
+    "befineSportsSpa": "Befine Sports & Spa",
+    "luxuriousRoom": "Luxuriöses Zimmer"
+  },
+  "restaurantBar": {
+    "restaurantBarTitle": "HOTEL AM BEATLES-PLATZ RESTAURANT & BAR",
+    "restaurantDescription": "Das zukünftige HOTEL AM BEATLES-PLATZ Restaurant wird zu den angesagten Locations in Hamburg zählen und sowohl Hotelgäste als auch Hamburger*innen gleichermaßen begeistern. Es wird in den Gemäuern einer ehemaligen Eisengießerei entstehen. Hinweise auf seine historische Vergangenheit werden im Restaurant an zahlreichen Orten, in den Wänden und in den erhaltenen baulichen Strukturen zu finden sein.",
+    "kitchenTeamDescription": "Das zukünftige Küchenteam wird Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und Fleischgerichten und Süßem aus der eigenen Pâtisserie verwöhnen.",
+    "sushiRestaurantTitle": "SUSHI-RESTAURANT",
+    "sushiRestaurantSubtitle": "IM HERZEN ST. PAULIS",
+    "cocktailBarTitle": "COCKTAIL BAR",
+    "cocktailBarSubtitle": "EINZIGARTIGE MIXOLOGIE",
+    "loungeTitle": "GEMÜTLICHE LOUNGE",
+    "loungeSubtitle": "FÜR ENTSPANNTE ABENDE"
+  },
+  "whiteSection": {
+    "modern": "MODERN.",
+    "newTimeless": "NEU. ZEITLOS.",
+    "welcome": "WILLKOMMEN BEIM HOTEL AM BEATLES-PLATZ",
+    "description": "Nach einer 5 jährigen Bauphase haben wir unsere Türen als 4-Sterne Superior Hotel in der lebendigsten Umgebung Hamburg&apos;s: St. Pauli eröffnet. Mit insgesamt 53 Zimmern und drei verschiedenen Zimmerkategorien, bieten wir unseren Gästen eine zeitlose Unterkunft. Genießen Sie hochklassigen Komfort während Ihrer Städtereise und machen Sie Ihren Aufenthalt in der schönen Hansestadt Hamburg unvergesslich sowie einzigartig.",
+    "beatlesPlatz": "BEATLES-PLATZ"
+  },
+  "footer": {
+    "hotelName": "Hotel am Beatles-Platz",
+    "slogan": "Modern. Neu. Zeitlos.",
+    "rooms": "Zimmer",
+    "dining": "Restaurant",
+    "events": "Veranstaltungen",
+    "contact": "Kontakt",
+    "copyright": "© {year} Hotel am Beatles-Platz. Alle Rechte vorbehalten.",
+    "impressum": "Impressum"
+  },
+  "featuresSection": {
+    "roomTypes": {
+      "classic": {
+        "title": "CLASSIC",
+        "description": "Schlafen Sie im großen King-Size Bett und starten Sie erholt in den neuen Tag. Für Gäste, die etwas mehr Freiraum benötigen, ist dieses Zimmer ideal geeignet. Diese Kategorie beinhaltet unter anderem auch Zimmer für bis zu drei Personen."
+      },
+      "comfort": {
+        "title": "COMFORT",
+        "description": "Erleben Sie gesteigerten Komfort in unseren geräumigen Comfort-Zimmern. Mit ca. 16m² bieten diese Zimmer mehr Platz als unsere Classic-Kategorie und sind perfekt für einen erholsamen Aufenthalt."
+      },
+      "comfortplus": {
+        "title": "COMFORT PLUS",
+        "description": "Das modern designte Comfort+-Zimmer ist perfekt für einen bequemen Aufenthalt zu dritt. Mit insgesamt 18m² bietet dieses Zimmer großen Komfort und zusätzliche Annehmlichkeiten."
+      },
+      "premium": {
+        "title": "PREMIUM",
+        "description": "Genießen Sie Luxus in unseren Premium-Zimmern. Mit einem King-Size-Bett und einem funktionalen Sofa, das in eine zusätzliche Schlafgelegenheit umgewandelt werden kann, bieten diese Zimmer den ultimativen Komfort für Ihren Aufenthalt."
+      }
+    },
+    "occupancy": {
+      "2 Guests": "2 Gäste",
+      "3 Guests": "3 Gäste"
+    },
+    "amenitiesTitle": "Ausstattung",
+    "amenities": {
+      "free_wi-fi": "Kostenloses WLAN",
+      "air_conditioning": "Klimaanlage",
+      "safe": "Safe",
+      "mini-bar": "Minibar"
+    },
+    "price": "€{price} / Nacht",
+    "bookNow": "Jetzt buchen"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Entschuldigung, wir konnten die Seite",
+    "suggestion": "nicht finden. Vielleicht können wir Ihnen mit etwas anderem behilflich sein?",
+    "rooms": "Unsere Zimmer",
+    "restaurant": "Restaurant",
+    "services": "Unsere Services",
+    "contact": "Kontakt",
+    "backToHome": "Zurück zur Startseite"
+  },
+
+  "impressum": {
+    "title": "Impressum",
+    "hotelName": "Hotel am Beatlesplatz",
+    "companyName": "Polat Hotelbetriebsgesellschaft mbH Reeperbahn 117",
+    "address": "20359 Hamburg",
+    "manager": "Geschäftsführer: Fatih Polat",
+    "registrationCourt": "Registergericht: Amtsgericht Hamburg",
+    "registrationNumber": "Registernummer: HRB",
+    "vatId": "USt-ID: DE",
+    "disclaimer": {
+      "title": "HAFTUNGSAUSSCHLUSS:",
+      "content": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte und die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Auch wenn wir davon ausgehen, dass die von uns gegebenen Informationen zutreffend sind, können sie dennoch Fehler oder Ungenauigkeiten enthalten. Der Inhalt dieser Website unterliegt dem Schutz des Urheberrechts. Jegliche Vervielfältigung, Verbreitung oder öffentliche Wiedergabe, auch von Teilen ist ohne unsere ausdrückliche Einwilligung ist verboten. Die inhaltliche Nennung von Marken- und Produktnamen sowie Logos dient ausschließlich Identifikationszwecken. Alle Rechte an den in diesen Seiten genannten Marken- und Produktnamen, gezeigten Logos und Bildern liegen bei deren Eigentümern. Wer mit der Nennung von Namen nicht einverstanden ist oder seiner Urheberrechte verletzt sieht, möge sich bitte zunächst bei uns per Email melden. Das Entsprechende wird dann umgehend entfernt."
+    }
   }
 }

@@ -3,6 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const images1 = [
   "/images/outSitting.jpg",
@@ -47,6 +48,7 @@ const ImageColumn: React.FC<{ images: string[]; direction: "up" | "down" }> = ({
 };
 
 export default function WhiteSection() {
+  const t = useTranslations("whiteSection");
   const controls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -93,26 +95,28 @@ export default function WhiteSection() {
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight"
             variants={itemVariants}
           >
-            <span className="text-primary-color">MODERN.</span> <br /> NEU.
-            ZEITLOS.
+            <span className="text-primary-color">{t("modern")}</span> <br />
+            {t("newTimeless")}
           </motion.h2>
           <motion.h3
             className="text-lg sm:text-xl text-gray-400 mb-6 sm:mb-8"
             variants={itemVariants}
           >
-            WILLKOMMEN BEIM HOTEL AM BEATLES-PLATZ
+            {/* WILLKOMMEN BEIM HOTEL AM BEATLES-PLATZ */}
+            {t("welcome")}
           </motion.h3>
           <motion.p
             className="text-gray-700 mb-6 sm:mb-8 leading-relaxed max-w-xl text-sm sm:text-base"
             variants={itemVariants}
           >
-            Nach einer 5 jährigen Bauphase haben wir unsere Türen als 4-Sterne
+            {/* Nach einer 5 jährigen Bauphase haben wir unsere Türen als 4-Sterne
             Superior Hotel in der lebendigsten Umgebung Hamburg's: St. Pauli
             eröffnet. Mit insgesamt 53 Zimmern und drei verschiedenen
             Zimmerkategorien, bieten wir unseren Gästen eine zeitlose
             Unterkunft. Genießen Sie hochklassigen Komfort während Ihrer
             Städtereise und machen Sie Ihren Aufenthalt in der schönen
-            Hansestadt Hamburg unvergesslich sowie einzigartig.
+            Hansestadt Hamburg unvergesslich sowie einzigartig. */}
+            {t("description")}
           </motion.p>
           {/* <button className="bg-primary-color text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-secondary-color transition duration-300 transform text-sm sm:text-base">
             MEHR ERFAHREN
@@ -133,7 +137,8 @@ export default function WhiteSection() {
                 whiteSpace: "nowrap",
               }}
             >
-              BEATLES-PLATZ
+              {/* BEATLES-PLATZ */}
+              {t("beatlesPlatz")}
             </h2>
           </motion.div>
           <ImageColumn images={images1} direction="up" />

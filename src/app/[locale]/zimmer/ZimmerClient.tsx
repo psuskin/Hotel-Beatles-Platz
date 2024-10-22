@@ -7,7 +7,7 @@ import BookingPopUp from "@/components/BookingPopUp";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaFire, FaCocktail, FaSnowflake, FaKey } from "react-icons/fa";
 import { roomTypes } from "@/components/constant/roomTypes";
-
+import { useTranslations } from "next-intl";
 
 interface RoomBenefit {
   name: string;
@@ -15,29 +15,54 @@ interface RoomBenefit {
   icon: React.ReactElement;
 }
 
-const roomBenefits: RoomBenefit[] = [
-  {
-    // name: "UNDERFLOOR HEATING",
-    name: "Kostenloses WLAN",
-    // description: "with display control",
-    description: "freies Surfen",
-    icon: <FaFire />,
-  },
-  { name: "MINI-BAR", description: "eiskalte Getränke", icon: <FaCocktail /> },
-  {
-    // name: "AIR CONDITIONING",
-    name: "KLIMAANLAGE",
-    // description: "individually controllable",
-    description: "individuell steuerbar",
-    icon: <FaSnowflake />,
-  },
-  { name: "SPIND", description: "für Ihre Wertsachen", icon: <FaKey /> },
-];
+// const roomBenefits: RoomBenefit[] = [
+//   {
+//     // name: "UNDERFLOOR HEATING",
+//     name: "Kostenloses WLAN",
+//     // description: "with display control",
+//     description: "freies Surfen",
+//     icon: <FaFire />,
+//   },
+//   { name: "MINI-BAR", description: "eiskalte Getränke", icon: <FaCocktail /> },
+//   {
+//     // name: "AIR CONDITIONING",
+//     name: "KLIMAANLAGE",
+//     // description: "individually controllable",
+//     description: "individuell steuerbar",
+//     icon: <FaSnowflake />,
+//   },
+//   { name: "SPIND", description: "für Ihre Wertsachen", icon: <FaKey /> },
+// ];
 
 const ZimmerClient = () => {
+  const t = useTranslations("rooms");
+
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+
+  const roomBenefits: RoomBenefit[] = [
+    {
+      name: t("wifiName"),
+      description: t("wifiDescription"),
+      icon: <FaFire />,
+    },
+    {
+      name: t("minibarName"),
+      description: t("minibarDescription"),
+      icon: <FaCocktail />,
+    },
+    {
+      name: t("acName"),
+      description: t("acDescription"),
+      icon: <FaSnowflake />,
+    },
+    {
+      name: t("lockerName"),
+      description: t("lockerDescription"),
+      icon: <FaKey />,
+    },
+  ];
 
   const handleBookNow = () => {
     setIsBookingOpen(true);
@@ -52,9 +77,8 @@ const ZimmerClient = () => {
       <div className="relative">
         <div className="sticky top-0 z-0">
           <SubHeader
-            title="Unsere Zimmer"
-            // description="Experience comfort and luxury in our carefully designed rooms"
-            description="Erleben Sie Komfort und Luxus in unseren wunderbar ausgestatteten Zimmern"
+            title={t("title")}
+            description={t("description")}
             imageSrc="/images/zimmer_sub.jpg"
           />
         </div>
@@ -63,10 +87,10 @@ const ZimmerClient = () => {
             <div className="mb-16 border-b border-gray-800 pb-8">
               <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {[
-                  { label: "ROOMS", value: "53" },
-                  { label: "BEDS", value: "58" },
-                  { label: "GUESTS", value: "120" },
-                  { label: "CATEGORIES", value: "3" },
+                  { label: t("rooms"), value: "53" },
+                  { label: t("beds"), value: "58" },
+                  { label: t("guests"), value: "120" },
+                  { label: t("categories"), value: "3" },
                 ].map((item) => (
                   <div key={item.label} className="text-center">
                     <div className="border border-gray-800 p-4 rounded-lg">
@@ -88,7 +112,7 @@ const ZimmerClient = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Unsere Zimmerauswahl
+              {t("roomSelection")}
             </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 max-w-7xl mx-auto">
@@ -96,11 +120,11 @@ const ZimmerClient = () => {
                 <RoomCard
                   key={room.name}
                   name={room.name}
-                  description={room.description}
-                  features={room.features}
+                  description={t(room.descriptionKey)}
+                  features={room.featuresKeys.map((key) => t(key))}
                   color={room.color}
                   size={room.size}
-                  capacity={room.capacity}
+                  capacity={t(room.capacityKey)}
                   onBookNow={handleBookNow}
                 />
               ))}
@@ -116,12 +140,10 @@ const ZimmerClient = () => {
       >
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-light text-center mb-12 text-black">
-            Zimmer-Vorteile
+            {t("roomBenefits")}
           </h2>
           <p className="text-center text-black mb-16 max-w-2xl mx-auto font-light text-lg leading-relaxed">
-            {/* Experience comfort and luxury with our carefully curated room
-            amenities. */}
-            Erleben Sie Komfort und Luxus mit unseren sorgfältig ausgewählten Zimmerausstattungen.
+            {t("roomBenefitsDescription")}
           </p>
           <div className="flex flex-wrap justify-center gap-8">
             {roomBenefits.map((benefit, index) => (
