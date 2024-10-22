@@ -107,7 +107,7 @@ export default function WhiteSection() {
             variants={itemVariants}
           >
             Nach einer 5 jährigen Bauphase haben wir unsere Türen als 4-Sterne
-            Superior Hotel in der lebendigsten Umgebung Hamburg's: St. Pauli
+            Superior Hotel in der lebendigsten Umgebung Hamburgs: St. Pauli
             eröffnet. Mit insgesamt 53 Zimmern und drei verschiedenen
             Zimmerkategorien, bieten wir unseren Gästen eine zeitlose
             Unterkunft. Genießen Sie hochklassigen Komfort während Ihrer
