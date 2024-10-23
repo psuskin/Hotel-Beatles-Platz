@@ -2,6 +2,20 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Send } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useFormspark } from "@formspark/use-formspark";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+
+const FORMSPARK_FORM_ID = "6GdlX5fN2"; // TODO: Add your Formspark form ID here
 
 const SendIcon = () => (
   <svg
@@ -40,6 +54,10 @@ interface FormState {
 
 const ContactForm: React.FC = () => {
   const t = useTranslations("contact");
+  const [submit, submitting] = useFormspark({
+    formId: FORMSPARK_FORM_ID,
+  });
+
   const [formState, setFormState] = useState<FormState>({
     firstName: "",
     lastName: "",
@@ -49,169 +67,170 @@ const ContactForm: React.FC = () => {
     message: "",
     consent: false,
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
   const handleInputChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value, type } = e.target;
-    setFormState((prev) => ({
-      ...prev,
-      [name]:
-        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
-    }));
+    const { name, value } = e.target;
+    setFormState((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
     setIsSuccess(false);
 
-    try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formState),
-      });
+    if (!formState.consent) {
+      alert(t("consentRequired"));
+      return;
+    }
 
-      if (response.ok) {
-        setIsSuccess(true);
-        // Optionally reset the form here
-        setFormState({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          subject: "Generally",
-          message: "",
-          consent: false,
-        });
-      } else {
-        throw new Error("Failed to send email");
-      }
+    try {
+      await submit({
+        firstName: formState.firstName,
+        lastName: formState.lastName,
+        email: formState.email,
+        phone: formState.phone,
+        subject: formState.subject,
+        message: formState.message,
+        consent: formState.consent,
+      });
+      setIsSuccess(true);
+      setFormState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        subject: "Generally",
+        message: "",
+        consent: false,
+      });
     } catch (error) {
-      console.error("Error sending email:", error);
-      // Handle error (e.g., show error message to user)
-    } finally {
-      setIsSubmitting(false);
+      console.error("Error submitting form:", error);
+      alert(t("submissionError"));
     }
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 bg-gray-900 p-8 w-full">
-      <h2 className="text-2xl font-semibold mb-6 text-white">{t("formTitle")}</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-white">
+        {t("formTitle")}
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-gray-300 mb-1">
+        <div className="space-y-2">
+          <Label htmlFor="firstName" className="text-gray-300">
             {t("firstName")}
-          </label>
-          <input
-            type="text"
+          </Label>
+          <Input
             id="firstName"
             name="firstName"
             value={formState.firstName}
             onChange={handleInputChange}
             placeholder={t("firstNamePlaceholder")}
-            className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
+            className="h-12 bg-gray-700 text-white border-gray-600 focus:ring-2 focus:ring-[#E68945] focus:border-transparent"
             required
           />
         </div>
-        <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-gray-300 mb-1">
+        <div className="space-y-2">
+          <Label htmlFor="lastName" className="text-gray-300">
             {t("lastName")}
-          </label>
-          <input
-            type="text"
+          </Label>
+          <Input
             id="lastName"
             name="lastName"
             value={formState.lastName}
             onChange={handleInputChange}
             placeholder={t("lastNamePlaceholder")}
-            className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
+            className="h-12 bg-gray-700 text-white border-gray-600 focus:ring-2 focus:ring-[#E68945] focus:border-transparent"
             required
           />
         </div>
       </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+      <div className="space-y-2">
+        <Label htmlFor="email" className="text-gray-300">
           {t("emailAddress")}
-        </label>
-        <input
-          type="email"
+        </Label>
+        <Input
           id="email"
           name="email"
+          type="email"
           value={formState.email}
           onChange={handleInputChange}
           placeholder={t("emailPlaceholder")}
-          className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
+          className="h-12 bg-gray-700 text-white border-gray-600 focus:ring-2 focus:ring-[#E68945] focus:border-transparent"
           required
         />
       </div>
-      <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">
+      <div className="space-y-2">
+        <Label htmlFor="phone" className="text-gray-300">
           {t("phoneNumber")}
-        </label>
-        <input
-          type="tel"
+        </Label>
+        <Input
           id="phone"
           name="phone"
+          type="tel"
           value={formState.phone}
           onChange={handleInputChange}
           placeholder={t("phonePlaceholder")}
-          className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
+          className="h-12 bg-gray-700 text-white border-gray-600 focus:ring-2 focus:ring-[#E68945] focus:border-transparent"
           required
         />
       </div>
-      <div>
-        <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
+      <div className="space-y-2">
+        <Label htmlFor="subject" className="text-gray-300">
           {t("subject")}
-        </label>
-        <select
-          id="subject"
+        </Label>
+        <Select
           name="subject"
           value={formState.subject}
-          onChange={handleInputChange}
-          className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
+          onValueChange={(value) =>
+            setFormState((prev) => ({ ...prev, subject: value }))
+          }
         >
-          <option value="Generally">{t("subjectOptions.generally")}</option>
-          <option value="Room reservation">{t("subjectOptions.roomReservation")}</option>
-          <option value="Report a problem">{t("subjectOptions.reportProblem")}</option>
-          <option value="press">{t("subjectOptions.press")}</option>
-        </select>
+          <SelectTrigger className="h-12 bg-gray-700 text-white border-gray-600 focus:ring-2 focus:ring-[#E68945] focus:border-transparent">
+            <SelectValue placeholder={t("subject")} />
+          </SelectTrigger>
+          <SelectContent className="bg-gray-700 text-white border-gray-600">
+            <SelectItem value="Generally">
+              {t("subjectOptions.generally")}
+            </SelectItem>
+            <SelectItem value="Room reservation">
+              {t("subjectOptions.roomReservation")}
+            </SelectItem>
+            <SelectItem value="Report a problem">
+              {t("subjectOptions.reportProblem")}
+            </SelectItem>
+            <SelectItem value="press">{t("subjectOptions.press")}</SelectItem>
+          </SelectContent>
+        </Select>
       </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+      <div className="space-y-2">
+        <Label htmlFor="message" className="text-gray-300">
           {t("message")}
-        </label>
-        <textarea
+        </Label>
+        <Textarea
           id="message"
           name="message"
           value={formState.message}
           onChange={handleInputChange}
           placeholder={t("messagePlaceholder")}
-          rows={4}
-          className="w-full p-3 bg-gray-700 text-white rounded-md focus:ring-2 focus:ring-primary outline-none transition"
-          required
-        ></textarea>
-      </div>
-      <div className="flex items-center space-x-2">
-        <input
-          type="checkbox"
-          id="consent"
-          name="consent"
-          checked={formState.consent}
-          onChange={handleInputChange}
-          className="w-4 h-4 text-primary bg-gray-700 border-gray-600 rounded focus:ring-primary"
+          className="h-32 bg-gray-700 text-white border-gray-600 focus:ring-2 focus:ring-[#E68945] focus:border-transparent"
           required
         />
-        <label htmlFor="consent" className="text-sm text-gray-300">
+      </div>
+      <div className="flex items-center space-x-2">
+        <Checkbox
+          id="consent"
+          checked={formState.consent}
+          onCheckedChange={(checked) =>
+            setFormState((prev) => ({ ...prev, consent: checked as boolean }))
+          }
+          className="bg-gray-700 border-gray-600 text-[#E68945] data-[state=checked]:bg-[#E68945] data-[state=checked]:text-white"
+          required
+        />
+        <Label htmlFor="consent" className="text-sm text-gray-300">
           {t("consentText")}
-        </label>
+        </Label>
       </div>
       <AnimatePresence>
         {isSuccess && (
@@ -227,14 +246,14 @@ const ContactForm: React.FC = () => {
       </AnimatePresence>
       <button
         type="submit"
-        disabled={isSubmitting}
-        className="w-full p-4 bg-primary-color text-white rounded-md font-semibold flex items-center justify-center space-x-3 transition duration-300 ease-in-out hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-primary-color focus:ring-opacity-50 disabled:opacity-50"
+        disabled={submitting}
+        className="w-full p-4 bg-[#E68945] text-white rounded-md font-semibold flex items-center justify-center space-x-3 transition duration-300 ease-in-out hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-[#E68945] focus:ring-opacity-50 disabled:opacity-50"
       >
         <span className="text-lg">
-          {isSubmitting ? t("sending") : t("sendMessage")}
+          {submitting ? t("sending") : t("sendMessage")}
         </span>
         <AnimatePresence>
-          {!isSubmitting && (
+          {!submitting && (
             <motion.div
               key="sendIcon"
               initial={{ opacity: 1, scale: 1 }}

@@ -18,12 +18,12 @@ const ContactInfo = () => {
       </div>
       <div>
         <p className="mb-2">
-          <a href="mailto:info@hotelambeatlesplatz.de" className="text-blue-600 hover:underline">
+          <a href="mailto:info@hotelambeatlesplatz.de" className="text-primary-color hover:underline">
             info@hotelambeatlesplatz.de
           </a>
         </p>
         <p>
-          <a href="tel:+4940181283811" className="text-blue-600 hover:underline">
+          <a href="tel:+4940181283811" className="text-primary-color hover:underline">
             +49 40 181 283 811
           </a>
         </p>

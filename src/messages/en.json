@@ -12,13 +12,13 @@
     "experienceDescription": "Experience the magic of Hamburg from the heart of St. Pauli. Your stay at Hotel am Beatles-Platz is more than just accommodation; it's an immersion into the vibrant culture and rich history of this iconic neighborhood.",
     "formTitle": "Contact Us",
     "firstName": "First Name",
-    "firstNamePlaceholder": "Enter your first name",
+    "firstNamePlaceholder": "First name",
     "lastName": "Last Name",
-    "lastNamePlaceholder": "Enter your last name",
+    "lastNamePlaceholder": "Last name",
     "emailAddress": "Email Address",
-    "emailPlaceholder": "Enter your email address",
+    "emailPlaceholder": "Email address",
     "phoneNumber": "Phone Number",
-    "phonePlaceholder": "Enter your phone number",
+    "phonePlaceholder": "Phone number",
     "subject": "Subject",
     "subjectOptions": {
       "generally": "General Inquiry",
@@ -27,11 +27,13 @@
       "press": "Press"
     },
     "message": "Your Message",
-    "messagePlaceholder": "Enter your message here",
+    "messagePlaceholder": "Message here",
     "consentText": "I give my revocable consent to be contacted by Hotel am Beatles-Platz Polat Hotelbetriebsgesellschaft mbH via email. Please note our privacy policy.",
     "successMessage": "Your message has been sent successfully!",
     "sending": "Sending...",
-    "sendMessage": "Send Message"
+    "sendMessage": "Send Message",
+    "consentRequired": "Please accept the consent to proceed.",
+    "submissionError": "An error occurred while submitting the form. Please try again."
   },
   "navbar": {
     "home": "HOME",

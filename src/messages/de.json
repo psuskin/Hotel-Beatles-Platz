@@ -12,13 +12,13 @@
     "experienceDescription": "Erleben Sie die Magie von Hamburg im Herzen von St. Pauli. Ihr Aufenthalt im Hotel am Beatles-Platz ist mehr als nur eine Unterkunft; es ist ein Eintauchen in die lebendige Kultur und die reiche Geschichte dieses ikonischen Viertels.",
     "formTitle": "Kontaktieren Sie uns",
     "firstName": "Vorname",
-    "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+    "firstNamePlaceholder": "Vorname",
     "lastName": "Nachname",
-    "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+    "lastNamePlaceholder": "Nachname",
     "emailAddress": "E-Mail-Adresse",
-    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "emailPlaceholder": "E-Mail-Adresse",
     "phoneNumber": "Telefonnummer",
-    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+    "phonePlaceholder": "Telefonnummer",
     "subject": "Betreff",
     "subjectOptions": {
       "generally": "Allgemeine Anfrage",
@@ -27,11 +27,13 @@
       "press": "Presse"
     },
     "message": "Ihre Nachricht",
-    "messagePlaceholder": "Geben Sie hier Ihre Nachricht ein",
+    "messagePlaceholder": "Nachricht hier",
     "consentText": "Ich erteile meine jederzeit widerrufliche Einwilligung, von Hotel am Beatles-Platz Polat Hotelbetriebsgesellschaft mbH per E-Mail angeschrieben zu werden. Bitte beachten Sie unsere Datenschutzerklärung.",
     "successMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
     "sending": "Wird gesendet...",
-    "sendMessage": "Nachricht senden"
+    "sendMessage": "Nachricht senden",
+    "consentRequired": "Bitte akzeptieren Sie die Einwilligung, um fortzufahren.",
+    "submissionError": "Beim Absenden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
   },
   "navbar": {
     "home": "STARTSEITE",
