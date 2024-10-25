@@ -41,10 +41,10 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/events"
+                  href={`/${locale}/bar`}
                   className="hover:text-primary-color transition-colors"
                 >
-                  {t("events")}
+                  {t("bar")}
                 </Link>
               </li>
               <li>
@@ -53,6 +53,14 @@ const Footer = () => {
                   className="hover:text-primary-color transition-colors"
                 >
                   {t("contact")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/${locale}/jobs`}
+                  className="hover:text-primary-color transition-colors"
+                >
+                  {t("jobs")}
                 </Link>
               </li>
             </ul>

@@ -42,7 +42,8 @@
     "gallery": "GALERIE",
     "partners": "PARTNER",
     "contact": "KONTAKT",
-    "book": "BUCHEN"
+    "book": "BUCHEN",
+    "bar": "BAR"
   },
   "partner": {
     "title": "Unsere Partner",
@@ -59,6 +60,9 @@
     "description": "Überzeugen Sie sich von unserem Hotel durch unsere sorgfältig zusammengestellte Bildergallerie."
   },
   "restaurant": {
+    "title": "Kommt bald..."
+  },
+  "bar": {
     "title": "Kommt bald..."
   },
   "rooms": {
@@ -144,10 +148,11 @@
     "slogan": "Modern. Neu. Zeitlos.",
     "rooms": "Zimmer",
     "dining": "Restaurant",
-    "events": "Veranstaltungen",
+    "bar": "Bar",
     "contact": "Kontakt",
     "copyright": "© {year} Hotel am Beatles-Platz. Alle Rechte vorbehalten.",
-    "impressum": "Impressum"
+    "impressum": "Impressum",
+    "jobs": "Jobs"
   },
   "featuresSection": {
     "roomTypes": {
@@ -205,6 +210,32 @@
     "disclaimer": {
       "title": "HAFTUNGSAUSSCHLUSS:",
       "content": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte und die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Auch wenn wir davon ausgehen, dass die von uns gegebenen Informationen zutreffend sind, können sie dennoch Fehler oder Ungenauigkeiten enthalten. Der Inhalt dieser Website unterliegt dem Schutz des Urheberrechts. Jegliche Vervielfältigung, Verbreitung oder öffentliche Wiedergabe, auch von Teilen ist ohne unsere ausdrückliche Einwilligung ist verboten. Die inhaltliche Nennung von Marken- und Produktnamen sowie Logos dient ausschließlich Identifikationszwecken. Alle Rechte an den in diesen Seiten genannten Marken- und Produktnamen, gezeigten Logos und Bildern liegen bei deren Eigentümern. Wer mit der Nennung von Namen nicht einverstanden ist oder seiner Urheberrechte verletzt sieht, möge sich bitte zunächst bei uns per Email melden. Das Entsprechende wird dann umgehend entfernt."
+    }
+  },
+  "jobsHeader": {
+    "title": "Finden Sie Ihre nächste Chance",
+    "description": "Unsere offenen Stellen und unser Team erwarten Sie"
+  },
+  "jobs": {
+    "title": "Finden Sie Ihre nächste Chance",
+    "searchPlaceholder": "Jobs suchen",
+    "selectLocation": "Standort auswählen",
+    "allLocations": "Alle Standorte",
+    "showFilters": "Filter anzeigen",
+    "hideFilters": "Filter ausblenden",
+    "resetFilters": "Filter zurücksetzen",
+    "noJobsFound": "Keine Jobs gefunden",
+    "noJobsFoundDescription": "Wir konnten keine Jobs finden, die Ihren aktuellen Filtern entsprechen. Versuchen Sie, Ihre Suchkriterien anzupassen oder",
+    "resetAllFilters": "alle Filter zurücksetzen",
+    "type": "Typ",
+    "schedule": "Zeitplan",
+    "experienceLevel": "Erfahrungsstufe",
+    "all": "Alle",
+    "jobCard": {
+      "location": "Standort",
+      "salary": "Gehalt",
+      "perYear": "/Jahr",
+      "viewJob": "Job ansehen"
     }
   }
 }

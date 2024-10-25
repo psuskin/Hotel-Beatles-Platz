@@ -42,7 +42,8 @@
     "gallery": "GALLERY",
     "partners": "PARTNERS",
     "contact": "CONTACT",
-    "book": "BOOK"
+    "book": "BOOK",
+    "bar": "BAR"
   },
   "partner": {
     "title": "Our Partners",
@@ -59,6 +60,9 @@
     "description": "Explore the beauty and elegance of our hotel through our carefully curated image gallery."
   },
   "restaurant": {
+    "title": "Coming Soon..."
+  },
+  "bar": {
     "title": "Coming Soon..."
   },
   "rooms": {
@@ -144,10 +148,11 @@
     "slogan": "Modern. New. Timeless.",
     "rooms": "Rooms",
     "dining": "Dining",
-    "events": "Events",
+    "bar": "Bar",
     "contact": "Contact",
     "copyright": "© {year} Hotel am Beatles-Platz. All rights reserved.",
-    "impressum": "Imprint"
+    "impressum": "Imprint",
+    "jobs": "Jobs"
   },
   "featuresSection": {
     "roomTypes": {
@@ -204,6 +209,32 @@
     "disclaimer": {
       "title": "DISCLAIMER:",
       "content": "Despite careful content control, we assume no liability for the content and the content of external links. The operators of the linked pages are solely responsible for their content. Even if we assume that the information we provide is correct, it may still contain errors or inaccuracies. The content of this website is protected by copyright. Any reproduction, distribution or public display, even of parts, is prohibited without our express consent. The mention of brand and product names as well as logos is for identification purposes only. All rights to the brand and product names mentioned on these pages, logos and images shown belong to their owners. If anyone does not agree with the mention of names or sees their copyrights violated, please contact us first by email. The corresponding content will then be removed immediately."
+    }
+  },
+  "jobsHeader": {
+    "title": "Find Your Next Opportunity",
+    "description": "Explore our open positions and join our team"
+  },
+  "jobs": {
+    "title": "Find Your Next Opportunity",
+    "searchPlaceholder": "Search jobs",
+    "selectLocation": "Select Location",
+    "allLocations": "All Locations",
+    "showFilters": "Show Filters",
+    "hideFilters": "Hide Filters",
+    "resetFilters": "Reset Filters",
+    "noJobsFound": "No jobs found",
+    "noJobsFoundDescription": "We couldn't find any jobs matching your current filters. Try adjusting your search criteria or",
+    "resetAllFilters": "reset all filters",
+    "type": "Type",
+    "schedule": "Schedule",
+    "experienceLevel": "Experience Level",
+    "all": "All",
+    "jobCard": {
+      "location": "Location",
+      "salary": "Salary",
+      "perYear": "/year",
+      "viewJob": "View Job"
     }
   }
 }
