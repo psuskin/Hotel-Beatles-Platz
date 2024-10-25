@@ -153,7 +153,7 @@
     "roomTypes": {
       "classic": {
         "title": "CLASSIC",
-        "description": "Schlafen Sie im großen King-Size Bett und starten Sie erholt in den neuen Tag. Für Gäste, die etwas mehr Freiraum benötigen, ist dieses Zimmer ideal geeignet. Diese Kategorie beinhaltet unter anderem auch Zimmer für bis zu drei Personen."
+        "description": "Schlafen Sie im großen King-Size Bett und starten Sie erholt in den neuen Tag. Für Gäste, die etwas mehr Freiraum benötigen, ist dieses Zimmer ideal geeignet. Diese Kategorie beinhaltet unter anderem auch Zimmer für bis zu zwei Personen."
       },
       "comfort": {
         "title": "COMFORT",
@@ -192,7 +192,6 @@
     "contact": "Kontakt",
     "backToHome": "Zurück zur Startseite"
   },
-
   "impressum": {
     "title": "Impressum",
     "hotelName": "Hotel am Beatlesplatz",
