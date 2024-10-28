@@ -11,7 +11,7 @@ const JobClient = () => {
         <SubHeader
         title={t("title")}
         description={t("description")}
-        imageSrc="/images/wideView2.jpg"
+        imageSrc="/images/frontView.jpg"
         />
       <AllJobs />
     </>
