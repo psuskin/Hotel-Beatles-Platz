@@ -1,0 +1,1238 @@
+{
+    "en": {
+        "What is the hotel's address?": [
+            {
+                "text": "Hotel Address:\n\nHotel am Beatles-Platz, Nobistor 4-8, 22767 Hamburg",
+                "score": 0.2996311205560459
+            },
+            {
+                "text": "Hotel Contact Information:\n\nTel: 040 181283810, Email: info@hotelambeatlesplatz.de",
+                "score": 0.33450198785055074
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3473755623583951
+            }
+        ],
+        "What attractions and connections are nearby?": [
+            {
+                "text": "Nearby Attractions and Connections:\n\nDirect S-Bahn connection, Beatles Platz, Große Freiheit, 600 meters from the Fish Market, 1.1 km to Landungsbrücke",
+                "score": 0.32554572612953003
+            },
+            {
+                "text": "Nearby Attractions:\n\nFish Market, Elbphilharmonie, Lion King Musical, Olivia Jones, Pulverfass, Kiezjungs, Miniatur Wunderland, Hamburg Dungeon, Reeperbahn, Große Freiheit, harbor tours",
+                "score": 0.37661993796529203
+            },
+            {
+                "text": "Family-Friendly Nearby Activities:\n\nBäderland Festland (Holstenstraße 30, Hamburg)",
+                "score": 0.3860356536983158
+            }
+        ],
+        "How can I contact the hotel?": [
+            {
+                "text": "Hotel Contact Information:\n\nTel: 040 181283810, Email: info@hotelambeatlesplatz.de",
+                "score": 0.3058780088037069
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3405982302079312
+            },
+            {
+                "text": "Hotel Address:\n\nHotel am Beatles-Platz, Nobistor 4-8, 22767 Hamburg",
+                "score": 0.3512689410210481
+            }
+        ],
+        "Is there a website or social media presence?": [
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3177756119449687
+            },
+            {
+                "text": "Payment Methods:\n\nOnline booking: PayPal\nOn-site: Debit card, credit cards (no AMEX)",
+                "score": 0.42493025751377894
+            },
+            {
+                "text": "Hotel Contact Information:\n\nTel: 040 181283810, Email: info@hotelambeatlesplatz.de",
+                "score": 0.4451546459090162
+            }
+        ],
+        "What are the check-in and check-out times?": [
+            {
+                "text": "Check-in and Check-out Times:\n\nCheck-in: 3:00 PM, Check-out: 11:00 AM",
+                "score": 0.19322879941033716
+            },
+            {
+                "text": "Luggage Storage:\n\nLuggage storage available before check-in and after check-out",
+                "score": 0.34722747665887765
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.360421843749474
+            }
+        ],
+        "What category is the hotel in?": [
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.34938400480813697
+            },
+            {
+                "text": "Hotel Address:\n\nHotel am Beatles-Platz, Nobistor 4-8, 22767 Hamburg",
+                "score": 0.39673966123748355
+            },
+            {
+                "text": "Room Rates:\n\nPrice range varies, approximately €30 difference between categories (prices analyzed by Happy Hotel)",
+                "score": 0.404277874779087
+            }
+        ],
+        "What room categories are available?": [
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.2571503197179894
+            },
+            {
+                "text": "Special Room Decorations:\n\nRoom decoration available upon request",
+                "score": 0.35302597211599346
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3558645576759854
+            }
+        ],
+        "What amenities are provided in the rooms?": [
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.26625546212795415
+            },
+            {
+                "text": "Inclusive Services:\n\nMinibar included with Premium Rooms",
+                "score": 0.3362594532908934
+            },
+            {
+                "text": "Special Room Decorations:\n\nRoom decoration available upon request",
+                "score": 0.3375902856314306
+            }
+        ],
+        "Are there accessible rooms?": [
+            {
+                "text": "Accessible Rooms:\n\nNo accessible rooms, no special facilities for wheelchair users",
+                "score": 0.31143171810067605
+            },
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.3536385985609512
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3549884834404931
+            }
+        ],
+        "What views do the rooms offer?": [
+            {
+                "text": "Room Views:\n\nViews of the bunker, TV tower, Reeperbahn, or harbor",
+                "score": 0.29600513598602524
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3708532161660243
+            },
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.3888601155395084
+            }
+        ],
+        "Are extra beds or baby cots available?": [
+            {
+                "text": "Extra Beds or Baby Cots:\n\nNo extra beds or baby cots",
+                "score": 0.2861755835654781
+            },
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.35595063131933513
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.4026770915736399
+            }
+        ],
+        "What are the room rates?": [
+            {
+                "text": "Room Rates:\n\nPrice range varies, approximately €30 difference between categories (prices analyzed by Happy Hotel)",
+                "score": 0.3127585810442749
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.32004454164769663
+            },
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.32183941050110304
+            }
+        ],
+        "Are there any inclusive services?": [
+            {
+                "text": "Inclusive Services:\n\nMinibar included with Premium Rooms",
+                "score": 0.40744107064893537
+            },
+            {
+                "text": "Printing Service:\n\nPrinting service at reception for items like flight tickets, entrance tickets",
+                "score": 0.41612745341123447
+            },
+            {
+                "text": "Room Service Availability:\n\nRoom service is under consideration",
+                "score": 0.4168764052345075
+            }
+        ],
+        "What is the cancellation policy?": [
+            {
+                "text": "Cancellation Policy:\n\nIndividual bookings: Free cancellation up to one day before arrival, otherwise 90% of the rate\nGroup bookings: Free cancellation up to 6 weeks before arrival, with staggered cancellation options",
+                "score": 0.27833331121384497
+            },
+            {
+                "text": "Payment Methods:\n\nOnline booking: PayPal\nOn-site: Debit card, credit cards (no AMEX)",
+                "score": 0.45171472315221334
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.46296806827157666
+            }
+        ],
+        "Are there early booking discounts?": [
+            {
+                "text": "Early Booking Discounts:\n\nNo special early booking discounts",
+                "score": 0.3005914273438668
+            },
+            {
+                "text": "Cancellation Policy:\n\nIndividual bookings: Free cancellation up to one day before arrival, otherwise 90% of the rate\nGroup bookings: Free cancellation up to 6 weeks before arrival, with staggered cancellation options",
+                "score": 0.3467467487452481
+            },
+            {
+                "text": "Payment Methods:\n\nOnline booking: PayPal\nOn-site: Debit card, credit cards (no AMEX)",
+                "score": 0.3674442833846723
+            }
+        ],
+        "What payment methods are available?": [
+            {
+                "text": "Payment Methods:\n\nOnline booking: PayPal\nOn-site: Debit card, credit cards (no AMEX)",
+                "score": 0.27466954322567333
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.4328523581568316
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.441640482456657
+            }
+        ],
+        "Is the reception open 24/7?": [
+            {
+                "text": "Reception Hours:\n\n24-hour reception",
+                "score": 0.26092685390252596
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.39037116733213634
+            },
+            {
+                "text": "Breakfast Hours:\n\nMon – Thu: 7:00 AM - 10:00 AM, Fri – Sun: 8:00 AM - 11:00 AM (final hours to be confirmed)",
+                "score": 0.4006998728441297
+            }
+        ],
+        "Is there Wi-Fi?": [
+            {
+                "text": "Wi-Fi Availability:\n\nFree Wi-Fi",
+                "score": 0.28098328948368106
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3743545253268331
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.40631829285115445
+            }
+        ],
+        "What are the breakfast hours?": [
+            {
+                "text": "Breakfast Hours:\n\nMon – Thu: 7:00 AM - 10:00 AM, Fri – Sun: 8:00 AM - 11:00 AM (final hours to be confirmed)",
+                "score": 0.23116755168014835
+            },
+            {
+                "text": "Check-in and Check-out Times:\n\nCheck-in: 3:00 PM, Check-out: 11:00 AM",
+                "score": 0.3969727823578258
+            },
+            {
+                "text": "Reception Hours:\n\n24-hour reception",
+                "score": 0.4174512587415046
+            }
+        ],
+        "Is there room service?": [
+            {
+                "text": "Room Service Availability:\n\nRoom service is under consideration",
+                "score": 0.28810804581392796
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3092102477131442
+            },
+            {
+                "text": "Laundry Service:\n\nLaundry service available; laundry bag in the room",
+                "score": 0.3328809920490385
+            }
+        ],
+        "Is there a spa or fitness area?": [
+            {
+                "text": "Spa and Fitness Area:\n\nNo spa or fitness area",
+                "score": 0.29506210322332205
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.35621318797797225
+            },
+            {
+                "text": "Family-Friendly Nearby Activities:\n\nBäderland Festland (Holstenstraße 30, Hamburg)",
+                "score": 0.40286576993300705
+            }
+        ],
+        "Is laundry service available?": [
+            {
+                "text": "Laundry Service:\n\nLaundry service available; laundry bag in the room",
+                "score": 0.22840921691768284
+            },
+            {
+                "text": "Room Service Availability:\n\nRoom service is under consideration",
+                "score": 0.3543407274318218
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3838281529436183
+            }
+        ],
+        "Can I store my luggage at the hotel?": [
+            {
+                "text": "Luggage Storage:\n\nLuggage storage available before check-in and after check-out",
+                "score": 0.3762816842989936
+            },
+            {
+                "text": "Laundry Service:\n\nLaundry service available; laundry bag in the room",
+                "score": 0.40367713505328845
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.4115964659177409
+            }
+        ],
+        "Are there meeting rooms at the hotel?": [
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.36987670657494703
+            },
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.3899526534547541
+            },
+            {
+                "text": "Meeting Rooms:\n\nNo meeting rooms",
+                "score": 0.3985161431277203
+            }
+        ],
+        "What technical equipment is available?": [
+            {
+                "text": "Technical Equipment:\n\nNo technical equipment",
+                "score": 0.36952415711502257
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.44398236929686713
+            },
+            {
+                "text": "Safety Measures:\n\nVideo surveillance, access to floors only with room key",
+                "score": 0.4604798963532553
+            }
+        ],
+        "Can I print documents?": [
+            {
+                "text": "Printing Service:\n\nPrinting service at reception for items like flight tickets, entrance tickets",
+                "score": 0.3464126807528297
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.47054328052884914
+            },
+            {
+                "text": "Emergency Exits:\n\nEmergency exits available",
+                "score": 0.47498470697944417
+            }
+        ],
+        "Does the hotel provide catering?": [
+            {
+                "text": "Catering Services:\n\nCatering is in planning",
+                "score": 0.353198093764182
+            },
+            {
+                "text": "Hamburg Card Availability:\n\nHamburg Card available directly at the hotel",
+                "score": 0.40049707692789155
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.4030402956396658
+            }
+        ],
+        "Is there parking at the hotel?": [
+            {
+                "text": "Parking Availability:\n\nNo hotel parking; nearby garages and parking available",
+                "score": 0.302034075249975
+            },
+            {
+                "text": "Hotel Address:\n\nHotel am Beatles-Platz, Nobistor 4-8, 22767 Hamburg",
+                "score": 0.37717332068801
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.39644050215221166
+            }
+        ],
+        "Does the hotel offer a shuttle service?": [
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3955798417659327
+            },
+            {
+                "text": "Parking Availability:\n\nNo hotel parking; nearby garages and parking available",
+                "score": 0.3983882933050426
+            },
+            {
+                "text": "Hotel Contact Information:\n\nTel: 040 181283810, Email: info@hotelambeatlesplatz.de",
+                "score": 0.40530728989245174
+            }
+        ],
+        "Is there bicycle rental?": [
+            {
+                "text": "Scooter and Bicycle Rental Locations:\n\nScooter and bicycle rental available through the city of Hamburg",
+                "score": 0.3094382443559513
+            },
+            {
+                "text": "Bicycle Rental:\n\nNo bicycle rental at the hotel",
+                "score": 0.34863453589452326
+            },
+            {
+                "text": "Parking Availability:\n\nNo hotel parking; nearby garages and parking available",
+                "score": 0.43091549742838026
+            }
+        ],
+        "What about public transportation?": [
+            {
+                "text": "Public Transportation Options:\n\nS-Bahn Reeperbahn directly in front, St. Pauli U-Bahn 900 m away, nearby bus stops",
+                "score": 0.33350968064638237
+            },
+            {
+                "text": "Parking Availability:\n\nNo hotel parking; nearby garages and parking available",
+                "score": 0.39794685840237776
+            },
+            {
+                "text": "Nearby Attractions and Connections:\n\nDirect S-Bahn connection, Beatles Platz, Große Freiheit, 600 meters from the Fish Market, 1.1 km to Landungsbrücke",
+                "score": 0.42061987440400733
+            }
+        ],
+        "Are there activities for children?": [
+            {
+                "text": "Children’s Activities:\n\nBoard games available for borrowing",
+                "score": 0.3459141154200148
+            },
+            {
+                "text": "Family-Friendly Nearby Activities:\n\nBäderland Festland (Holstenstraße 30, Hamburg)",
+                "score": 0.3858259313245135
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.4301314498612964
+            }
+        ],
+        "Are pets allowed?": [
+            {
+                "text": "Pet Policy:\n\nNo pets allowed",
+                "score": 0.3250112330028869
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.41780857450467723
+            },
+            {
+                "text": "Extra Beds or Baby Cots:\n\nNo extra beds or baby cots",
+                "score": 0.42992998107970043
+            }
+        ],
+        "Are there family-friendly activities nearby?": [
+            {
+                "text": "Family-Friendly Nearby Activities:\n\nBäderland Festland (Holstenstraße 30, Hamburg)",
+                "score": 0.25539439532410635
+            },
+            {
+                "text": "Nearby Attractions:\n\nFish Market, Elbphilharmonie, Lion King Musical, Olivia Jones, Pulverfass, Kiezjungs, Miniatur Wunderland, Hamburg Dungeon, Reeperbahn, Große Freiheit, harbor tours",
+                "score": 0.3673362599729065
+            },
+            {
+                "text": "Children’s Activities:\n\nBoard games available for borrowing",
+                "score": 0.3787079528369745
+            }
+        ],
+        "What attractions are nearby?": [
+            {
+                "text": "Nearby Attractions:\n\nFish Market, Elbphilharmonie, Lion King Musical, Olivia Jones, Pulverfass, Kiezjungs, Miniatur Wunderland, Hamburg Dungeon, Reeperbahn, Große Freiheit, harbor tours",
+                "score": 0.3410268948777401
+            },
+            {
+                "text": "Family-Friendly Nearby Activities:\n\nBäderland Festland (Holstenstraße 30, Hamburg)",
+                "score": 0.3670264418198869
+            },
+            {
+                "text": "Nearby Attractions and Connections:\n\nDirect S-Bahn connection, Beatles Platz, Große Freiheit, 600 meters from the Fish Market, 1.1 km to Landungsbrücke",
+                "score": 0.3790568344826327
+            }
+        ],
+        "Is the Hamburg Card available at the hotel?": [
+            {
+                "text": "Hamburg Card Availability:\n\nHamburg Card available directly at the hotel",
+                "score": 0.1991655872034827
+            },
+            {
+                "text": "Hotel Address:\n\nHotel am Beatles-Platz, Nobistor 4-8, 22767 Hamburg",
+                "score": 0.3141984212321425
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3684760219355343
+            }
+        ],
+        "Which restaurants and bars are recommended?": [
+            {
+                "text": "Recommended Restaurants and Bars:\n\nNara Restaurant, planned rooftop bar 2025, Clouds Heaven, Cuneo Italian Restaurant",
+                "score": 0.2578778438588611
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.4184443056336768
+            },
+            {
+                "text": "Inclusive Services:\n\nMinibar included with Premium Rooms",
+                "score": 0.4402014700918516
+            }
+        ],
+        "Where can I rent scooters or bicycles?": [
+            {
+                "text": "Scooter and Bicycle Rental Locations:\n\nScooter and bicycle rental available through the city of Hamburg",
+                "score": 0.2479036897569314
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.42200054753487287
+            },
+            {
+                "text": "Bicycle Rental:\n\nNo bicycle rental at the hotel",
+                "score": 0.4248813657242425
+            }
+        ],
+        "Where is the nearest clinic?": [
+            {
+                "text": "Nearest Clinic:\n\nHelios Endo-Klinik, Holstenstraße 2",
+                "score": 0.2650828726128115
+            },
+            {
+                "text": "Family-Friendly Nearby Activities:\n\nBäderland Festland (Holstenstraße 30, Hamburg)",
+                "score": 0.43295476932547977
+            },
+            {
+                "text": "Parking Availability:\n\nNo hotel parking; nearby garages and parking available",
+                "score": 0.4434124679900217
+            }
+        ],
+        "What safety measures are in place at the hotel?": [
+            {
+                "text": "Safety Measures:\n\nVideo surveillance, access to floors only with room key",
+                "score": 0.33875056190292
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.36482488449339545
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.4104944551990029
+            }
+        ],
+        "Are there emergency exits?": [
+            {
+                "text": "Emergency Exits:\n\nEmergency exits available",
+                "score": 0.2771476375755417
+            },
+            {
+                "text": "Safety Measures:\n\nVideo surveillance, access to floors only with room key",
+                "score": 0.44128511065455317
+            },
+            {
+                "text": "Check-in and Check-out Times:\n\nCheck-in: 3:00 PM, Check-out: 11:00 AM",
+                "score": 0.4600756153311511
+            }
+        ],
+        "Are there special room decorations?": [
+            {
+                "text": "Special Room Decorations:\n\nRoom decoration available upon request",
+                "score": 0.26894224812221634
+            },
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.3775014806245046
+            },
+            {
+                "text": "Room Categories:\n\n33 Classic Double Rooms, 6 Comfort Double Rooms, 5 Comfort Plus Triple Rooms, 9 Premium Double Rooms (with sofa bed for additional bedding)",
+                "score": 0.38915271910183397
+            }
+        ],
+        "Are there special arrangements for events?": [
+            {
+                "text": "Event Arrangements:\n\nIn planning",
+                "score": 0.3297359602126397
+            },
+            {
+                "text": "Special Room Decorations:\n\nRoom decoration available upon request",
+                "score": 0.42094857463035984
+            },
+            {
+                "text": "Catering Services:\n\nCatering is in planning",
+                "score": 0.4437216364252807
+            }
+        ],
+        "Are there special events at the hotel?": [
+            {
+                "text": "Room Amenities:\n\nAir conditioning, underfloor heating, minibar, rain shower, Smart TV, safe, desk, Rituals products",
+                "score": 0.40372248095236035
+            },
+            {
+                "text": "Special Room Decorations:\n\nRoom decoration available upon request",
+                "score": 0.4109320273713191
+            },
+            {
+                "text": "Website and Social Media:\n\nWebsite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.4163444178244068
+            }
+        ]
+    },
+    "de": {
+        "Wie lautet die Adresse des Hotels?": [
+            {
+                "text": "Hoteladresse:\n\nHotel am Beatles-Platz, Nobistor 4-8, 22767 Hamburg",
+                "score": 0.3093821710963989
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.328976374843863
+            },
+            {
+                "text": "Hotelkontakt:\n\nTel: 040 181283810, E-Mail: info@hotelambeatlesplatz.de",
+                "score": 0.33312127857945584
+            }
+        ],
+        "Welche Sehenswürdigkeiten und Anbindungen gibt es in der Nähe?": [
+            {
+                "text": "Nahegelegene Attraktionen und Verbindungen:\n\nDirekte S-Bahn-Verbindung, Beatles Platz, Große Freiheit, 600 Meter zum Fischmarkt, 1,1 km bis Landungsbrücke",
+                "score": 0.29079140377554646
+            },
+            {
+                "text": "Nahegelegene Sehenswürdigkeiten:\n\nFischmarkt, Elbphilharmonie, König der Löwen Musical, Olivia Jones, Pulverfass, Kiezjungs, Miniatur Wunderland, Hamburg Dungeon, Reeperbahn, Große Freiheit, Hafenrundfahrten",
+                "score": 0.3461864729131088
+            },
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.3476342819382117
+            }
+        ],
+        "Wie kann ich das Hotel kontaktieren?": [
+            {
+                "text": "Hotelkontakt:\n\nTel: 040 181283810, E-Mail: info@hotelambeatlesplatz.de",
+                "score": 0.3085119499747579
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3164099926080962
+            },
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.33131844095288004
+            }
+        ],
+        "Gibt es eine Website oder Social-Media-Präsenz?": [
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.31027150402417863
+            },
+            {
+                "text": "Spa- und Fitnessbereich:\n\nKein Spa- oder Fitnessbereich",
+                "score": 0.3821995513509752
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.40540501796163125
+            }
+        ],
+        "Wann sind Check-in und Check-out Zeiten?": [
+            {
+                "text": "Check-in und Check-out Zeiten:\n\nCheck-in: 15:00 Uhr, Check-out: 11:00 Uhr",
+                "score": 0.197736087979116
+            },
+            {
+                "text": "Gepäckaufbewahrung:\n\nGepäckaufbewahrung vor Check-in und nach Check-out möglich",
+                "score": 0.3076745958496234
+            },
+            {
+                "text": "Frühstückszeiten:\n\nMo – Do: 07:00 - 10:00 Uhr, Fr – So: 08:00 - 11:00 Uhr (endgültige Zeiten noch zu bestätigen)",
+                "score": 0.3426818995913579
+            }
+        ],
+        "In welcher Hotelkategorie befindet sich das Hotel?": [
+            {
+                "text": "Zimmerkategorien:\n\n33 Klassische Doppelzimmer, 6 Komfort-Doppelzimmer, 5 Komfort Plus-Dreibettzimmer, 9 Premium-Doppelzimmer (mit Schlafsofa für zusätzliche Betten)",
+                "score": 0.30639458487249394
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.35573533358865983
+            },
+            {
+                "text": "Hotelkategorie:\n\n4,5-Sterne-Kategorie",
+                "score": 0.3566135471615057
+            }
+        ],
+        "Welche Zimmerkategorien gibt es?": [
+            {
+                "text": "Zimmerkategorien:\n\n33 Klassische Doppelzimmer, 6 Komfort-Doppelzimmer, 5 Komfort Plus-Dreibettzimmer, 9 Premium-Doppelzimmer (mit Schlafsofa für zusätzliche Betten)",
+                "score": 0.2538403447392487
+            },
+            {
+                "text": "Zimmerpreise:\n\nPreisspanne variiert, ca. €30 Unterschied zwischen den Kategorien (Preisanalyse durch Happy Hotel)",
+                "score": 0.33827904298584166
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.34559273284325437
+            }
+        ],
+        "Welche Ausstattung bieten die Zimmer?": [
+            {
+                "text": "Zimmerausstattung:\n\nKlimaanlage, Fußbodenheizung, Minibar, Regendusche, Smart-TV, Safe, Schreibtisch, Rituals-Produkte",
+                "score": 0.28865364397058774
+            },
+            {
+                "text": "Zimmerkategorien:\n\n33 Klassische Doppelzimmer, 6 Komfort-Doppelzimmer, 5 Komfort Plus-Dreibettzimmer, 9 Premium-Doppelzimmer (mit Schlafsofa für zusätzliche Betten)",
+                "score": 0.3029615243432256
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.30436587723768793
+            }
+        ],
+        "Gibt es barrierefreie Zimmer?": [
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.2411262825428672
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.3173470150378511
+            },
+            {
+                "text": "Zimmerkategorien:\n\n33 Klassische Doppelzimmer, 6 Komfort-Doppelzimmer, 5 Komfort Plus-Dreibettzimmer, 9 Premium-Doppelzimmer (mit Schlafsofa für zusätzliche Betten)",
+                "score": 0.32937064808532285
+            }
+        ],
+        "Welchen Ausblick bieten die Zimmer?": [
+            {
+                "text": "Zimmerausblick:\n\nBlick auf den Bunker, Fernsehturm, Reeperbahn oder Hafen",
+                "score": 0.28734405953077097
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.3037512799383026
+            },
+            {
+                "text": "Sicherheitsmaßnahmen:\n\nVideoüberwachung, Zugang zu den Etagen nur mit Zimmerkarte",
+                "score": 0.3129090209908944
+            }
+        ],
+        "Gibt es Zustellbetten oder Babybetten?": [
+            {
+                "text": "Zustellbetten oder Babybetten:\n\nKeine Zustellbetten oder Babybetten verfügbar",
+                "score": 0.23170151506328665
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.365902170779936
+            },
+            {
+                "text": "Zimmerkategorien:\n\n33 Klassische Doppelzimmer, 6 Komfort-Doppelzimmer, 5 Komfort Plus-Dreibettzimmer, 9 Premium-Doppelzimmer (mit Schlafsofa für zusätzliche Betten)",
+                "score": 0.3667922187036516
+            }
+        ],
+        "Was sind die Preise für die Zimmer?": [
+            {
+                "text": "Zimmerpreise:\n\nPreisspanne variiert, ca. €30 Unterschied zwischen den Kategorien (Preisanalyse durch Happy Hotel)",
+                "score": 0.29551759088394464
+            },
+            {
+                "text": "Zimmerkategorien:\n\n33 Klassische Doppelzimmer, 6 Komfort-Doppelzimmer, 5 Komfort Plus-Dreibettzimmer, 9 Premium-Doppelzimmer (mit Schlafsofa für zusätzliche Betten)",
+                "score": 0.30149178361312096
+            },
+            {
+                "text": "Zimmerausstattung:\n\nKlimaanlage, Fußbodenheizung, Minibar, Regendusche, Smart-TV, Safe, Schreibtisch, Rituals-Produkte",
+                "score": 0.33855114565519717
+            }
+        ],
+        "Gibt es besondere Inklusivleistungen?": [
+            {
+                "text": "Inklusive Leistungen:\n\nMinibar in Premium-Zimmern inbegriffen",
+                "score": 0.35078584969438015
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.3588574947769175
+            },
+            {
+                "text": "Technische Ausstattung:\n\nKeine technische Ausstattung",
+                "score": 0.4025842810441465
+            }
+        ],
+        "Wie sind die Stornierungsbedingungen?": [
+            {
+                "text": "Stornierungsbedingungen:\n\nEinzelbuchungen: Kostenlose Stornierung bis einen Tag vor Anreise, danach 90% des Preises\nGruppenbuchungen: Kostenlose Stornierung bis 6 Wochen vor Anreise, mit gestaffelten Stornierungsoptionen",
+                "score": 0.23717155622289038
+            },
+            {
+                "text": "Check-in und Check-out Zeiten:\n\nCheck-in: 15:00 Uhr, Check-out: 11:00 Uhr",
+                "score": 0.3964692211607481
+            },
+            {
+                "text": "Zahlungsmethoden:\n\nOnline-Buchung: PayPal\nVor Ort: EC-Karte, Kreditkarten (kein AMEX)",
+                "score": 0.40178652813939336
+            }
+        ],
+        "Gibt es Frühbucherrabatte?": [
+            {
+                "text": "Frühbucherrabatte:\n\nKeine speziellen Frühbucherrabatte",
+                "score": 0.29308449035859707
+            },
+            {
+                "text": "Stornierungsbedingungen:\n\nEinzelbuchungen: Kostenlose Stornierung bis einen Tag vor Anreise, danach 90% des Preises\nGruppenbuchungen: Kostenlose Stornierung bis 6 Wochen vor Anreise, mit gestaffelten Stornierungsoptionen",
+                "score": 0.36724945979432433
+            },
+            {
+                "text": "Zahlungsmethoden:\n\nOnline-Buchung: PayPal\nVor Ort: EC-Karte, Kreditkarten (kein AMEX)",
+                "score": 0.37870038441554194
+            }
+        ],
+        "Welche Zahlungsmethoden sind verfügbar?": [
+            {
+                "text": "Zahlungsmethoden:\n\nOnline-Buchung: PayPal\nVor Ort: EC-Karte, Kreditkarten (kein AMEX)",
+                "score": 0.2671584549784238
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.39509839626763243
+            },
+            {
+                "text": "Hamburg Card Verfügbarkeit:\n\nHamburg Card direkt im Hotel erhältlich",
+                "score": 0.39537056854794733
+            }
+        ],
+        "Ist die Rezeption durchgehend besetzt?": [
+            {
+                "text": "Rezeption Öffnungszeiten:\n\n24-Stunden-Rezeption",
+                "score": 0.35402146245254607
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.4051256450414917
+            },
+            {
+                "text": "Frühstückszeiten:\n\nMo – Do: 07:00 - 10:00 Uhr, Fr – So: 08:00 - 11:00 Uhr (endgültige Zeiten noch zu bestätigen)",
+                "score": 0.4085355337598099
+            }
+        ],
+        "Gibt es WLAN?": [
+            {
+                "text": "WLAN-Verfügbarkeit:\n\nKostenloses WLAN",
+                "score": 0.25867029437255984
+            },
+            {
+                "text": "Zimmerausstattung:\n\nKlimaanlage, Fußbodenheizung, Minibar, Regendusche, Smart-TV, Safe, Schreibtisch, Rituals-Produkte",
+                "score": 0.3525688361045628
+            },
+            {
+                "text": "Shuttle-Service:\n\nKein Shuttle-Service",
+                "score": 0.3618807609841002
+            }
+        ],
+        "Welche Frühstückszeiten gelten?": [
+            {
+                "text": "Frühstückszeiten:\n\nMo – Do: 07:00 - 10:00 Uhr, Fr – So: 08:00 - 11:00 Uhr (endgültige Zeiten noch zu bestätigen)",
+                "score": 0.2538314035199215
+            },
+            {
+                "text": "Check-in und Check-out Zeiten:\n\nCheck-in: 15:00 Uhr, Check-out: 11:00 Uhr",
+                "score": 0.377673865944619
+            },
+            {
+                "text": "Rezeption Öffnungszeiten:\n\n24-Stunden-Rezeption",
+                "score": 0.3978219431768495
+            }
+        ],
+        "Gibt es Zimmerservice?": [
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.22416993205592417
+            },
+            {
+                "text": "Wäschereiservice:\n\nWäschereiservice verfügbar; Wäschesack im Zimmer",
+                "score": 0.3238813606633119
+            },
+            {
+                "text": "Spezielle Zimmerdekorationen:\n\nZimmerdekoration auf Anfrage verfügbar",
+                "score": 0.33078270736529164
+            }
+        ],
+        "Gibt es einen Spa- oder Fitnessbereich?": [
+            {
+                "text": "Spa- und Fitnessbereich:\n\nKein Spa- oder Fitnessbereich",
+                "score": 0.24106506632322242
+            },
+            {
+                "text": "Zimmerausstattung:\n\nKlimaanlage, Fußbodenheizung, Minibar, Regendusche, Smart-TV, Safe, Schreibtisch, Rituals-Produkte",
+                "score": 0.33041158391835324
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.3568708679358696
+            }
+        ],
+        "Gibt es einen Wäscheservice?": [
+            {
+                "text": "Wäschereiservice:\n\nWäschereiservice verfügbar; Wäschesack im Zimmer",
+                "score": 0.2813669759303805
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.3185113731229654
+            },
+            {
+                "text": "Shuttle-Service:\n\nKein Shuttle-Service",
+                "score": 0.3636014246408714
+            }
+        ],
+        "Kann ich mein Gepäck im Hotel aufbewahren?": [
+            {
+                "text": "Gepäckaufbewahrung:\n\nGepäckaufbewahrung vor Check-in und nach Check-out möglich",
+                "score": 0.32830394080791336
+            },
+            {
+                "text": "Sicherheitsmaßnahmen:\n\nVideoüberwachung, Zugang zu den Etagen nur mit Zimmerkarte",
+                "score": 0.3947875115733958
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.3953667865882312
+            }
+        ],
+        "Gibt es Tagungsräume im Hotel?": [
+            {
+                "text": "Tagungsräume:\n\nKeine Tagungsräume",
+                "score": 0.34139548953247717
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3760008530289263
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.3806780557290673
+            }
+        ],
+        "Welche technische Ausstattung ist verfügbar?": [
+            {
+                "text": "Technische Ausstattung:\n\nKeine technische Ausstattung",
+                "score": 0.3005116690838252
+            },
+            {
+                "text": "Zimmerausstattung:\n\nKlimaanlage, Fußbodenheizung, Minibar, Regendusche, Smart-TV, Safe, Schreibtisch, Rituals-Produkte",
+                "score": 0.35791504883361136
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.3716015880942544
+            }
+        ],
+        "Kann ich Dokumente ausdrucken lassen?": [
+            {
+                "text": "Druckservice:\n\nDruckservice an der Rezeption für z.B. Flugtickets, Eintrittskarten",
+                "score": 0.35864205098492163
+            },
+            {
+                "text": "Notausgänge:\n\nNotausgänge vorhanden",
+                "score": 0.4178932590553033
+            },
+            {
+                "text": "Spezielle Zimmerdekorationen:\n\nZimmerdekoration auf Anfrage verfügbar",
+                "score": 0.43326344444163717
+            }
+        ],
+        "Bietet das Hotel Catering?": [
+            {
+                "text": "Catering-Services:\n\nCatering in Planung",
+                "score": 0.3094154284462042
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.3343980302846686
+            },
+            {
+                "text": "Hamburg Card Verfügbarkeit:\n\nHamburg Card direkt im Hotel erhältlich",
+                "score": 0.3505082035156568
+            }
+        ],
+        "Gibt es Parkplätze am Hotel?": [
+            {
+                "text": "Parkmöglichkeiten:\n\nKein Hotelparkplatz; nahegelegene Garagen und Parkplätze verfügbar",
+                "score": 0.2773696778482668
+            },
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.319655472351174
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3425880247264584
+            }
+        ],
+        "Bietet das Hotel einen Shuttle-Service an?": [
+            {
+                "text": "Shuttle-Service:\n\nKein Shuttle-Service",
+                "score": 0.32084077063385963
+            },
+            {
+                "text": "Zimmerservice-Verfügbarkeit:\n\nZimmerservice ist in Erwägung",
+                "score": 0.32189940657397836
+            },
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.32686187457006616
+            }
+        ],
+        "Gibt es einen Fahrradverleih?": [
+            {
+                "text": "Orte für Roller- und Fahrradverleih:\n\nRoller- und Fahrradverleih durch die Stadt Hamburg verfügbar",
+                "score": 0.3038746646536559
+            },
+            {
+                "text": "Fahrradverleih:\n\nKein Fahrradverleih im Hotel",
+                "score": 0.30823108659205456
+            },
+            {
+                "text": "Parkmöglichkeiten:\n\nKein Hotelparkplatz; nahegelegene Garagen und Parkplätze verfügbar",
+                "score": 0.39921965868011633
+            }
+        ],
+        "Wie sieht es mit öffentlichen Verkehrsmitteln aus?": [
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.36281449700307444
+            },
+            {
+                "text": "Parkmöglichkeiten:\n\nKein Hotelparkplatz; nahegelegene Garagen und Parkplätze verfügbar",
+                "score": 0.3976026760207094
+            },
+            {
+                "text": "Shuttle-Service:\n\nKein Shuttle-Service",
+                "score": 0.40449002154127206
+            }
+        ],
+        "Gibt es spezielle Aktivitäten für Kinder?": [
+            {
+                "text": "Aktivitäten für Kinder:\n\nBrettspiele zum Ausleihen verfügbar",
+                "score": 0.3481317767353945
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.4174694041727036
+            },
+            {
+                "text": "Veranstaltungsarrangements:\n\nIn Planung",
+                "score": 0.4221278312863744
+            }
+        ],
+        "Sind Haustiere erlaubt?": [
+            {
+                "text": "Haustierpolitik:\n\nKeine Haustiere erlaubt",
+                "score": 0.2890722636685121
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.39317941136254325
+            },
+            {
+                "text": "Sicherheitsmaßnahmen:\n\nVideoüberwachung, Zugang zu den Etagen nur mit Zimmerkarte",
+                "score": 0.39481549380318026
+            }
+        ],
+        "Gibt es familienfreundliche Aktivitäten in der Nähe?": [
+            {
+                "text": "Familienfreundliche Aktivitäten in der Nähe:\n\nBäderland Festland (Holstenstraße 30, Hamburg)",
+                "score": 0.28819339812844286
+            },
+            {
+                "text": "Nahegelegene Sehenswürdigkeiten:\n\nFischmarkt, Elbphilharmonie, König der Löwen Musical, Olivia Jones, Pulverfass, Kiezjungs, Miniatur Wunderland, Hamburg Dungeon, Reeperbahn, Große Freiheit, Hafenrundfahrten",
+                "score": 0.33288676818863855
+            },
+            {
+                "text": "Aktivitäten für Kinder:\n\nBrettspiele zum Ausleihen verfügbar",
+                "score": 0.3386933375737814
+            }
+        ],
+        "Welche Sehenswürdigkeiten befinden sich in der Nähe?": [
+            {
+                "text": "Nahegelegene Sehenswürdigkeiten:\n\nFischmarkt, Elbphilharmonie, König der Löwen Musical, Olivia Jones, Pulverfass, Kiezjungs, Miniatur Wunderland, Hamburg Dungeon, Reeperbahn, Große Freiheit, Hafenrundfahrten",
+                "score": 0.35988959099302953
+            },
+            {
+                "text": "Nahegelegene Attraktionen und Verbindungen:\n\nDirekte S-Bahn-Verbindung, Beatles Platz, Große Freiheit, 600 Meter zum Fischmarkt, 1,1 km bis Landungsbrücke",
+                "score": 0.3802503345225648
+            },
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.40835174959199244
+            }
+        ],
+        "Gibt es die Hamburg Card im Hotel?": [
+            {
+                "text": "Hamburg Card Verfügbarkeit:\n\nHamburg Card direkt im Hotel erhältlich",
+                "score": 0.21074799614238493
+            },
+            {
+                "text": "Hoteladresse:\n\nHotel am Beatles-Platz, Nobistor 4-8, 22767 Hamburg",
+                "score": 0.3241993881908477
+            },
+            {
+                "text": "Hotelkontakt:\n\nTel: 040 181283810, E-Mail: info@hotelambeatlesplatz.de",
+                "score": 0.38749486747966866
+            }
+        ],
+        "Welche Restaurants und Bars werden empfohlen?": [
+            {
+                "text": "Empfohlene Restaurants und Bars:\n\nNara Restaurant, geplante Rooftop-Bar 2025, Clouds Heaven, Cuneo italienisches Restaurant",
+                "score": 0.25216220678084145
+            },
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3825627762114189
+            },
+            {
+                "text": "Nahegelegene Sehenswürdigkeiten:\n\nFischmarkt, Elbphilharmonie, König der Löwen Musical, Olivia Jones, Pulverfass, Kiezjungs, Miniatur Wunderland, Hamburg Dungeon, Reeperbahn, Große Freiheit, Hafenrundfahrten",
+                "score": 0.39723802212687076
+            }
+        ],
+        "Wo kann man Roller oder Fahrräder mieten?": [
+            {
+                "text": "Orte für Roller- und Fahrradverleih:\n\nRoller- und Fahrradverleih durch die Stadt Hamburg verfügbar",
+                "score": 0.26673312824005735
+            },
+            {
+                "text": "Fahrradverleih:\n\nKein Fahrradverleih im Hotel",
+                "score": 0.3964320055223284
+            },
+            {
+                "text": "Parkmöglichkeiten:\n\nKein Hotelparkplatz; nahegelegene Garagen und Parkplätze verfügbar",
+                "score": 0.4288497222413206
+            }
+        ],
+        "Wo befindet sich die nächste Klinik?": [
+            {
+                "text": "Nächstgelegene Klinik:\n\nHelios Endo-Klinik, Holstenstraße 2",
+                "score": 0.2996082217059986
+            },
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.41325185881425486
+            },
+            {
+                "text": "Parkmöglichkeiten:\n\nKein Hotelparkplatz; nahegelegene Garagen und Parkplätze verfügbar",
+                "score": 0.422523428917197
+            }
+        ],
+        "Welche Sicherheitsvorkehrungen gibt es im Hotel?": [
+            {
+                "text": "Sicherheitsmaßnahmen:\n\nVideoüberwachung, Zugang zu den Etagen nur mit Zimmerkarte",
+                "score": 0.276949654690463
+            },
+            {
+                "text": "Zimmerausstattung:\n\nKlimaanlage, Fußbodenheizung, Minibar, Regendusche, Smart-TV, Safe, Schreibtisch, Rituals-Produkte",
+                "score": 0.34997351109491054
+            },
+            {
+                "text": "Öffentliche Verkehrsmittel:\n\nS-Bahn Reeperbahn direkt vor dem Hotel, U-Bahn St. Pauli 900 m entfernt, nahegelegene Bushaltestellen",
+                "score": 0.3771897033440408
+            }
+        ],
+        "Gibt es Notausgänge?": [
+            {
+                "text": "Notausgänge:\n\nNotausgänge vorhanden",
+                "score": 0.2528511685467837
+            },
+            {
+                "text": "Tagungsräume:\n\nKeine Tagungsräume",
+                "score": 0.3860608272107268
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.3952199932731736
+            }
+        ],
+        "Gibt es spezielle Zimmerdekorationen?": [
+            {
+                "text": "Spezielle Zimmerdekorationen:\n\nZimmerdekoration auf Anfrage verfügbar",
+                "score": 0.25860424572976654
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.3557297764166926
+            },
+            {
+                "text": "Zimmerkategorien:\n\n33 Klassische Doppelzimmer, 6 Komfort-Doppelzimmer, 5 Komfort Plus-Dreibettzimmer, 9 Premium-Doppelzimmer (mit Schlafsofa für zusätzliche Betten)",
+                "score": 0.36447412726420036
+            }
+        ],
+        "Gibt es besondere Arrangements für Anlässe?": [
+            {
+                "text": "Veranstaltungsarrangements:\n\nIn Planung",
+                "score": 0.322784349722713
+            },
+            {
+                "text": "Spezielle Zimmerdekorationen:\n\nZimmerdekoration auf Anfrage verfügbar",
+                "score": 0.3472176710164975
+            },
+            {
+                "text": "Catering-Services:\n\nCatering in Planung",
+                "score": 0.3676339076192055
+            }
+        ],
+        "Gibt es besondere Events im Hotel?": [
+            {
+                "text": "Webseite und soziale Medien:\n\nWebseite: www.hotelambeatlesplatz.de, Instagram: hotelambeatlesplatz",
+                "score": 0.3653186688421962
+            },
+            {
+                "text": "Veranstaltungsarrangements:\n\nIn Planung",
+                "score": 0.3714861753690068
+            },
+            {
+                "text": "Barrierefreie Zimmer:\n\nKeine barrierefreien Zimmer, keine speziellen Einrichtungen für Rollstuhlfahrer",
+                "score": 0.3745421284759153
+            }
+        ]
+    }
+}
