@@ -43,7 +43,7 @@
     "partners": "PARTNER",
     "contact": "KONTAKT",
     "book": "BUCHEN",
-    "bar": "BAR"
+    "bar": "BARS"
   },
   "partner": {
     "title": "Unsere Partner",
@@ -63,7 +63,7 @@
     "title": "Kommt bald..."
   },
   "bar": {
-    "title": "Kommt bald..."
+    "title": "Bar & Rooftop Bar kommen bald..."
   },
   "rooms": {
     "title": "Unsere Zimmer",
@@ -127,8 +127,8 @@
   },
   "restaurantBar": {
     "restaurantBarTitle": "HOTEL AM BEATLES-PLATZ RESTAURANT & BAR",
-    "restaurantDescription": "Das zukünftige HOTEL AM BEATLES-PLATZ Restaurant wird zu den angesagten Locations in Hamburg zählen und sowohl Hotelgäste als auch Hamburger*innen gleichermaßen begeistern. Es wird in den Gemäuern einer ehemaligen Eisengießerei entstehen. Hinweise auf seine historische Vergangenheit werden im Restaurant an zahlreichen Orten, in den Wänden und in den erhaltenen baulichen Strukturen zu finden sein.",
-    "kitchenTeamDescription": "Das zukünftige Küchenteam wird Sie mit ausgefallenem Sushi und Sashimi, Salaten, Fisch- und Fleischgerichten und Süßem aus der eigenen Pâtisserie verwöhnen.",
+    "restaurantDescription": "Unser zukünftiges HOTEL AM BEATLES-PLATZ Restaurant wird sich als eines der stilvollsten kulinarischen Highlights Hamburgs etablieren und nicht nur unsere Hotelgäste, sondern auch Feinschmecker aus der gesamten Region begeistern. In den geschichtsträchtigen Mauern einer ehemaligen Eisengießerei entsteht ein Ort, an dem die Vergangenheit und die Moderne auf einzigartige Weise verschmelzen: Elemente wie erhaltene Bausubstanzen und Wände zeugen von der eindrucksvollen Historie und verleihen dem Restaurant eine unverwechselbare Atmosphäre.",
+    "kitchenTeamDescription": "Unter der Leitung eines kreativen Küchenteams bietet das Restaurant besondere, einzigartige Kreationen der japanischen Küche und verleiht Sushi und Sashimi eine neue Note. Ausgefallene Sushi-Kreationen, erlesene Sashimi-Variationen, feinste Fisch- und Fleischgerichte sowie raffinierte Desserts versprechen ein unvergessliches Genusserlebnis. Freuen Sie sich auf eine besondere kulinarische Erfahrung, bei der traditionelle und moderne Einflüsse harmonisch zusammenkommen - das Restaurant bei HOTEL AM BEATLES-PLATZ heißt alle Gäste herzlich willkommen.",
     "sushiRestaurantTitle": "SUSHI-RESTAURANT",
     "sushiRestaurantSubtitle": "IM HERZEN ST. PAULIS",
     "cocktailBarTitle": "COCKTAIL BAR",

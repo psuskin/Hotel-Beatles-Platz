@@ -105,11 +105,10 @@ const Navbar: React.FC = () => {
     { name: t("home"), href: `/${locale}` },
     { name: t("rooms"), href: `/${locale}/zimmer` },
     { name: t("restaurant"), href: `/${locale}/restaurant` },
+    { name: t("bar"), href: `/${locale}/bar` },
     { name: t("gallery"), href: `/${locale}/galerie` },
     { name: t("partners"), href: `/${locale}/partner` },
     { name: t("contact"), href: `/${locale}/kontakt` },
-    { name: t("bar"), href: `/${locale}/bar` },
-
   ];
 
   return (
