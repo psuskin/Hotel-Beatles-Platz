@@ -11,12 +11,12 @@ export async function generateMetadata({
   return {
     title:
       locale === "de"
-        ? "Jobs - Hotel am Beatlesplatz Hamburg"
-        : "Jobs - Hotel am Beatlesplatz Hamburg",
+        ? "Jobs - Hotel Am Beatles Platz Hamburg"
+        : "Jobs - Hotel Am Beatles Platz Hamburg",
     description:
       locale === "de"
-        ? "Entdecken Sie spannende Karrieremöglichkeiten im Hotel am Beatlesplatz. Werden Sie Teil unseres engagierten Teams in Hamburg"
-        : "Discover exciting career opportunities at Hotel am Beatlesplatz. Join our dedicated team in Hamburg",
+        ? "Entdecken Sie spannende Karrieremöglichkeiten im Hotel Am Beatles Platz. Werden Sie Teil unseres engagierten Teams in Hamburg"
+        : "Discover exciting career opportunities at Hotel Am Beatles Platz. Join our dedicated team in Hamburg",
     keywords:
       locale === "de"
         ? "jobs hamburg, hotelkarriere, hoteljobs, stellenangebote hotel"
@@ -24,18 +24,18 @@ export async function generateMetadata({
     openGraph: {
       title:
         locale === "de"
-          ? "Jobs - Hotel am Beatlesplatz Hamburg"
-          : "Jobs - Hotel am Beatlesplatz Hamburg",
+          ? "Jobs - Hotel Am Beatles Platz Hamburg"
+          : "Jobs - Hotel Am Beatles Platz Hamburg",
       description:
         locale === "de"
-          ? "Entdecken Sie spannende Karrieremöglichkeiten im Hotel am Beatlesplatz"
-          : "Discover exciting career opportunities at Hotel am Beatlesplatz",
+          ? "Entdecken Sie spannende Karrieremöglichkeiten im Hotel Am Beatles Platz"
+          : "Discover exciting career opportunities at Hotel Am Beatles Platz",
       images: [
         {
           url: "https://www.hotelambeatlesplatz.de/images/wideView2.jpg",
           width: 1200,
           height: 630,
-          alt: "Jobs at Hotel am Beatlesplatz",
+          alt: "Jobs at Hotel Am Beatles Platz",
         },
       ],
     },

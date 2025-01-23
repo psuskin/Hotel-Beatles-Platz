@@ -9,8 +9,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   return {
     title: locale === "de" 
-      ? "Restaurant - Hotel am Beatlesplatz Hamburg" 
-      : "Restaurant - Hotel am Beatlesplatz Hamburg",
+      ? "Restaurant - Hotel Am Beatles Platz Hamburg" 
+      : "Restaurant - Hotel Am Beatles Platz Hamburg",
     description: locale === "de"
       ? "Genießen Sie exquisite Küche in unserem Restaurant mit Blick auf den Beatlesplatz. Frühstück, Mittag- und Abendessen in eleganter Atmosphäre"
       : "Enjoy exquisite cuisine in our restaurant overlooking Beatlesplatz. Breakfast, lunch and dinner in an elegant atmosphere",
@@ -19,8 +19,8 @@ export async function generateMetadata({
       : "restaurant hamburg, hotel restaurant, breakfast hamburg, fine dining, st. pauli restaurant",
     openGraph: {
       title: locale === "de" 
-        ? "Restaurant - Hotel am Beatlesplatz Hamburg" 
-        : "Restaurant - Hotel am Beatlesplatz Hamburg",
+        ? "Restaurant - Hotel Am Beatles Platz Hamburg" 
+        : "Restaurant - Hotel Am Beatles Platz Hamburg",
       description: locale === "de"
         ? "Kulinarische Erlebnisse im Herzen von Hamburg"
         : "Culinary experiences in the heart of Hamburg",
@@ -29,7 +29,7 @@ export async function generateMetadata({
           url: "https://www.hotelambeatlesplatz.de/images/wideView.jpg",
           width: 1200,
           height: 630,
-          alt: "Restaurant at Hotel am Beatlesplatz",
+          alt: "Restaurant at Hotel Am Beatles Platz",
         },
       ],
     },

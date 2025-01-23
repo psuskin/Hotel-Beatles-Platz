@@ -30,8 +30,8 @@ export async function generateMetadata({
   return {
     title:
       locale === "de"
-        ? "Hotel am Beatlesplatz - Hamburg"
-        : "Hotel am Beatlesplatz - Hamburg",
+        ? "Hotel Am Beatles Platz - Hamburg"
+        : "Hotel Am Beatles Platz - Hamburg",
     description:
       locale === "de"
         ? "Luxuriöser Aufenthalt im Herzen von Hamburg"
@@ -40,9 +40,9 @@ export async function generateMetadata({
       locale === "de"
         ? "hotel hamburg, beatlesplatz, luxushotel, st. pauli, reeperbahn"
         : "hotel hamburg, beatlesplatz, luxury hotel, st. pauli, reeperbahn",
-    authors: [{ name: "Hotel am Beatlesplatz" }],
-    creator: "Hotel am Beatlesplatz",
-    publisher: "Hotel am Beatlesplatz",
+    authors: [{ name: "Hotel Am Beatles Platz" }],
+    creator: "Hotel Am Beatles Platz",
+    publisher: "Hotel Am Beatles Platz",
     robots: "index, follow",
     alternates: {
       canonical: "https://www.hotelambeatlesplatz.de",
@@ -55,11 +55,11 @@ export async function generateMetadata({
       type: "website",
       locale: locale,
       url: "https://www.hotelambeatlesplatz.de",
-      siteName: "Hotel am Beatlesplatz",
+      siteName: "Hotel Am Beatles Platz",
       title:
         locale === "de"
-          ? "Hotel am Beatlesplatz - Hamburg"
-          : "Hotel am Beatlesplatz - Hamburg",
+          ? "Hotel Am Beatles Platz - Hamburg"
+          : "Hotel Am Beatles Platz - Hamburg",
       description:
         locale === "de"
           ? "Luxuriöser Aufenthalt im Herzen von Hamburg"
@@ -69,7 +69,7 @@ export async function generateMetadata({
           url: "https://www.hotelambeatlesplatz.de/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: "Hotel am Beatlesplatz",
+          alt: "Hotel Am Beatles Platz",
         },
       ],
     },
@@ -77,8 +77,8 @@ export async function generateMetadata({
       card: "summary_large_image",
       title:
         locale === "de"
-          ? "Hotel am Beatlesplatz - Hamburg"
-          : "Hotel am Beatlesplatz - Hamburg",
+          ? "Hotel Am Beatles Platz - Hamburg"
+          : "Hotel Am Beatles Platz - Hamburg",
       description:
         locale === "de"
           ? "Luxuriöser Aufenthalt im Herzen von Hamburg"

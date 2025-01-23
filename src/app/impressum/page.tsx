@@ -13,7 +13,7 @@ const Impressum: React.FC = () => {
             imageSrc=""
         />
         <div className="container mx-auto px-3 md:px-8 py-12 text-center">
-        <p>Hotel am Beatlesplatz</p>
+        <p>Hotel Am Beatles Platz</p>
         <p>Polat Hotelbetriebsgesellschaft mbH Reeperbahn 117</p>
         <p>20359 Hamburg</p>
         <p></p>

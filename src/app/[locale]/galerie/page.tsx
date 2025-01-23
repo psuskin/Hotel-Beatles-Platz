@@ -10,8 +10,8 @@ export async function generateMetadata({
   return {
     title:
       locale === "de"
-        ? "Galerie - Hotel am Beatlesplatz Hamburg"
-        : "Gallery - Hotel am Beatlesplatz Hamburg",
+        ? "Galerie - Hotel Am Beatles Platz Hamburg"
+        : "Gallery - Hotel Am Beatles Platz Hamburg",
     description:
       locale === "de"
         ? "Entdecken Sie unser luxuriöses Hotel durch unsere Bildergalerie. Sehen Sie unsere eleganten Zimmer, moderne Einrichtung und erstklassige Ausstattung"
@@ -19,8 +19,8 @@ export async function generateMetadata({
     openGraph: {
       title:
         locale === "de"
-          ? "Galerie - Hotel am Beatlesplatz Hamburg"
-          : "Gallery - Hotel am Beatlesplatz Hamburg",
+          ? "Galerie - Hotel Am Beatles Platz Hamburg"
+          : "Gallery - Hotel Am Beatles Platz Hamburg",
       description:
         locale === "de"
           ? "Entdecken Sie unser luxuriöses Hotel durch unsere Bildergalerie"
@@ -30,7 +30,7 @@ export async function generateMetadata({
           url: "https://www.hotelambeatlesplatz.de/images/Premium-2.jpg",
           width: 1200,
           height: 630,
-          alt: "Hotel am Beatlesplatz Gallery",
+          alt: "Hotel Am Beatles Platz Gallery",
         },
       ],
     },

@@ -10,8 +10,8 @@ export async function generateMetadata({
   return {
     title:
       locale === "de"
-        ? "Zimmer - Hotel am Beatlesplatz Hamburg"
-        : "Rooms - Hotel am Beatlesplatz Hamburg",
+        ? "Zimmer - Hotel Am Beatles Platz Hamburg"
+        : "Rooms - Hotel Am Beatles Platz Hamburg",
     description:
       locale === "de"
         ? "Entdecken Sie unsere 53 modernen Zimmer und Suiten mit Klimaanlage, kostenlosem WLAN und erstklassigem Komfort im Herzen von Hamburg"
@@ -23,8 +23,8 @@ export async function generateMetadata({
     openGraph: {
       title:
         locale === "de"
-          ? "Zimmer - Hotel am Beatlesplatz Hamburg"
-          : "Rooms - Hotel am Beatlesplatz Hamburg",
+          ? "Zimmer - Hotel Am Beatles Platz Hamburg"
+          : "Rooms - Hotel Am Beatles Platz Hamburg",
       description:
         locale === "de"
           ? "Luxuriöse Zimmer mit modernem Komfort im Herzen von Hamburg"
@@ -34,7 +34,7 @@ export async function generateMetadata({
           url: "https://www.hotelambeatlesplatz.de/images/room.jpg",
           width: 1200,
           height: 630,
-          alt: "Rooms at Hotel am Beatlesplatz",
+          alt: "Rooms at Hotel Am Beatles Platz",
         },
       ],
     },

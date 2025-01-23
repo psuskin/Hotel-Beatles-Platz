@@ -9,8 +9,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   return {
     title: locale === "de" 
-      ? "Partner - Hotel am Beatlesplatz Hamburg" 
-      : "Partners - Hotel am Beatlesplatz Hamburg",
+      ? "Partner - Hotel Am Beatles Platz Hamburg" 
+      : "Partners - Hotel Am Beatles Platz Hamburg",
     description: locale === "de"
       ? "Entdecken Sie unsere geschätzten Partner, die den Aufenthalt in unserem Hotel noch besonderer machen. Von lokalen Touren bis zu Wellness-Angeboten"
       : "Discover our valued partners who make your stay at our hotel even more special. From local tours to wellness offerings",
@@ -19,8 +19,8 @@ export async function generateMetadata({
       : "hotel partners hamburg, kiezjungs, hamburg card, rituals, beurer, rojee design, zur ritze",
     openGraph: {
       title: locale === "de" 
-        ? "Partner - Hotel am Beatlesplatz Hamburg" 
-        : "Partners - Hotel am Beatlesplatz Hamburg",
+        ? "Partner - Hotel Am Beatles Platz Hamburg" 
+        : "Partners - Hotel Am Beatles Platz Hamburg",
       description: locale === "de"
         ? "Unsere ausgewählten Partner für Ihren perfekten Aufenthalt in Hamburg"
         : "Our selected partners for your perfect stay in Hamburg",
@@ -29,7 +29,7 @@ export async function generateMetadata({
           url: "https://www.hotelambeatlesplatz.de/images/outsideView.jpg",
           width: 1200,
           height: 630,
-          alt: "Partners of Hotel am Beatlesplatz",
+          alt: "Partners of Hotel Am Beatles Platz",
         },
       ],
     },
