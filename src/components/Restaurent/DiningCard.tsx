@@ -11,6 +11,7 @@ const DiningCard = () => {
   const t = useTranslations("menu");
   const [isPdfOpen, setIsPdfOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isReservationOpen, setIsReservationOpen] = useState(false);
 
   // Check if device is mobile
   useEffect(() => {
@@ -25,22 +26,17 @@ const DiningCard = () => {
   }, []);
 
   const handleMenuClick = () => {
-    if (isMobile) {
-      // Open PDF in new tab on mobile
-      window.open("/NARAGKS1-kombiniert.pdf", "_blank");
-    } else {
-      setIsPdfOpen(true);
-    }
+    setIsPdfOpen(true);
   };
 
   const menuCategories = [
     {
       key: "appetizers",
-      image: "/images/appetizers.jpg",
+      image: "/images/seeds.jpg",
     },
     {
       key: "mainDishes",
-      image: "/images/main-dishes.jpg",
+      image: "/images/steak.jpg",
     },
     {
       key: "sushi",
@@ -48,7 +44,7 @@ const DiningCard = () => {
     },
     {
       key: "drinks",
-      image: "/images/drinks.jpg",
+      image: "/images/drinkss.jpg",
     },
   ];
 
@@ -132,13 +128,22 @@ const DiningCard = () => {
                     {t(`categories.${category.key}.description`)}
                   </p>
 
-                  <RestaurantButton
-                    text={t("viewMenu")}
-                    variant="outline"
-                    size="sm"
-                    className="mt-4 inline-flex items-center gap-2"
-                    onClick={handleMenuClick}
-                  />
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <RestaurantButton
+                      text={t("viewMenu")}
+                      variant="outline"
+                      size="sm"
+                      className="inline-flex items-center gap-2"
+                      onClick={handleMenuClick}
+                    />
+                    <RestaurantButton
+                      text={t("reserveTable")}
+                      variant="secondary"
+                      size="sm"
+                      className="inline-flex items-center gap-2"
+                      onClick={() => setIsReservationOpen(true)}
+                    />
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -146,9 +151,9 @@ const DiningCard = () => {
         </div>
       </section>
 
-      {/* PDF Modal - Only shown on desktop */}
+      {/* PDF Modal */}
       <AnimatePresence>
-        {isPdfOpen && !isMobile && (
+        {isPdfOpen && (
           <div className="fixed inset-0 z-[9999] overflow-hidden">
             <motion.div
               initial={{ opacity: 0 }}
@@ -220,6 +225,65 @@ const DiningCard = () => {
                     src="/NARAGKS1-kombiniert.pdf"
                     className="w-full h-full border-0"
                     title={t("menuTitle")}
+                  />
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Reservation Modal */}
+      <AnimatePresence>
+        {isReservationOpen && (
+          <div className="fixed inset-0 z-[9999] overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/75 backdrop-blur-sm"
+              onClick={() => setIsReservationOpen(false)}
+            />
+            <div className="fixed inset-0 flex items-center justify-center">
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                transition={{ type: "spring", duration: 0.5 }}
+                className="bg-white dark:bg-gray-800 w-[95%] h-[70vh] max-w-4xl rounded-xl shadow-2xl overflow-hidden"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Header */}
+                <div className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700 bg-secondary-color">
+                  <h2 className="text-2xl font-semibold text-white">
+                    {t("reservationTitle")}
+                  </h2>
+                  <button
+                    onClick={() => setIsReservationOpen(false)}
+                    className="text-white hover:text-white/80 transition-colors duration-200 hover:bg-red-800/40 p-2 rounded-full"
+                  >
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </button>
+                </div>
+
+                {/* OpenTable iframe */}
+                <div className="w-full h-[calc(100%-4rem)]">
+                  <iframe
+                    src="https://www.opentable.de/restref/client/?rid=373635&restref=373635&domain=de&lang=de-DE&theme=standard&color=1&iframe=true"
+                    title="OpenTable Reservation"
+                    className="w-full h-full border-0"
                   />
                 </div>
               </motion.div>

@@ -7,7 +7,7 @@ import RestaurantButton from "./RestaurantButton";
 import { useTranslations } from "next-intl";
 
 const RestaurantIntro = () => {
-  const t = useTranslations("restaurantBar");
+  const t = useTranslations("restaurantIntro");
 
   const scrollToMenu = () => {
     const menuSection = document.getElementById("nara-menu");
@@ -30,7 +30,7 @@ const RestaurantIntro = () => {
             >
               <h2 className="text-4xl md:text-5xl font-light text-white tracking-tight leading-tight">
                 <span className="text-primary-color">NARA</span> <br />
-                {t("sushiRestaurantTitle")}
+                {t("title")}
               </h2>
               <div className="h-[2px] w-24 bg-primary-color mt-4" />
             </motion.div>
@@ -50,7 +50,7 @@ const RestaurantIntro = () => {
                   viewport={{ once: true }}
                   className="text-white/90 leading-relaxed"
                 >
-                  {t("restaurantDescription")}
+                  {t("description")}
                 </motion.p>
 
                 <motion.p
@@ -60,7 +60,17 @@ const RestaurantIntro = () => {
                   viewport={{ once: true }}
                   className="text-white/90 leading-relaxed"
                 >
-                  {t("kitchenTeamDescription")}
+                  {t("experience")}
+                </motion.p>
+
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ delay: 0.4 }}
+                  viewport={{ once: true }}
+                  className="text-white/90 leading-relaxed"
+                >
+                  {t("highlight")}
                 </motion.p>
               </div>
 
@@ -72,17 +82,17 @@ const RestaurantIntro = () => {
                 className="flex flex-wrap gap-3 mt-8"
               >
                 <RestaurantButton
-                  text={t("menuButton")}
+                  text="MENU"
                   variant="outline"
                   onClick={scrollToMenu}
                 />
                 <RestaurantButton
-                  text={t("drinksButton")}
+                  text="DRINKS"
                   variant="outline"
                   onClick={scrollToMenu}
                 />
                 <RestaurantButton
-                  text={t("wineButton")}
+                  text="WINE LIST"
                   variant="outline"
                   onClick={scrollToMenu}
                 />

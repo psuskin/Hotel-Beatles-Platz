@@ -272,8 +272,18 @@
       }
     },
     "viewMenu": "EXPLORE MENU",
-    "menuTitle": "NARA MENU",
-    "pdfViewerNotSupported": "PDF viewer is not supported on your device",
+    "menuTitle": "NARA Menu",
+    "reserveTable": "RESERVE A TABLE",
+    "reservationTitle": "Reservation",
+    "pdfViewerNotSupported": "PDF viewer not supported",
     "downloadPdf": "DOWNLOAD MENU"
+  },
+  "restaurantIntro": {
+    "title": "RESTAURANT",
+    "subtitle": "NARA RESTAURANT",
+    "description": "With NARA, we are expanding the experience at Hotel am Beatles Platz to a new culinary dimension - Japanese Fine Dining in the heart of the Reeperbahn. Here, traditional Japanese culinary art meets modern fusion creations, served in a stylish, elegant ambiance.",
+    "experience": "Whether it's finest sushi creations, innovative fusion dishes, or artfully composed cocktails - NARA offers a unique taste experience that is open to both hotel guests and visitors alike.",
+    "highlight": "Let yourself be surprised by a culinary highlight that combines quality, craftsmanship, and unique design - while fitting perfectly into the pulsating heart of the city.",
+    "reserveTable": "RESERVE A TABLE"
   }
 }

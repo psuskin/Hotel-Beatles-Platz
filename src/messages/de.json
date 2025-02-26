@@ -247,33 +247,43 @@
   "menu": {
     "categories": {
       "appetizers": {
-        "title": "Vorspeisen & Kunnichwa",
-        "description": "Beginnen Sie Ihre kulinarische Reise mit erlesenen Gerichten wie Austern Finde de Claire (4€), Ikura Ishiso Trüffel (15€) und verschiedenen Edamame-Zubereitungen. Mit Spezialitäten wie Black Tiger Garnelen mit japanischer Aji Mayo.",
-        "time": "17:00 - 23:00 Uhr",
-        "priceRange": "4€ - 21€"
+        "title": "Vorspeisen & Appetizer",
+        "time": "GANZTÄGIG SERVIERT",
+        "priceRange": "€8 - €24",
+        "description": "Beginnen Sie Ihre kulinarische Reise mit unserer exquisiten Auswahl an japanischen Vorspeisen. Von traditionellem Edamame bis zu unseren Signature Gyoza, jede Vorspeise ist darauf ausgerichtet, Ihren Gaumen zu verwöhnen."
       },
       "mainDishes": {
-        "title": "Hauptgerichte & Chef's Specials",
-        "description": "Genießen Sie unsere Signature-Gerichte wie Sweet Spicy Dengaku Aubergine (18€), grünes Kotelett vom Lamm (34€) und Premium-Selektionen wie O-Toro Heaven mit Blauflossenthunfisch (42€).",
-        "time": "17:00 - 23:00 Uhr",
-        "priceRange": "18€ - 42€"
+        "title": "Hauptgerichte",
+        "time": "MITTAG- & ABENDESSEN",
+        "priceRange": "€18 - €45",
+        "description": "Erleben Sie das Herz der japanischen Küche mit unseren Hauptgerichten. Mit Premium Wagyu-Rindfleisch, frischen Meeresfrüchten und vegetarischen Optionen erzählt jedes Gericht eine Geschichte von Tradition und Innovation."
       },
       "sushi": {
         "title": "Sushi & Sashimi",
-        "description": "Erleben Sie unsere Premium-Sushi-Auswahl mit Red Veil (17€), Salmon Surfer (19€) und dem luxuriösen Opus Magnum mit A5 Wagyu und 24K Blattgold (69€).",
-        "time": "17:00 - 23:00 Uhr",
-        "priceRange": "8€ - 69€"
+        "time": "GANZTÄGIG SERVIERT",
+        "priceRange": "€12 - €38",
+        "description": "Genießen Sie die Kreationen unseres Sushi-Meisters. Mit frischesten Zutaten und traditionellen Techniken bietet unsere Sushi- und Sashimi-Auswahl einen authentischen Geschmack Japans."
       },
       "drinks": {
-        "title": "Signature Cocktails & Weine",
-        "description": "Genießen Sie unsere kreativen Cocktails wie Kokonattsu Gimlet (14,5€) und Moaitai (16€), oder wählen Sie aus unserer umfangreichen Weinkollektion mit Premium-Selektionen wie Taittinger Champagner.",
-        "time": "17:00 - 00:00 Uhr",
-        "priceRange": "7€ - 289€"
+        "title": "Getränke & Cocktails",
+        "time": "AB 11:00",
+        "priceRange": "€6 - €16",
+        "description": "Vervollständigen Sie Ihr Esserlebnis mit unserer sorgfältig zusammengestellten Getränkekarte. Von Sake bis hin zu Signature-Cocktails ist jedes Getränk darauf ausgelegt, Ihre Mahlzeit perfekt zu ergänzen."
       }
     },
-    "viewMenu": "MENÜ ANZEIGEN",
+    "viewMenu": "MENÜ ANSEHEN",
     "menuTitle": "NARA MENÜ",
+    "reserveTable": "TISCH RESERVIEREN",
+    "reservationTitle": "Tischreservierung",
     "pdfViewerNotSupported": "PDF-Viewer wird auf Ihrem Gerät nicht unterstützt",
     "downloadPdf": "MENÜ HERUNTERLADEN"
+  },
+  "restaurantIntro": {
+    "title": "RESTAURANT",
+    "subtitle": "NARA RESTAURANT",
+    "description": "Mit NARA erweitern wir das Erlebnis im Hotel am Beatles Platz um eine neue kulinarische Dimension – Japanese Fine Dining mitten auf der Reeperbahn. Hier trifft traditionelle japanische Kochkunst auf moderne Fusion-Kreationen, serviert in einem stilvollen, edlen Ambiente.",
+    "experience": "Ob feinste Sushi-Kreationen, innovative Fusion Dishes oder kunstvoll komponierte Cocktails – NARA bietet ein einzigartiges Geschmackserlebnis, das für Hotelgäste und Besucher gleichermaßen offensteht.",
+    "highlight": "Lassen Sie sich von einem kulinarischen Highlight überraschen, das Qualität, Handwerkskunst und einzigartiges Design vereint – und dabei perfekt in das pulsierende Herz der Stadt passt.",
+    "reserveTable": "TISCH RESERVIEREN"
   }
 }
