@@ -60,7 +60,11 @@
     "description": "Explore the beauty and elegance of our hotel through our carefully curated image gallery."
   },
   "restaurant": {
-    "title": "Coming Soon..."
+    "title": "RESTAURANT",
+    "subtitle": "Japanese Fine Dining on the Reeperbahn",
+    "reservationTitle": "NARA Table Reservation",
+    "description": "Experience exceptional culinary art at our NARA Restaurant",
+    "reserveTable": "Reserve a Table"
   },
   "bar": {
     "title": "Bar and rooftop bar coming soon..."
@@ -134,7 +138,10 @@
     "cocktailBarTitle": "COCKTAIL BAR",
     "cocktailBarSubtitle": "UNIQUE MIXOLOGY",
     "loungeTitle": "COZY LOUNGE",
-    "loungeSubtitle": "FOR RELAXED EVENINGS"
+    "loungeSubtitle": "FOR RELAXED EVENINGS",
+    "menuButton": "MENU",
+    "drinksButton": "DRINKS",
+    "wineButton": "WINE LIST"
   },
   "whiteSection": {
     "modern": "MODERN.",
@@ -236,5 +243,37 @@
       "perYear": "/year",
       "viewJob": "View Job"
     }
+  },
+  "menu": {
+    "categories": {
+      "appetizers": {
+        "title": "Appetizers & Starters",
+        "description": "Begin your culinary journey with exquisite selections like Oyster Finde de Claire (€4), Ikura Ishiso Truffle (€15), and various Edamame preparations. Featuring specialties like Black Tiger Prawn with Japanese Aji Mayo.",
+        "time": "5:00 PM - 11:00 PM",
+        "priceRange": "€4 - €21"
+      },
+      "mainDishes": {
+        "title": "Main Courses & Chef's Specials",
+        "description": "Savor our signature dishes including Sweet Spicy Dengaku Aubergine (€18), Green Kotelett with Lamb (€34), and premium selections like O-Toro Heaven with Bluefin Tuna (€42).",
+        "time": "5:00 PM - 11:00 PM",
+        "priceRange": "€18 - €42"
+      },
+      "sushi": {
+        "title": "Sushi & Sashimi",
+        "description": "Experience our premium sushi selection including Red Veil (€17), Salmon Surfer (€19), and the luxurious Opus Magnum with A5 Wagyu and 24K gold leaf (€69).",
+        "time": "5:00 PM - 11:00 PM",
+        "priceRange": "€8 - €69"
+      },
+      "drinks": {
+        "title": "Signature Cocktails & Wine",
+        "description": "Indulge in our creative cocktails like Kokonattsu Gimlet (€14.5) and Moaitai (€16), or choose from our extensive wine collection featuring premium selections like Taittinger Champagne.",
+        "time": "5:00 PM - 12:00 AM",
+        "priceRange": "€7 - €289"
+      }
+    },
+    "viewMenu": "EXPLORE MENU",
+    "menuTitle": "NARA MENU",
+    "pdfViewerNotSupported": "PDF viewer is not supported on your device",
+    "downloadPdf": "DOWNLOAD MENU"
   }
 }

@@ -1,40 +1,65 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
-
-const diningOptions = [
-  {
-    title: "Breakfast",
-    description:
-      "Choose from fresh bread, baked goods, muesli, fruit, sausage and cheese as well as vegetarian salads from the breakfast buffet.",
-    image:
-      "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-  },
-  {
-    title: "Private Dining",
-    description:
-      "The HOTEL AM BEATLES PLATZ Lounge is perfect for private events such as celebrations, lectures and private dining.",
-    image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-  },
-  {
-    title: "Snacks",
-    description:
-      "For the small hunger in between, there are delicious snacks from the snack menu at Yakshi Bar.",
-    image:
-      "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-  },
-];
+import RestaurantButton from "./RestaurantButton";
+import { useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const DiningCard = () => {
+  const t = useTranslations("menu");
+  const [isPdfOpen, setIsPdfOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const handleMenuClick = () => {
+    if (isMobile) {
+      // Open PDF in new tab on mobile
+      window.open("/NARAGKS1-kombiniert.pdf", "_blank");
+    } else {
+      setIsPdfOpen(true);
+    }
+  };
+
+  const menuCategories = [
+    {
+      key: "appetizers",
+      image: "/images/appetizers.jpg",
+    },
+    {
+      key: "mainDishes",
+      image: "/images/main-dishes.jpg",
+    },
+    {
+      key: "sushi",
+      image: "/images/sushi.jpg",
+    },
+    {
+      key: "drinks",
+      image: "/images/drinks.jpg",
+    },
+  ];
+
   const cardVariants = {
-    hidden: { opacity: 0, scale: 0.95, y: 20 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
-      scale: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        ease: [0.22, 1, 0.36, 1],
+        duration: 0.5,
+        ease: "easeOut",
         staggerChildren: 0.1,
       },
     },
@@ -46,72 +71,163 @@ const DiningCard = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.4,
+        duration: 0.3,
         ease: "easeOut",
       },
     },
   };
 
   return (
-    <section className="py-20 px-4">
-      <div className="container mx-auto">
-        <motion.h2
-          className="text-5xl font-light text-white mb-16 text-left uppercase max-w-3xl"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          Eat well at HOTEL AM BEATLES PLATZ
-        </motion.h2>
-      </div>
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {diningOptions.map((option, index) => (
-            <motion.div
-              key={index}
-              className="bg-gray-800 rounded-lg overflow-hidden shadow-lg"
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.1 }}
-            >
+    <>
+      <section id="nara-menu" className="py-24 px-4">
+        <div className="max-w-[1400px] mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white uppercase tracking-tight">
+              {t("menuTitle")}
+            </h2>
+            <div className="mt-4 h-[1px] w-24 bg-gradient-to-r from-primary-color to-transparent" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {menuCategories.map((category) => (
               <motion.div
-                className="relative h-64"
-                variants={cardChildrenVariants}
+                key={category.key}
+                className="group relative bg-black border border-white/5 rounded-sm overflow-hidden hover:border-primary-color/30 transition-colors duration-500"
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
               >
-                <Image
-                  src={option.image}
-                  alt={option.title}
-                  layout="fill"
-                  objectFit="cover"
-                />
+                <div className="aspect-[4/3] relative overflow-hidden">
+                  <Image
+                    src={category.image}
+                    alt={t(`categories.${category.key}.title`)}
+                    layout="fill"
+                    objectFit="cover"
+                    className="transform transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60" />
+
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-xs tracking-wider text-white/70 mb-1 uppercase">
+                      {t(`categories.${category.key}.time`)}
+                    </p>
+                    <h3 className="text-xl font-light text-white mb-1">
+                      {t(`categories.${category.key}.title`)}
+                    </h3>
+                    <p className="text-primary-color text-sm">
+                      {t(`categories.${category.key}.priceRange`)}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="p-4">
+                  <p className="text-white/70 text-sm leading-relaxed line-clamp-4">
+                    {t(`categories.${category.key}.description`)}
+                  </p>
+
+                  <RestaurantButton
+                    text={t("viewMenu")}
+                    variant="outline"
+                    size="sm"
+                    className="mt-4 inline-flex items-center gap-2"
+                    onClick={handleMenuClick}
+                  />
+                </div>
               </motion.div>
-              <div className="p-6">
-                <motion.h3
-                  className="text-2xl font-semibold text-secondary-color mb-2"
-                  variants={cardChildrenVariants}
-                >
-                  {option.title}
-                </motion.h3>
-                <motion.p
-                  className="text-gray-300 mb-4 text-sm"
-                  variants={cardChildrenVariants}
-                >
-                  {option.description}
-                </motion.p>
-                <motion.button
-                  className="w-full bg-secondary-color text-gray-900 font-bold py-2 px-4 rounded transition-colors duration-300"
-                  variants={cardChildrenVariants}
-                >
-                  LEARN MORE
-                </motion.button>
-              </div>
-            </motion.div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* PDF Modal - Only shown on desktop */}
+      <AnimatePresence>
+        {isPdfOpen && !isMobile && (
+          <div className="fixed inset-0 z-[9999] overflow-hidden">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/75 backdrop-blur-sm"
+              onClick={() => setIsPdfOpen(false)}
+            />
+            <div className="fixed inset-0 flex items-center justify-center">
+              <motion.div
+                initial={{ scale: 0.95, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.95, opacity: 0 }}
+                transition={{ type: "spring", duration: 0.5 }}
+                className="bg-white dark:bg-gray-800 w-[95%] h-[90vh] max-w-6xl rounded-xl shadow-2xl overflow-hidden"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Header */}
+                <div className="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-700 bg-secondary-color">
+                  <h2 className="text-2xl font-semibold text-white">
+                    {t("menuTitle")}
+                  </h2>
+                  <div className="flex items-center gap-4">
+                    <a
+                      href="/NARAGKS1-kombiniert.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-white/80 transition-colors duration-200 hover:bg-primary-color/40 p-2 rounded-full"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        />
+                      </svg>
+                    </a>
+                    <button
+                      onClick={() => setIsPdfOpen(false)}
+                      className="text-white hover:text-white/80 transition-colors duration-200 hover:bg-red-800/40 p-2 rounded-full"
+                    >
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                {/* PDF Viewer */}
+                <div className="w-full h-[calc(100%-4rem)]">
+                  <iframe
+                    src="/NARAGKS1-kombiniert.pdf"
+                    className="w-full h-full border-0"
+                    title={t("menuTitle")}
+                  />
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
 

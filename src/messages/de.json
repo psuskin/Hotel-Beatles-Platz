@@ -60,7 +60,11 @@
     "description": "Überzeugen Sie sich von unserem Hotel durch unsere sorgfältig zusammengestellte Bildergallerie."
   },
   "restaurant": {
-    "title": "Kommt bald..."
+    "title": "RESTAURANT",
+    "subtitle": "Japanese Fine Dining auf der Reeperbahn",
+    "reservationTitle": "NARA Tischreservierung",
+    "description": "Erleben Sie außergewöhnliche kulinarische Kunst in unserem NARA Restaurant",
+    "reserveTable": "Tisch reservieren"
   },
   "bar": {
     "title": "Bar & Rooftop Bar kommen bald..."
@@ -84,7 +88,7 @@
     "lockerName": "SPIND",
     "lockerDescription": "für Ihre Wertsachen",
     "classicDescription": "Das modern designte Classic-Zimmer, ist perfekt für einen bequemen Aufenthalt zu zweit. Mit insgesamt 14m² bietet dieses Zimmer großen Komfort.",
-    "comfortDescription": "Die Kategorie „Comfort“ ist mit ca. 16m² etwas geräumiger als das Classic-Zimmer und bietet im Comfort+ Zimmer auch Platz für bis zu insgesamt drei Gäste.",
+    "comfortDescription": "Die Kategorie 'Comfort' ist mit ca. 16m² etwas geräumiger als das Classic-Zimmer und bietet im Comfort+ Zimmer auch Platz für bis zu insgesamt drei Gäste.",
     "comfortPlusDescription": "Das modern designte Comfort+-Zimmer ist perfekt für einen bequemen Aufenthalt zu dritt. Mit insgesamt 18m² bietet dieses Zimmer großen Komfort.",
     "premiumDescription": "Das Premium-Zimmer bietet mit einem King-Size Bett den perfekten Komfort für Ihren Aufenthalt. Das Sofa besitzt eine integrierte Matratze und kann für einen weiteren Gast genutzt werden.",
     "freeWifi": "Kostenloses WLAN",
@@ -134,7 +138,10 @@
     "cocktailBarTitle": "COCKTAIL BAR",
     "cocktailBarSubtitle": "EINZIGARTIGE MIXOLOGIE",
     "loungeTitle": "GEMÜTLICHE LOUNGE",
-    "loungeSubtitle": "FÜR ENTSPANNTE ABENDE"
+    "loungeSubtitle": "FÜR ENTSPANNTE ABENDE",
+    "menuButton": "SPEISEKARTE",
+    "drinksButton": "GETRÄNKE",
+    "wineButton": "WEINKARTE"
   },
   "whiteSection": {
     "modern": "MODERN.",
@@ -236,5 +243,37 @@
       "perYear": "/Jahr",
       "viewJob": "Job ansehen"
     }
+  },
+  "menu": {
+    "categories": {
+      "appetizers": {
+        "title": "Vorspeisen & Kunnichwa",
+        "description": "Beginnen Sie Ihre kulinarische Reise mit erlesenen Gerichten wie Austern Finde de Claire (4€), Ikura Ishiso Trüffel (15€) und verschiedenen Edamame-Zubereitungen. Mit Spezialitäten wie Black Tiger Garnelen mit japanischer Aji Mayo.",
+        "time": "17:00 - 23:00 Uhr",
+        "priceRange": "4€ - 21€"
+      },
+      "mainDishes": {
+        "title": "Hauptgerichte & Chef's Specials",
+        "description": "Genießen Sie unsere Signature-Gerichte wie Sweet Spicy Dengaku Aubergine (18€), grünes Kotelett vom Lamm (34€) und Premium-Selektionen wie O-Toro Heaven mit Blauflossenthunfisch (42€).",
+        "time": "17:00 - 23:00 Uhr",
+        "priceRange": "18€ - 42€"
+      },
+      "sushi": {
+        "title": "Sushi & Sashimi",
+        "description": "Erleben Sie unsere Premium-Sushi-Auswahl mit Red Veil (17€), Salmon Surfer (19€) und dem luxuriösen Opus Magnum mit A5 Wagyu und 24K Blattgold (69€).",
+        "time": "17:00 - 23:00 Uhr",
+        "priceRange": "8€ - 69€"
+      },
+      "drinks": {
+        "title": "Signature Cocktails & Weine",
+        "description": "Genießen Sie unsere kreativen Cocktails wie Kokonattsu Gimlet (14,5€) und Moaitai (16€), oder wählen Sie aus unserer umfangreichen Weinkollektion mit Premium-Selektionen wie Taittinger Champagner.",
+        "time": "17:00 - 00:00 Uhr",
+        "priceRange": "7€ - 289€"
+      }
+    },
+    "viewMenu": "MENÜ ANZEIGEN",
+    "menuTitle": "NARA MENÜ",
+    "pdfViewerNotSupported": "PDF-Viewer wird auf Ihrem Gerät nicht unterstützt",
+    "downloadPdf": "MENÜ HERUNTERLADEN"
   }
 }

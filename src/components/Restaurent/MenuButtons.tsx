@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
+import RestaurantButton from "./RestaurantButton";
 
 const MenuButtons = ({ menuItems }: { menuItems: string[] }) => {
   const [isOverflowing, setIsOverflowing] = useState<boolean>(false);
@@ -39,14 +40,13 @@ const MenuButtons = ({ menuItems }: { menuItems: string[] }) => {
         }}
       >
         {menuItems.map((item, index) => (
-          <motion.button
+          <RestaurantButton
             key={index}
-            className="bg-gray-800 text-white px-5 py-4 m-1 text-sm rounded-sm transition-colors hover:bg-secondary-color flex-shrink-0 whitespace-nowrap"
-            whileHover={{ scale: 1.01 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            {item}
-          </motion.button>
+            text={item}
+            variant="secondary"
+            size="md"
+            className="m-1 flex-shrink-0 whitespace-nowrap"
+          />
         ))}
       </div>
       {isOverflowing && (

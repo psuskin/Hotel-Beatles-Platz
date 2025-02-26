@@ -4,30 +4,17 @@ import React from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useTranslations } from "next-intl";
-// import MenuButtons from "@/components/Restaurent/MenuButtons";
-// import RestaurantIntro from "@/components/Restaurent/RestaurantIntro";
-// import FoodSection from "@/components/Restaurent/FoodSection";
-// import DiningCard from "@/components/Restaurent/DiningCard";
-// import RestaurantGallery from "@/components/Restaurent/RestaurantGallery";
-
-
-
-const menuItems = [
-  "BREAKFAST",
-  "LUNCH & SNACKS",
-  "DINNER",
-  "OPENING HOURS",
-  "SUSTAINABLE KITCHEN",
-];
+import RestaurantIntro from "@/components/Restaurent/RestaurantIntro";
+import DiningCard from "@/components/Restaurent/DiningCard";
+import RestaurantGallery from "@/components/Restaurent/RestaurantGallery";
+import OpenTableWidget from "@/components/Restaurent/OpenTableWidget";
 
 const RestaurantClient = () => {
   const t = useTranslations("restaurant");
 
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const titleY = useTransform(scrollY, [0, 300], [0, -50]);
-  const descriptionY = useTransform(scrollY, [0, 300], [0, 50]);
-  const scale = useTransform(scrollY, [0, 300], [1, 0.9]);
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
   const imageScale = useTransform(scrollY, [0, 500], [1, 1.1]);
 
   const springY = useSpring(y, { stiffness: 400, damping: 90 });
@@ -35,53 +22,149 @@ const RestaurantClient = () => {
     stiffness: 400,
     damping: 90,
   });
+  const springOpacity = useSpring(opacity, { stiffness: 400, damping: 90 });
+
+  // Animation variants for the letters
+  const letterVariants = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+      filter: "blur(10px)",
+    },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        delay: i * 0.2,
+        duration: 1,
+        ease: [0.2, 0.65, 0.3, 0.9],
+      },
+    }),
+  };
+
+  // Animation variant for the subtitle
+  const subtitleVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 1.2,
+        duration: 0.8,
+      },
+    },
+  };
 
   return (
     <div className="text-white min-h-screen">
-      {/* SubHeader Section */}
-      <section className="relative h-[90vh] overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
+        {/* Background Image with Gradient Overlay */}
         <motion.div
           style={{ y: springY, scale: springImageScale }}
           className="absolute inset-0"
         >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/90 z-10" />
           <Image
             src="/images/wideView.jpg"
             alt="Restaurant Interior"
             layout="fill"
             objectFit="cover"
             className="brightness-50"
+            priority
           />
         </motion.div>
-        <motion.div
-          className="absolute inset-0 flex flex-col justify-center items-center text-center"
-          style={{ scale }}
-        >
-          <motion.h1
-            className="text-6xl md:text-8xl font-bold mb-4 text-secondary-color"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            style={{ y: titleY }}
+
+        {/* Content Container */}
+        <div className="absolute inset-0 flex flex-col items-center justify-between z-20 px-4 py-20">
+          {/* Top Section - Creative Title */}
+          <motion.div
+            className="text-center relative pt-16"
+            style={{ scale: 1, opacity: springOpacity }}
           >
-            {t("title")}
-          </motion.h1>
-          {/* <motion.p
-            className="text-xl md:text-2xl mb-8"
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            style={{ y: descriptionY }}
+            <motion.p
+              className="text-2xl font-light tracking-[0.2em] text-white/80 mb-8"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              NEUERÖFFNUNG
+            </motion.p>
+
+            {/* NARA letters with individual animations */}
+            <div className="relative flex items-center justify-center gap-3 md:gap-4 mb-12">
+              {["N", "A", "R", "A"].map((letter, i) => (
+                <motion.div
+                  key={i}
+                  custom={i}
+                  variants={letterVariants}
+                  initial="hidden"
+                  animate="visible"
+                  className="relative"
+                >
+                  <span
+                    className="inline-block text-8xl md:text-9xl lg:text-[11rem] font-normal tracking-wide"
+                    style={{
+                      color: "white",
+                      textShadow: `
+                        0 0 40px rgba(255,255,255,0.8),
+                        0 0 80px rgba(255,255,255,0.4),
+                        0 0 120px rgba(255,255,255,0.2)
+                      `,
+                      WebkitTextStroke: "1px rgba(255,255,255,0.3)",
+                    }}
+                  >
+                    {letter}
+                  </span>
+                  {/* Illuminated effect overlay */}
+                  <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{
+                      background:
+                        "linear-gradient(180deg, rgba(255,255,255,0.15) 0%, transparent 100%)",
+                      mixBlendMode: "overlay",
+                    }}
+                  />
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Subtitle */}
+            <motion.div
+              variants={subtitleVariants}
+              initial="hidden"
+              animate="visible"
+              className="space-y-4"
+            >
+              <p className="text-xl md:text-2xl font-light tracking-widest text-white/90">
+                {t("subtitle")}
+              </p>
+              <p className="text-lg font-light tracking-wide text-white/70">
+                ✧ Sushi & japanese fusion kitchen ✧
+              </p>
+            </motion.div>
+          </motion.div>
+
+          {/* Middle Section - OpenTable Widget */}
+          <div className="w-full max-w-5xl mx-auto relative">
+            <OpenTableWidget className="mt-8" />
+          </div>
+
+          {/* Bottom Section - Scroll Indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2.2, duration: 0.8 }}
+            className="flex flex-col items-center"
           >
-            A Culinary Journey Through Flavors
-          </motion.p> */}
-        </motion.div>
-        {/* <MenuButtons menuItems={menuItems} /> */}
+            <div className="w-px h-16 bg-gradient-to-b from-white/20 via-white/10 to-transparent animate-pulse" />
+          </motion.div>
+        </div>
       </section>
 
-      {/* <RestaurantIntro />
-      <FoodSection />
+      <RestaurantIntro />
       <DiningCard />
-      <RestaurantGallery /> */}
+      {/* <RestaurantGallery /> */}
     </div>
   );
 };

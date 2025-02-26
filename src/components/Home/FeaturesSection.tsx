@@ -196,7 +196,9 @@ const RoomCard: React.FC<{
               </div>
               <div className="flex items-center text-gray-300">
                 <Users className="w-4 h-4 md:w-5 md:h-5 mr-1 md:mr-2 text-primary-color" />
-                <span className="text-sm md:text-base">{t(`occupancy.${room.occupancy}`)}</span>
+                <span className="text-sm md:text-base">
+                  {t(`occupancy.${room.occupancy}`)}
+                </span>
               </div>
             </div>
             <div className="mb-4 md:mb-6">
@@ -209,16 +211,16 @@ const RoomCard: React.FC<{
                     key={index}
                     className="bg-gray-800 text-gray-200 px-2 py-1 rounded-full text-xs md:text-sm"
                   >
-                    {t(`amenities.${amenity.toLowerCase().replace(' ', '_')}`)}
+                    {t(`amenities.${amenity.toLowerCase().replace(" ", "_")}`)}
                   </span>
                 ))}
               </div>
             </div>
             <div className="flex justify-between items-center">
               <p className="text-xl md:text-2xl font-bold text-gray-200">
-                {t('price', { price: room.price.split(' ')[0] })}
+                {t("price", { price: room.price.split(" ")[0] })}
               </p>
-              <Button text={t('bookNow')} onClick={onBookNow} />
+              <Button text={t("bookNow")} onClick={onBookNow} />
             </div>
           </div>
         </div>
