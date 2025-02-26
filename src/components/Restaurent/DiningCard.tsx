@@ -178,7 +178,7 @@ const DiningCard = () => {
                   </h2>
                   <div className="flex items-center gap-4">
                     <a
-                      href="/NARAGKS1-kombiniert.pdf"
+                      href="/Speisekarte.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-white/80 transition-colors duration-200 hover:bg-primary-color/40 p-2 rounded-full"
@@ -222,7 +222,7 @@ const DiningCard = () => {
                 {/* PDF Viewer */}
                 <div className="w-full h-[calc(100%-4rem)]">
                   <iframe
-                    src="/NARAGKS1-kombiniert.pdf"
+                    src="/Speisekarte.pdf"
                     className="w-full h-full border-0"
                     title={t("menuTitle")}
                   />
