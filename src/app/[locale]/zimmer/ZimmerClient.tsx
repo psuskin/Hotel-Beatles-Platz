@@ -5,7 +5,7 @@ import SubHeader from "@/components/SubHeader";
 import RoomCard from "@/components/RoomCard";
 import BookingPopUp from "@/components/BookingPopUp";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaFire, FaCocktail, FaSnowflake, FaKey } from "react-icons/fa";
+import { FaFire, FaCocktail, FaSnowflake } from "react-icons/fa";
 import { roomTypes } from "@/components/constant/roomTypes";
 import { useTranslations } from "next-intl";
 
@@ -57,11 +57,11 @@ const ZimmerClient = () => {
       description: t("acDescription"),
       icon: <FaSnowflake />,
     },
-    {
-      name: t("lockerName"),
-      description: t("lockerDescription"),
-      icon: <FaKey />,
-    },
+    // {
+    //   name: t("lockerName"),
+    //   description: t("lockerDescription"),
+    //   icon: <FaKey />,
+    // },
   ];
 
   const handleBookNow = () => {

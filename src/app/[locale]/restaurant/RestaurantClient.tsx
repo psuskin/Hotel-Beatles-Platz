@@ -66,7 +66,7 @@ const RestaurantClient = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/70 to-black/90 z-10" />
           <Image
-            src="/images/wideView.jpg"
+            src="/images/barNara.jpg"
             alt="Restaurant Interior"
             layout="fill"
             objectFit="cover"

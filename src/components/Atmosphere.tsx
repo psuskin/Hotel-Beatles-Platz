@@ -49,7 +49,7 @@ const Atmosphere: React.FC<AtmosphereProps> = ({ currentTime, weather }) => {
             />
             <InfoItem label={t("currentWeather")} value={weather} />
             <InfoItem label={t("email")} value={t("emailValue")} />
-            <InfoItem label={t("pdf")} value={t("guestFolder")} isLink />
+            {/* <InfoItem label={t("pdf")} value={t("guestFolder")} isLink /> */}
             <InfoItem label={t("link")} value={t("attractions")} isLink />
           </div>
         </motion.div>
@@ -126,7 +126,7 @@ const InfoItem: React.FC<{
     {icon && <span className="mr-2">{icon}</span>}
     <span className="text-gray-400">{label || text}</span>
     {isLink ? (
-      <a href="#" className="text-primary-color hover:underline">
+      <a href="https://www.hamburg.de/tourismus/sehenswuerdigkeiten" className="text-primary-color hover:underline">
         {value}
       </a>
     ) : (

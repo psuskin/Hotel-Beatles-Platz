@@ -102,7 +102,7 @@ const RestaurantIntro = () => {
           <div className="w-full h-64 md:h-96 lg:w-[60%] lg:h-auto lg:absolute lg:right-0 lg:top-0 lg:bottom-0">
             <div className="relative w-full h-full">
               <Image
-                src="/images/chairs.jpg"
+                src="/images/nara.jpg"
                 alt="NARA Restaurant Interior"
                 layout="fill"
                 objectFit="cover"
